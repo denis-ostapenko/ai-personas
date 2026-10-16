@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Persona | A conversation with character</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<div id="app" class="app">
+  <aside class="sidebar" aria-label="Conversations">
+    <a class="wordmark" href="/" aria-label="Persona home"><span class="mark" aria-hidden="true">p</span>persona<span class="wordmark-dot">.</span></a>
+    <div class="edition">A CONVERSATION WITH CHARACTER</div>
+    <button id="new-chat" class="button primary new-chat">+ New conversation</button>
+    <div class="sidebar-label">YOUR CONVERSATIONS</div>
+    <nav id="chat-list" class="chat-list" aria-label="Chat history"></nav>
+    <div class="sidebar-bottom"><span class="connection-dot"></span><span id="connection">Connecting</span><span class="version">v0.4.2</span></div>
+  </aside>
+  <main class="main">
+    <header class="main-header"><div><span class="eyebrow">YOUR PERSONA</span><h1 id="chat-title">Room for a real conversation.</h1></div><button id="settings-toggle" class="button quiet">Character & memory</button></header>
+    <select id="mobile-history" class="mobile-history" aria-label="Conversation history" hidden></select>
+    <div id="notice" class="notice" role="status" hidden></div>
+    <div id="error" class="error" role="alert" hidden></div>
+    <section id="introduction" class="introduction" aria-label="Introduction" hidden></section>
+    <section id="conversation" class="conversation" aria-label="Conversation" aria-live="polite"></section>
+    <div id="busy-message" class="busy-message" role="status" hidden></div>
+    <div class="composer-area">
+      <div id="session-meta" class="session-meta"></div>
+      <form id="composer" class="composer"><label class="sr-only" for="message">Your message</label><textarea id="message" rows="2" maxlength="6000" placeholder="What is on your mind?"></textarea><button id="send" class="send" aria-label="Send message">Send <span aria-hidden="true">↗</span></button></form>
+      <div class="composer-caption"><label><input type="checkbox" id="remember" checked> Remember useful details in new conversations</label><span>Enter to send · Shift + Enter for a new line</span></div>
+    </div>
+  </main>
+  <aside id="inspector" class="inspector" aria-label="Persona settings">
+    <header class="inspector-header"><div><span class="eyebrow">MAKE IT YOURS</span><h2>A little more you.</h2></div><button id="close-inspector" class="icon-button" aria-label="Close settings">×</button></header>
+    <nav class="tabs" aria-label="Persona panels"><button data-tab="character" class="active">Character</button><button data-tab="memory">Memory</button><button data-tab="state">State</button><button data-tab="review">Review</button></nav>
+    <div id="panel" class="panel"></div>
+    <footer class="inspector-footer"><a href="/api/export" download title="Readable data export; use the documented cold snapshot for complete restoration">Export data</a><button id="reset" class="text-button">Reset</button></footer>
+  </aside>
+</div>
+<script type="module" src="/app.js"></script>
+</body></html>

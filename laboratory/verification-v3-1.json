@@ -1,0 +1,10 @@
+{
+  "scope": "synthetic offline teaching lab",
+  "sqlite_version": "3.53.0",
+  "tests_run": 7,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "postgres_gateway": "node --check passed; no database integration run",
+  "verified_on": "2026-10-15"
+}

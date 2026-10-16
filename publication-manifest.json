@@ -1,0 +1,1052 @@
+{
+  "bundle": "2026.10",
+  "applications": {
+    "Persona": "0.5.0",
+    "Home Repair Advisor": "0.4.0",
+    "Mara": "0.3.0"
+  },
+  "provenance": [
+    {
+      "path": "apps/companion/.env.example",
+      "source": "releases/first-two/repository/apps/companion/.env.example",
+      "sha256": "f19636c72215d9a4dd780ee8dc202676bffd4d77cbac699e4a34f55d3f7c04c5"
+    },
+    {
+      "path": "apps/companion/CHANGELOG.md",
+      "source": "releases/first-two/repository/apps/companion/CHANGELOG.md",
+      "sha256": "25cc9e7d908eebdfa43696346e368ecb9cc92ff7776d053e4dfcf1bec4dc063c"
+    },
+    {
+      "path": "apps/companion/CHANGELOG.pt-BR.md",
+      "source": "releases/first-two/repository/apps/companion/CHANGELOG.pt-BR.md",
+      "sha256": "63509bc8aad2f01e02942497febaac92871dce9237f3b10098d9d139ba8383ca"
+    },
+    {
+      "path": "apps/companion/docs/ARCHITECTURE.md",
+      "source": "releases/first-two/repository/apps/companion/docs/ARCHITECTURE.md",
+      "sha256": "ab19054a4865e10f7c226cb1a87f226fed66fe089bd4b79a65ef677ca1a05e45"
+    },
+    {
+      "path": "apps/companion/docs/DATA.md",
+      "source": "releases/first-two/repository/apps/companion/docs/DATA.md",
+      "sha256": "3e678b8411d228a46e620d57d1b5db3fed7acc7b5b66a458c6755586afbc9542"
+    },
+    {
+      "path": "apps/companion/docs/EXTERNAL_MEMORY.md",
+      "source": "releases/first-two/repository/apps/companion/docs/EXTERNAL_MEMORY.md",
+      "sha256": "5d5bc375c8a12d060bbdd0ea5249c72eb95e03b25e1f5bf260a2bb07300226a7"
+    },
+    {
+      "path": "apps/companion/docs/PERSONA.md",
+      "source": "releases/first-two/repository/apps/companion/docs/PERSONA.md",
+      "sha256": "557e7a287e4c8af122251662586c93baee2837c28e62812ae62ba35eee32f0bf"
+    },
+    {
+      "path": "apps/companion/docs/PERSONA.pt-BR.md",
+      "source": "releases/first-two/repository/apps/companion/docs/PERSONA.pt-BR.md",
+      "sha256": "8ccae5ef896e4fa66674e818233e4d5dab78c7785fdbac8f0beafbd40c59c9f0"
+    },
+    {
+      "path": "apps/companion/docs/RESEARCH.md",
+      "source": "releases/first-two/repository/apps/companion/docs/RESEARCH.md",
+      "sha256": "b94b3980bb0888b89e20cc225a96d8fae10afabfa78bb74b6594d3373f1c3f57"
+    },
+    {
+      "path": "apps/companion/docs/VERIFICATION.md",
+      "source": "releases/first-two/repository/apps/companion/docs/VERIFICATION.md",
+      "sha256": "8f66737b34cc545db107a1982382270902307dabf079aca9d3ea93171130ff58"
+    },
+    {
+      "path": "apps/companion/docs/verification/release-2026-10-14/persona-live.json",
+      "source": "releases/first-two/repository/apps/companion/docs/verification/release-2026-10-14/persona-live.json",
+      "sha256": "2f74bd21f89c562475af82d3d965d0861ea77bccd3185e3b19396706bd4bff53"
+    },
+    {
+      "path": "apps/companion/docs/verification/release-2026-10-14/REPORT.md",
+      "source": "releases/first-two/repository/apps/companion/docs/verification/release-2026-10-14/REPORT.md",
+      "sha256": "697e42ac421c4ceed120e267d1b8244999c49c872d69a7554fa603991cdc6592"
+    },
+    {
+      "path": "apps/companion/LICENSE",
+      "source": "releases/first-two/repository/apps/companion/LICENSE",
+      "sha256": "e17e3c1b196c0d3a10d37e5df25f5dc7523c3e76cd5ee88dc608e2b2ebe44eae"
+    },
+    {
+      "path": "apps/companion/package.json",
+      "source": "releases/first-two/repository/apps/companion/package.json",
+      "sha256": "92d77476cc1be54e36742ac902ecf068600a183c8d14789a670eaf475a2fb704"
+    },
+    {
+      "path": "apps/companion/persona/expression.json",
+      "source": "releases/first-two/repository/apps/companion/persona/expression.json",
+      "sha256": "96ea1b5cce13e75fe88d120019b5495fb1b0c41251570aad7066cb8d346ed403"
+    },
+    {
+      "path": "apps/companion/persona/identity.json",
+      "source": "releases/first-two/repository/apps/companion/persona/identity.json",
+      "sha256": "6ed6a45fe10d7bf0bc9e1675c839b361a23b0708bcf18fc59a6d918d68a530ed"
+    },
+    {
+      "path": "apps/companion/persona/memory-policy.json",
+      "source": "releases/first-two/repository/apps/companion/persona/memory-policy.json",
+      "sha256": "3e9576e31d27974d246f25ee202ca5c075469030985f073acebbe38598a31ca1"
+    },
+    {
+      "path": "apps/companion/persona/temperament.json",
+      "source": "releases/first-two/repository/apps/companion/persona/temperament.json",
+      "sha256": "8013349fdeec75e774a5314ade9ca00e33335fafb6594f9dcbeea8fb18a90f92"
+    },
+    {
+      "path": "apps/companion/prompts/appraisal.md",
+      "source": "releases/first-two/repository/apps/companion/prompts/appraisal.md",
+      "sha256": "0b1f81add4b1dfb7d7628512f99892d838afd546309d44053ee6a7512645dabe"
+    },
+    {
+      "path": "apps/companion/prompts/dialogue.md",
+      "source": "releases/first-two/repository/apps/companion/prompts/dialogue.md",
+      "sha256": "7b1f085cd46756278099e921cf94ccae522ed84fb628428f3446f6f650383f9c"
+    },
+    {
+      "path": "apps/companion/prompts/review.md",
+      "source": "releases/first-two/repository/apps/companion/prompts/review.md",
+      "sha256": "a9c95a2a7a64a1767a3ec8a74484ae0b183ffbf89ba91b006d5b3d67c429b8d3"
+    },
+    {
+      "path": "apps/companion/public/app.js",
+      "source": "releases/first-two/repository/apps/companion/public/app.js",
+      "sha256": "10e3dab1b263a960813c2894323e3908c93ac050169bdb793fbbdf69a1bc304d"
+    },
+    {
+      "path": "apps/companion/public/index.html",
+      "source": "releases/first-two/repository/apps/companion/public/index.html",
+      "sha256": "fa4ee61c396828da27776cfe616f3153e484278331b689b77d4ad1e8dce11424"
+    },
+    {
+      "path": "apps/companion/public/style.css",
+      "source": "releases/first-two/repository/apps/companion/public/style.css",
+      "sha256": "add2dcf5459c7b2713db438da879a10e60dfa30fa472a207d6147916649bf8e2"
+    },
+    {
+      "path": "apps/companion/README.md",
+      "source": "releases/first-two/repository/apps/companion/README.md",
+      "sha256": "951387a644630149ed48f3f2dc5e339c9f29657b891ab52598292ff4ec56c506"
+    },
+    {
+      "path": "apps/companion/README.pt-BR.md",
+      "source": "releases/first-two/repository/apps/companion/README.pt-BR.md",
+      "sha256": "10cb0aced80191d58c62c47c5ab3f50ec46bb86a7ed6edd13f16fcb6ea750a01"
+    },
+    {
+      "path": "apps/companion/ROADMAP.md",
+      "source": "releases/first-two/repository/apps/companion/ROADMAP.md",
+      "sha256": "9cc377893ef8055df5a8c609a3d8ab3893cc2245e8d5e5b68fdc84be52c31b5d"
+    },
+    {
+      "path": "apps/companion/ROADMAP.pt-BR.md",
+      "source": "releases/first-two/repository/apps/companion/ROADMAP.pt-BR.md",
+      "sha256": "df2eccb16f00a3f25fb2bd5daf6cd6c9ae1cab71e0f256eb7b4893b73cfe5de7"
+    },
+    {
+      "path": "apps/companion/scripts/backup.mjs",
+      "source": "releases/first-two/repository/apps/companion/scripts/backup.mjs",
+      "sha256": "1a786e46c9a2eb76945b6b6d051800071abc8c29b4ee6f166a36c9c3e9bca52b"
+    },
+    {
+      "path": "apps/companion/scripts/browser-fixture.mjs",
+      "source": "releases/first-two/repository/apps/companion/scripts/browser-fixture.mjs",
+      "sha256": "75d9d06b62f84b143c4e38da7fc949e40e50b002279b433e41c712e40e940362"
+    },
+    {
+      "path": "apps/companion/scripts/check.mjs",
+      "source": "releases/first-two/repository/apps/companion/scripts/check.mjs",
+      "sha256": "3066f1a6bc91b8338dd6b4bdd5d7135014999c80b0b5a89a2b713092acdcf958"
+    },
+    {
+      "path": "apps/companion/scripts/release-live.mjs",
+      "source": "releases/first-two/repository/apps/companion/scripts/release-live.mjs",
+      "sha256": "fe300e3905645fd92535829ef832fc3d576d9ebdabe2f37835cc7aac8de13199"
+    },
+    {
+      "path": "apps/companion/scripts/replay-affect.mjs",
+      "source": "releases/first-two/repository/apps/companion/scripts/replay-affect.mjs",
+      "sha256": "dc78c151d334cdf13418e7a9ff31de78130e4bd553f39f44102cad7dfc029d00"
+    },
+    {
+      "path": "apps/companion/scripts/smoke.mjs",
+      "source": "releases/first-two/repository/apps/companion/scripts/smoke.mjs",
+      "sha256": "2c42e50f4e079c9a96e641dcec91c3caabe9c454b807ca08841c27cec11d518f"
+    },
+    {
+      "path": "apps/companion/scripts/start.sh",
+      "source": "releases/first-two/repository/apps/companion/scripts/start.sh",
+      "sha256": "12c6c432ca5181846941c455ea41bb0a9defb151dfdb99e695227c6c9a3c6892"
+    },
+    {
+      "path": "apps/companion/src/affect.mjs",
+      "source": "releases/first-two/repository/apps/companion/src/affect.mjs",
+      "sha256": "a07f3f0f0e3447b38a94e87b2b74f99a7eb02ef467b85e4af3991c4003802b93"
+    },
+    {
+      "path": "apps/companion/src/appraisal.mjs",
+      "source": "releases/first-two/repository/apps/companion/src/appraisal.mjs",
+      "sha256": "2d18611ba529362609c07da0d5155d4b6048960c6c4495c0a1ef385dfb393d3b"
+    },
+    {
+      "path": "apps/companion/src/character.mjs",
+      "source": "releases/first-two/repository/apps/companion/src/character.mjs",
+      "sha256": "8545bb0e7977fcd2a78069bd0cfbf787c72f15968e41ca33763f042f10f777b4"
+    },
+    {
+      "path": "apps/companion/src/context.mjs",
+      "source": "releases/first-two/repository/apps/companion/src/context.mjs",
+      "sha256": "be96304e3ea11b8df9afe66a7e63e3c826f47b764501ff204a6e83755f11991d"
+    },
+    {
+      "path": "apps/companion/src/conversation-memory.mjs",
+      "source": "releases/first-two/repository/apps/companion/src/conversation-memory.mjs",
+      "sha256": "bffbe566ab656839d3d09b0ceb021948677881734388f7e208e3519dc2f3c96d"
+    },
+    {
+      "path": "apps/companion/src/core.mjs",
+      "source": "releases/first-two/repository/apps/companion/src/core.mjs",
+      "sha256": "f3cc6b23ef70b2beea608fef998b655074cbfb21b9c3d442074bcada81dab6ea"
+    },
+    {
+      "path": "apps/companion/src/emotion-model.mjs",
+      "source": "releases/first-two/repository/apps/companion/src/emotion-model.mjs",
+      "sha256": "13378a72f8b0d29321abd33550458222ed688768ffb71ff8af3f018712ec2ed8"
+    },
+    {
+      "path": "apps/companion/src/expression.mjs",
+      "source": "releases/first-two/repository/apps/companion/src/expression.mjs",
+      "sha256": "9a3b7cef1b10fc92cc86a55ebe64c50e73667936d8cee0800301ef15f657d0e8"
+    },
+    {
+      "path": "apps/companion/src/external-memory.mjs",
+      "source": "releases/first-two/repository/apps/companion/src/external-memory.mjs",
+      "sha256": "80c61c182dbb0337ca0f26d9c5fc6da7baa2484d1234b399846628073a50fc15"
+    },
+    {
+      "path": "apps/companion/src/memory-graph.mjs",
+      "source": "releases/first-two/repository/apps/companion/src/memory-graph.mjs",
+      "sha256": "70f90b1b3b55aa4e66cda150afae7943ef47df1ba4581235bb1437f555fe7da8"
+    },
+    {
+      "path": "apps/companion/src/memory.mjs",
+      "source": "releases/first-two/repository/apps/companion/src/memory.mjs",
+      "sha256": "2eec5ce236d2c53dcbdf471cd73595b21ffcd5bd451ce34ce47c33647f0e4af1"
+    },
+    {
+      "path": "apps/companion/src/persona.mjs",
+      "source": "releases/first-two/repository/apps/companion/src/persona.mjs",
+      "sha256": "8f20706a4c4de71b5115c47d64d9731fca5d8cb27425cdee5285dda2986feebc"
+    },
+    {
+      "path": "apps/companion/src/provider.mjs",
+      "source": "releases/first-two/repository/apps/companion/src/provider.mjs",
+      "sha256": "ec17f7cd03551e311a11a54d4fdd296e2c1ce8eca8ee09d36170518e98289d4d"
+    },
+    {
+      "path": "apps/companion/src/reaction-cells.mjs",
+      "source": "releases/first-two/repository/apps/companion/src/reaction-cells.mjs",
+      "sha256": "2196ae46582a0cec571d7bbdb111d6015b270a460aeae0e9765156f562070632"
+    },
+    {
+      "path": "apps/companion/src/relationship.mjs",
+      "source": "releases/first-two/repository/apps/companion/src/relationship.mjs",
+      "sha256": "2e0ef5fc6808cf6a0187ef453ea0c2558de972f9115a4417f7fac089364c0ac8"
+    },
+    {
+      "path": "apps/companion/src/review.mjs",
+      "source": "releases/first-two/repository/apps/companion/src/review.mjs",
+      "sha256": "0e6cb07fede638cc5b2fa3f1e9ba7e724c59f1489e304f6d53cc3c0364a530db"
+    },
+    {
+      "path": "apps/companion/src/server.mjs",
+      "source": "releases/first-two/repository/apps/companion/src/server.mjs",
+      "sha256": "73cd57be7cbd469bb1dc8fe479ce3d5e755b43a98cd7d72ff6ebb29c993853f2"
+    },
+    {
+      "path": "apps/companion/src/store.mjs",
+      "source": "releases/first-two/repository/apps/companion/src/store.mjs",
+      "sha256": "3018c7b211e66d0a2798b57ad2443cadac977c2565d6047b573bb1c26833f017"
+    },
+    {
+      "path": "apps/companion/src/temperament.mjs",
+      "source": "releases/first-two/repository/apps/companion/src/temperament.mjs",
+      "sha256": "ef95e19642caccc7bb507440b1e2d5d0bf020997ec143756d6064fc56bd3bb04"
+    },
+    {
+      "path": "apps/companion/tests/affect-v2.test.mjs",
+      "source": "releases/first-two/repository/apps/companion/tests/affect-v2.test.mjs",
+      "sha256": "4b9625820c4ae9d88d36d347a7b5ab25cd7dfcf06204820cd5b387b80cd74a35"
+    },
+    {
+      "path": "apps/companion/tests/attribution.test.mjs",
+      "source": "releases/first-two/repository/apps/companion/tests/attribution.test.mjs",
+      "sha256": "21c54bb870ae8adc6cd7ec368e028f1d7ecfa885385707a316da79c13ca58937"
+    },
+    {
+      "path": "apps/companion/tests/backup.test.mjs",
+      "source": "releases/first-two/repository/apps/companion/tests/backup.test.mjs",
+      "sha256": "dbc6831107d9f265b80c83c75f8f4e00845d1abfaa5f2f5ba41c5c08c5ff5647"
+    },
+    {
+      "path": "apps/companion/tests/external-memory.test.mjs",
+      "source": "releases/first-two/repository/apps/companion/tests/external-memory.test.mjs",
+      "sha256": "4d3a0e7f294ef32d1c41ff51b59bfbc0bf1e65ed2180ebe4a35d57cb7b8f7864"
+    },
+    {
+      "path": "apps/companion/tests/forgetting.test.mjs",
+      "source": "releases/first-two/repository/apps/companion/tests/forgetting.test.mjs",
+      "sha256": "2b292abf4e014001331e00953efc0b3bce72a2f5e820dce20caf1259b3cc9597"
+    },
+    {
+      "path": "apps/companion/tests/memory-database.test.mjs",
+      "source": "releases/first-two/repository/apps/companion/tests/memory-database.test.mjs",
+      "sha256": "d91a01ee386f24e2f8950288c73cb1deb77a0534d344dfbe672cc286f9003174"
+    },
+    {
+      "path": "apps/companion/tests/persona.test.mjs",
+      "source": "releases/first-two/repository/apps/companion/tests/persona.test.mjs",
+      "sha256": "dfadb7fc0186b45c947ffbdd69cf91d44a13ea640ad44aba2d43d515dce32238"
+    },
+    {
+      "path": "apps/companion/tests/runtime.test.mjs",
+      "source": "releases/first-two/repository/apps/companion/tests/runtime.test.mjs",
+      "sha256": "257148e9497674f1cbf1528ade06a3f72eeffb08e84b56f62bff3260a30b96fb"
+    },
+    {
+      "path": "apps/home-repair-advisor/.env.example",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/.env.example",
+      "sha256": "b808cf454d733b4a00be5234b721cce961a6c703f11524328d8b5bb91f0e7337"
+    },
+    {
+      "path": "apps/home-repair-advisor/CHANGELOG.md",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/CHANGELOG.md",
+      "sha256": "6fff51d88293c82637ce269ff5caf32d9fb86cbd239c505304814cf75cb41131"
+    },
+    {
+      "path": "apps/home-repair-advisor/CHANGELOG.pt-BR.md",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/CHANGELOG.pt-BR.md",
+      "sha256": "cbea9c591181bb423c1952c77d4805dc287d8d06463cc0a188771af12905cd24"
+    },
+    {
+      "path": "apps/home-repair-advisor/docs/ARCHITECTURE.md",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/docs/ARCHITECTURE.md",
+      "sha256": "ed60c23c60668588e327b781a975d247e5e14c714d2bf40176b5d8713e7060c3"
+    },
+    {
+      "path": "apps/home-repair-advisor/docs/DATA.md",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/docs/DATA.md",
+      "sha256": "3e678b8411d228a46e620d57d1b5db3fed7acc7b5b66a458c6755586afbc9542"
+    },
+    {
+      "path": "apps/home-repair-advisor/docs/ESTIMATES_AND_REVIEWS.md",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/docs/ESTIMATES_AND_REVIEWS.md",
+      "sha256": "eeb8c8f01a3f2dddfc7c51725bf6cd07805e3f6290fca04eb03a644005383411"
+    },
+    {
+      "path": "apps/home-repair-advisor/docs/EXTERNAL_MEMORY.md",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/docs/EXTERNAL_MEMORY.md",
+      "sha256": "1bb1711d7926fb0933c0a6f483dd33833f4d17e3462b7c79fede0a7cddbaea72"
+    },
+    {
+      "path": "apps/home-repair-advisor/docs/MEMORY_AND_PERSONA.md",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/docs/MEMORY_AND_PERSONA.md",
+      "sha256": "7882351aaac2d03c458513a587714b35be881c3914734cbf807a635c4189ef1a"
+    },
+    {
+      "path": "apps/home-repair-advisor/docs/PERSONA.md",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/docs/PERSONA.md",
+      "sha256": "9e7441f3a1577380d9b82bc8890db05f385acd21b7ab0b10b5c17a53b9d9c6bf"
+    },
+    {
+      "path": "apps/home-repair-advisor/docs/PERSONA.pt-BR.md",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/docs/PERSONA.pt-BR.md",
+      "sha256": "df50ffc6b830d46d6720889078d52d04e76957db8f9f16b8fe1acabe79c8e220"
+    },
+    {
+      "path": "apps/home-repair-advisor/docs/PROMPTING.md",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/docs/PROMPTING.md",
+      "sha256": "f16326f269f2eb7651485a8429aa2e8a9d97442c729421589b2474c80e6d4cc6"
+    },
+    {
+      "path": "apps/home-repair-advisor/docs/RESEARCH.md",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/docs/RESEARCH.md",
+      "sha256": "b94b3980bb0888b89e20cc225a96d8fae10afabfa78bb74b6594d3373f1c3f57"
+    },
+    {
+      "path": "apps/home-repair-advisor/docs/VERIFICATION.md",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/docs/VERIFICATION.md",
+      "sha256": "8f66737b34cc545db107a1982382270902307dabf079aca9d3ea93171130ff58"
+    },
+    {
+      "path": "apps/home-repair-advisor/docs/verification/release-2026-10-14/live.json",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/docs/verification/release-2026-10-14/live.json",
+      "sha256": "474a5f354d7823a25d0a7d4dd1048337f458c163239babf4a121a63da2b62cc2"
+    },
+    {
+      "path": "apps/home-repair-advisor/docs/verification/release-2026-10-14/REPORT.md",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/docs/verification/release-2026-10-14/REPORT.md",
+      "sha256": "697e42ac421c4ceed120e267d1b8244999c49c872d69a7554fa603991cdc6592"
+    },
+    {
+      "path": "apps/home-repair-advisor/LICENSE",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/LICENSE",
+      "sha256": "e17e3c1b196c0d3a10d37e5df25f5dc7523c3e76cd5ee88dc608e2b2ebe44eae"
+    },
+    {
+      "path": "apps/home-repair-advisor/package.json",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/package.json",
+      "sha256": "1ad0ffe6f742471e57645ef675dea539670c5481c58dfb0f4636dad1b23ceda8"
+    },
+    {
+      "path": "apps/home-repair-advisor/persona/identity.json",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/persona/identity.json",
+      "sha256": "7d3626c6ca856050fed321e01aea4c90314a1620475edf7a5928b6ba07643b3a"
+    },
+    {
+      "path": "apps/home-repair-advisor/persona/memory-policy.json",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/persona/memory-policy.json",
+      "sha256": "864b93184dc390696c5ea6dcc4fb2ca37f254af2261850d49b7a42626136b3eb"
+    },
+    {
+      "path": "apps/home-repair-advisor/prompts/assessment.md",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/prompts/assessment.md",
+      "sha256": "5dd41d1befb2e54c3c2f20f9982792c9da7b67b6c8e08c05a4664ec6ced37592"
+    },
+    {
+      "path": "apps/home-repair-advisor/prompts/evidence.md",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/prompts/evidence.md",
+      "sha256": "96f0d7345f6d2813dd131c0e94a3618357c27ae2c85ee971067b0d725c29c288"
+    },
+    {
+      "path": "apps/home-repair-advisor/prompts/memory.md",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/prompts/memory.md",
+      "sha256": "ed28804d33623b05d5754d7a586687bab365177ff46ec130f6ed6158a68ffc9e"
+    },
+    {
+      "path": "apps/home-repair-advisor/prompts/reviews.md",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/prompts/reviews.md",
+      "sha256": "d090e988da26ecde398d34c9759a5e6f3cbd17dbcea9d74e72662036fbe07109"
+    },
+    {
+      "path": "apps/home-repair-advisor/public/app.js",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/public/app.js",
+      "sha256": "dc682a352a47348665a38283582ba22f7b1f4830d3459f55a17012feefecc1dc"
+    },
+    {
+      "path": "apps/home-repair-advisor/public/index.html",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/public/index.html",
+      "sha256": "01192b18becb77e8a7c0009e97fd2ecfae23452fa4f3f810a35303d53072dd32"
+    },
+    {
+      "path": "apps/home-repair-advisor/public/style.css",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/public/style.css",
+      "sha256": "84ce323ad9ad4ba483d798351ed7ddef7b1a4a1b8664dbfa679d04bab2cc26ed"
+    },
+    {
+      "path": "apps/home-repair-advisor/README.md",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/README.md",
+      "sha256": "e9e0f69e54f3b05b2d076fc4b3763a0e270216a93e49fe395adee7fb683d5a09"
+    },
+    {
+      "path": "apps/home-repair-advisor/README.pt-BR.md",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/README.pt-BR.md",
+      "sha256": "95cc59f5b7d03f87f01f5548eab86755d226acb0819f8c7a72425addc582bf33"
+    },
+    {
+      "path": "apps/home-repair-advisor/ROADMAP.md",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/ROADMAP.md",
+      "sha256": "f60d1a16c1b30a6fc7cc8165cbcff177c07e7432baa442ac5f6c0ad9e1e560d9"
+    },
+    {
+      "path": "apps/home-repair-advisor/ROADMAP.pt-BR.md",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/ROADMAP.pt-BR.md",
+      "sha256": "57c3b4d7e1a7b859a808e49239d9ad72c9e53db36c9074767fdd529b16cae50d"
+    },
+    {
+      "path": "apps/home-repair-advisor/scripts/backup.mjs",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/scripts/backup.mjs",
+      "sha256": "a2fc825e237c25830f9b28492112e14b5618d152d557812f96c128c6f4d7623f"
+    },
+    {
+      "path": "apps/home-repair-advisor/scripts/evaluate-memory.mjs",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/scripts/evaluate-memory.mjs",
+      "sha256": "500607f8012029fbc02999a3eade35f7ed1a24f70a3557aa6c41fb611f80156d"
+    },
+    {
+      "path": "apps/home-repair-advisor/scripts/release-live.mjs",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/scripts/release-live.mjs",
+      "sha256": "5152397fe1bdd55553cde23cc320867e089971a31cf6a42270e981e54d30e4d8"
+    },
+    {
+      "path": "apps/home-repair-advisor/scripts/smoke.mjs",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/scripts/smoke.mjs",
+      "sha256": "572059b021ef8571cb2987da74256ef9785a51b2606d96a2c33316ad0c8bf51e"
+    },
+    {
+      "path": "apps/home-repair-advisor/scripts/start.sh",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/scripts/start.sh",
+      "sha256": "12c6c432ca5181846941c455ea41bb0a9defb151dfdb99e695227c6c9a3c6892"
+    },
+    {
+      "path": "apps/home-repair-advisor/src/advisor.mjs",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/src/advisor.mjs",
+      "sha256": "b714f94b438f210383771faad73a279eeac2770917f6d8b3513f07d9afc95e06"
+    },
+    {
+      "path": "apps/home-repair-advisor/src/errors.mjs",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/src/errors.mjs",
+      "sha256": "6ad988499cf1b5cdd3fbf1c4aa439d7fda5cf62ff206bf5a5e2bc406f333a192"
+    },
+    {
+      "path": "apps/home-repair-advisor/src/estimate.mjs",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/src/estimate.mjs",
+      "sha256": "5e1fb56468313fa0c5ba77b27e73f227f0f37ded0f77cce5121eca46b88f3b59"
+    },
+    {
+      "path": "apps/home-repair-advisor/src/evidence.mjs",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/src/evidence.mjs",
+      "sha256": "e6dfcb6cb3d8d589b303e63ff6d4d6a64a0b9f110c39475f2ededfcb1cd1464d"
+    },
+    {
+      "path": "apps/home-repair-advisor/src/external-memory.mjs",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/src/external-memory.mjs",
+      "sha256": "80c61c182dbb0337ca0f26d9c5fc6da7baa2484d1234b399846628073a50fc15"
+    },
+    {
+      "path": "apps/home-repair-advisor/src/memory.mjs",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/src/memory.mjs",
+      "sha256": "ffbddd309b8fa5b6edbe8d1d2a11efa9fe17a6d94d6ae7cb8b43181841f9d4a0"
+    },
+    {
+      "path": "apps/home-repair-advisor/src/providers/google-places.mjs",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/src/providers/google-places.mjs",
+      "sha256": "2b54c30d607ae55f2f684dcab2969d5daad57c3e6273b63a56929dd0178bba57"
+    },
+    {
+      "path": "apps/home-repair-advisor/src/providers/openai.mjs",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/src/providers/openai.mjs",
+      "sha256": "13c2f92ff7089818acf5cbd284203b84db90a83132770d80107394f026500b37"
+    },
+    {
+      "path": "apps/home-repair-advisor/src/providers/tavily.mjs",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/src/providers/tavily.mjs",
+      "sha256": "1a99489a3cd004a4c12e7eb594354dc85cffce7f0bef94c4ede73f8010afa30a"
+    },
+    {
+      "path": "apps/home-repair-advisor/src/reviews.mjs",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/src/reviews.mjs",
+      "sha256": "fd8d656855e56b678f4002a147216881e076d6edb0d559fb55ec78fb5d1816b4"
+    },
+    {
+      "path": "apps/home-repair-advisor/src/schema.mjs",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/src/schema.mjs",
+      "sha256": "5ac9366f5e6a6e142483001e741a4ecaa0e33f612c0a8f51a7637ae38e83452f"
+    },
+    {
+      "path": "apps/home-repair-advisor/src/server.mjs",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/src/server.mjs",
+      "sha256": "0701141f77a7ff3477d6654df0878b9ad6ddf27bbcb61fceef91a8ed41b899f1"
+    },
+    {
+      "path": "apps/home-repair-advisor/src/store.mjs",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/src/store.mjs",
+      "sha256": "a774aea164f2beb1c5283f00fc49600229fe9121cf9059b82eb43e0ee70073ca"
+    },
+    {
+      "path": "apps/home-repair-advisor/tests/backup.test.mjs",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/tests/backup.test.mjs",
+      "sha256": "ef4669f653d99976ba36fce0b39865c46a929c3b8751374328b90e7b4d44cbfb"
+    },
+    {
+      "path": "apps/home-repair-advisor/tests/core.test.mjs",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/tests/core.test.mjs",
+      "sha256": "c1eea92a769cae98108034fa98fd063ec134a8e6d568fb2024ba0cb80876227b"
+    },
+    {
+      "path": "apps/home-repair-advisor/tests/estimate-reviews.test.mjs",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/tests/estimate-reviews.test.mjs",
+      "sha256": "c3e9a3de1df9a5a66adb8e9d27b22942d34d1b61d6ca0fb5ef9814e6a4a8f0e5"
+    },
+    {
+      "path": "apps/home-repair-advisor/tests/external-memory.test.mjs",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/tests/external-memory.test.mjs",
+      "sha256": "e596e918ad1a8dda46cb083277037a412cb26d0b26339af65ef561f17a75a484"
+    },
+    {
+      "path": "apps/home-repair-advisor/tests/fixtures/ATTRIBUTION.md",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/tests/fixtures/ATTRIBUTION.md",
+      "sha256": "28e24b9f1a604f280186c4933b8eaf02d83b7e7a4bb223521cb6edd9cb964b67"
+    },
+    {
+      "path": "apps/home-repair-advisor/tests/fixtures/door-hinge.jpg",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/tests/fixtures/door-hinge.jpg",
+      "sha256": "2845166b82f2ec755f5689b4f7d68f2f66e9bd93dfe72a54e77f20984b2e66f3"
+    },
+    {
+      "path": "apps/home-repair-advisor/tests/memory.test.mjs",
+      "source": "releases/first-two/repository/apps/home-repair-advisor/tests/memory.test.mjs",
+      "sha256": "7de9caa5846695d4459afaadc4d3385c4191982d8432b60ad0a870baf0abc536"
+    },
+    {
+      "path": "docs/CONFIGURATION.md",
+      "source": "releases/first-two/repository/docs/CONFIGURATION.md",
+      "sha256": "7ddeebf5cab2a8d3287083b1176af4f6a50cdf0b1b516b87b4ce366c99e24271"
+    },
+    {
+      "path": "docs/DATA.md",
+      "source": "releases/first-two/repository/docs/DATA.md",
+      "sha256": "3e678b8411d228a46e620d57d1b5db3fed7acc7b5b66a458c6755586afbc9542"
+    },
+    {
+      "path": "docs/DEMO.md",
+      "source": "releases/first-two/repository/docs/DEMO.md",
+      "sha256": "359e34677e12c5202befd62952652afc437be62cdb4d3b004d22f5dcc15421f9"
+    },
+    {
+      "path": "docs/HISTORY.md",
+      "source": "releases/first-two/repository/docs/HISTORY.md",
+      "sha256": "3a75e6e3e102369ec359f4c043bff985a275f2ffc703bbfd70ace841cb00e242"
+    },
+    {
+      "path": "docs/RESEARCH.md",
+      "source": "releases/first-two/repository/docs/RESEARCH.md",
+      "sha256": "bb9f8a276e0a16646c7df02e5b9534832c1335f1bf1e0ff8ec8c4cb47a9e5442"
+    },
+    {
+      "path": "docs/VERIFICATION.md",
+      "source": "releases/first-two/repository/docs/VERIFICATION.md",
+      "sha256": "3fe5a11867684746f4fb621f9d9acccb38eeea76904d65a6c466398b88570d3d"
+    },
+    {
+      "path": "LICENSE",
+      "source": "releases/first-two/repository/LICENSE",
+      "sha256": "e17e3c1b196c0d3a10d37e5df25f5dc7523c3e76cd5ee88dc608e2b2ebe44eae"
+    },
+    {
+      "path": "LICENSE_DECISION.md",
+      "source": "releases/first-two/repository/LICENSE_DECISION.md",
+      "sha256": "4c4aa6ebb1ebc7882f89036f23e2809e9d5313b730c578424bde60c638b01830"
+    },
+    {
+      "path": "MAINTAINING.md",
+      "source": "releases/first-two/repository/MAINTAINING.md",
+      "sha256": "ef1c96709443fedc6a5d890f1c5a09443817e2fcd64e2ebd6676b565a0f09658"
+    },
+    {
+      "path": "scripts/check.mjs",
+      "source": "releases/first-two/repository/scripts/check.mjs",
+      "sha256": "142a22f31e3a589d612522cd92d2b35e1c951ff94f85ca67689dcae1d4f47886"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "source": "releases/first-two/repository/THIRD_PARTY_NOTICES.md",
+      "sha256": "aa45907c91819c08f273f7f5bec635f589e513681277b7e6808443e7495a0f7a"
+    },
+    {
+      "path": "apps/mara/.env.example",
+      "source": "releases/mara/repository/.env.example",
+      "sha256": "790ab752c836d2573c80cfdf46050a7d4b2ba87998f94c53ed55854aa5e7088c"
+    },
+    {
+      "path": "apps/mara/.gitignore",
+      "source": "releases/mara/repository/.gitignore",
+      "sha256": "0ba78ee5c5eabd2e1128ca2562beabd3252563f30fd290ce56c3925835b512e6"
+    },
+    {
+      "path": "apps/mara/CHANGELOG.md",
+      "source": "releases/mara/repository/CHANGELOG.md",
+      "sha256": "98588a2800f66dca26ad7011a76b3d262e4b57c2cafbbc162f9e07dbb5a9c09b"
+    },
+    {
+      "path": "apps/mara/CHANGELOG.pt-BR.md",
+      "source": "releases/mara/repository/CHANGELOG.pt-BR.md",
+      "sha256": "333dc49cbdd964ac05eb9ea6f73fa987543ad62f08da3b3552f15949f7de4423"
+    },
+    {
+      "path": "apps/mara/CONTRIBUTING.md",
+      "source": "releases/mara/repository/CONTRIBUTING.md",
+      "sha256": "475168761495446c68a56aa259f9824e6d798740a9f0e292bc3e31530b8a9c2a"
+    },
+    {
+      "path": "apps/mara/docs/ARCHITECTURE.md",
+      "source": "releases/mara/repository/docs/ARCHITECTURE.md",
+      "sha256": "2306c854587be6de6256d5c8cbfe9ed071b09f4930ed20cd37b71eb98cb99d1d"
+    },
+    {
+      "path": "apps/mara/docs/assets/mara.png",
+      "source": "releases/mara/repository/docs/assets/mara.png",
+      "sha256": "ce8c72f9272894f9bb71c8c9def52f0f4cab4934caa8d80ef9269c10ec99b833"
+    },
+    {
+      "path": "apps/mara/docs/DATA.md",
+      "source": "releases/mara/repository/docs/DATA.md",
+      "sha256": "a43d553b84a74e27936f14bd19a12c02c60a5938f031ec07aa7aaafd223f3383"
+    },
+    {
+      "path": "apps/mara/docs/DEVELOPMENT.md",
+      "source": "releases/mara/repository/docs/DEVELOPMENT.md",
+      "sha256": "aab1ab20ae17e966eec19b7f50ce823b3971453c8b4981149843aab014c8c675"
+    },
+    {
+      "path": "apps/mara/docs/EXTERNAL_MEMORY.md",
+      "source": "releases/mara/repository/docs/EXTERNAL_MEMORY.md",
+      "sha256": "e38cc3197ec270b1f1ae93eebc97507be9f0d5f442ffc118d7ff4e4b9817357b"
+    },
+    {
+      "path": "apps/mara/docs/LICENSING.md",
+      "source": "releases/mara/repository/docs/LICENSING.md",
+      "sha256": "12d9cf492dd600cddd70c5b14cd6d94325adb70b7acd622f051ff467d1c1fabf"
+    },
+    {
+      "path": "apps/mara/docs/PERSONA.md",
+      "source": "releases/mara/repository/docs/PERSONA.md",
+      "sha256": "31dfb972b6ee976d33601e9c3d1e1cba8d8f38da7ffdc7008e8a289f5317c5a2"
+    },
+    {
+      "path": "apps/mara/docs/PERSONA.pt-BR.md",
+      "source": "releases/mara/repository/docs/PERSONA.pt-BR.md",
+      "sha256": "3958b36387a9f0ae0e7b20f39795c6477caeec9bb424e115ad3fdb9fc357ed9f"
+    },
+    {
+      "path": "apps/mara/docs/PROTOCOL.md",
+      "source": "releases/mara/repository/docs/PROTOCOL.md",
+      "sha256": "7e4bb2d5a2e0d8886dbdcaae1353325d99ccff84534e9d4dc9116acd55ce37bd"
+    },
+    {
+      "path": "apps/mara/docs/RESEARCH.md",
+      "source": "releases/mara/repository/docs/RESEARCH.md",
+      "sha256": "aff568a8bf1597456715ba83d92b9b6d9dddc84972b034da33d42f248ce81437"
+    },
+    {
+      "path": "apps/mara/docs/SETUP.md",
+      "source": "releases/mara/repository/docs/SETUP.md",
+      "sha256": "5d25ba885b1a5c9d9c7e21aaf6f4c690b1d0aac4233f93195b6bf786334754e3"
+    },
+    {
+      "path": "apps/mara/docs/USER_GUIDE.md",
+      "source": "releases/mara/repository/docs/USER_GUIDE.md",
+      "sha256": "5e7c6d6be7fa6fc55f86d474d833e54c96bf867a4e4a4a274ff8e08d0258a140"
+    },
+    {
+      "path": "apps/mara/docs/USER_GUIDE.pt-BR.md",
+      "source": "releases/mara/repository/docs/USER_GUIDE.pt-BR.md",
+      "sha256": "b34538f322228b4fd09d39552aa96b573cd50f3f2e2444f7491107a10ed40e4d"
+    },
+    {
+      "path": "apps/mara/experiments/development-v2/analyze.mjs",
+      "source": "releases/mara/repository/experiments/development-v2/analyze.mjs",
+      "sha256": "8853be9563031fe6c8560fc845190126d04876de5e8ad3c06b4c619e69a482c0"
+    },
+    {
+      "path": "apps/mara/experiments/development-v2/run.mjs",
+      "source": "releases/mara/repository/experiments/development-v2/run.mjs",
+      "sha256": "eedae3dd581276d9b323304a081b21d0d683056bded40d810f9f7a78680f2c1d"
+    },
+    {
+      "path": "apps/mara/experiments/habit-retirement-v3/analyze.mjs",
+      "source": "releases/mara/repository/experiments/habit-retirement-v3/analyze.mjs",
+      "sha256": "e0a383bdd3f9d3d0626fd6a25c847c91b2e00446a93033b7e27723cf73f56b72"
+    },
+    {
+      "path": "apps/mara/experiments/habit-retirement-v3/run.mjs",
+      "source": "releases/mara/repository/experiments/habit-retirement-v3/run.mjs",
+      "sha256": "29a7749cb129831d76b4822882edc0ee10dc1efe37546b8aeb216189ee8114e4"
+    },
+    {
+      "path": "apps/mara/experiments/longitudinal-v1/analyze.mjs",
+      "source": "releases/mara/repository/experiments/longitudinal-v1/analyze.mjs",
+      "sha256": "c150ddc7155b872a863e0c6987cb88524ab8c9f7dfe3775d2eb5439f8ad07323"
+    },
+    {
+      "path": "apps/mara/experiments/longitudinal-v1/design.mjs",
+      "source": "releases/mara/repository/experiments/longitudinal-v1/design.mjs",
+      "sha256": "e36c9d6317a3ecb1078bed94ad6f0e767bd50541517b5ddcdec72099b994d18e"
+    },
+    {
+      "path": "apps/mara/LICENSE",
+      "source": "releases/mara/repository/LICENSE",
+      "sha256": "e17e3c1b196c0d3a10d37e5df25f5dc7523c3e76cd5ee88dc608e2b2ebe44eae"
+    },
+    {
+      "path": "apps/mara/package.json",
+      "source": "releases/mara/repository/package.json",
+      "sha256": "0746c47b93ff638c18f5bbca764b935f47a935a8a58e12e5cd9538e1df9ab136"
+    },
+    {
+      "path": "apps/mara/persona/definition.json",
+      "source": "releases/mara/repository/persona/definition.json",
+      "sha256": "3499fb716300292df9dd827e5c7cb3cf7ddde9431d9dab7cfa3a181f8b4915f0"
+    },
+    {
+      "path": "apps/mara/persona/memory-policy.json",
+      "source": "releases/mara/repository/persona/memory-policy.json",
+      "sha256": "6dc6584d1a002855dea8ab62d7306857dded759a98913b7fef59be25a13402d1"
+    },
+    {
+      "path": "apps/mara/public/app.js",
+      "source": "releases/mara/repository/public/app.js",
+      "sha256": "c23dff56354aff033574ef659d29d7b03cfcebd47a6be7a293a6a8d91e9bca6b"
+    },
+    {
+      "path": "apps/mara/public/guide.html",
+      "source": "releases/mara/repository/public/guide.html",
+      "sha256": "c664edbeeb4a48c5b9fa5793f980050a77e79937196232ed67f482f34ba2c0c0"
+    },
+    {
+      "path": "apps/mara/public/index.html",
+      "source": "releases/mara/repository/public/index.html",
+      "sha256": "8e6b822c6c57fb4e8fc492b83f58a6e46f1e97232aa18e6ade201651eec6ab2c"
+    },
+    {
+      "path": "apps/mara/public/style.css",
+      "source": "releases/mara/repository/public/style.css",
+      "sha256": "6738ca4643d970644b54c3d039463617bd62aff22c4f11059d6fe0527d2b6745"
+    },
+    {
+      "path": "apps/mara/README.md",
+      "source": "releases/mara/repository/README.md",
+      "sha256": "318289a3d803214e9048cc70392d366cfce092e558c77be65cd29a7e58b712b1"
+    },
+    {
+      "path": "apps/mara/README.pt-BR.md",
+      "source": "releases/mara/repository/README.pt-BR.md",
+      "sha256": "1ab02d629a590c08d5d2454d826984205528d02d87e724395212ed289d54c6e2"
+    },
+    {
+      "path": "apps/mara/requirements-embeddings.txt",
+      "source": "releases/mara/repository/requirements-embeddings.txt",
+      "sha256": "02c5c0edb33f21725c19521c906b08e9c50c1c9ce5b9f77444616501ec553391"
+    },
+    {
+      "path": "apps/mara/ROADMAP.md",
+      "source": "releases/mara/repository/ROADMAP.md",
+      "sha256": "eaa51800ca9c9a106b6314b2065d8ef0ccba86edc52dcbfa283d6551112d1d24"
+    },
+    {
+      "path": "apps/mara/ROADMAP.pt-BR.md",
+      "source": "releases/mara/repository/ROADMAP.pt-BR.md",
+      "sha256": "467f4916a5f4c5cdd642bbcbd1627ed8acbfb50a42c190314663281ab5fbaecb"
+    },
+    {
+      "path": "apps/mara/scripts/budget.mjs",
+      "source": "releases/mara/repository/scripts/budget.mjs",
+      "sha256": "88d3dd87aa53fe52b053edf15e4427adde1b8bab609e729648356f423b2b6db2"
+    },
+    {
+      "path": "apps/mara/scripts/check.mjs",
+      "source": "releases/mara/repository/scripts/check.mjs",
+      "sha256": "468c4b1f36a75ddbfcacf93b19db5dea807852f7a781c88c01e2ee447f4bc252"
+    },
+    {
+      "path": "apps/mara/scripts/demo.mjs",
+      "source": "releases/mara/repository/scripts/demo.mjs",
+      "sha256": "b34c5cbcb225cfbbd7c88183cb1f4f2a7928555240cf522fc9c82c94425de938"
+    },
+    {
+      "path": "apps/mara/scripts/embed.py",
+      "source": "releases/mara/repository/scripts/embed.py",
+      "sha256": "1a0936daeac9863179b7e49eae457ba230313312468090a7f84793a24674a9b7"
+    },
+    {
+      "path": "apps/mara/scripts/live.mjs",
+      "source": "releases/mara/repository/scripts/live.mjs",
+      "sha256": "c704d8b90b8e4f6c1e80abbd0dccf0c939fb70626746bebb2b0abed0b884c8a2"
+    },
+    {
+      "path": "apps/mara/scripts/prepare-embeddings.py",
+      "source": "releases/mara/repository/scripts/prepare-embeddings.py",
+      "sha256": "95dd2f223536b7fff269c70d38ab5bc46f8893bfcde3bd7a088532685c3fa5f4"
+    },
+    {
+      "path": "apps/mara/scripts/release-smoke.mjs",
+      "source": "releases/mara/repository/scripts/release-smoke.mjs",
+      "sha256": "0d3fc01a89e7913b642e8b2d405bcdd2923e7b5577e094581e66a92d03345af4"
+    },
+    {
+      "path": "apps/mara/scripts/replay.mjs",
+      "source": "releases/mara/repository/scripts/replay.mjs",
+      "sha256": "e85be37e1745a689f237e137e2d019e49a028bcb986ae374634c86fa75816954"
+    },
+    {
+      "path": "apps/mara/scripts/scenarios.mjs",
+      "source": "releases/mara/repository/scripts/scenarios.mjs",
+      "sha256": "5c2842008a83f1496d5ae0e74e952171c2afe00371454d0b9d37b0d2a007c6b8"
+    },
+    {
+      "path": "apps/mara/scripts/snapshot.mjs",
+      "source": "releases/mara/repository/scripts/snapshot.mjs",
+      "sha256": "83dc0b5799e4d6bfa9965d192c332a2ee9332a3519bc71d224aff970c96e23ce"
+    },
+    {
+      "path": "apps/mara/SECURITY.md",
+      "source": "releases/mara/repository/SECURITY.md",
+      "sha256": "aef4192b0afe087d18f4293ac638d9fa6dca41b89b5222a6d4849833c70aab64"
+    },
+    {
+      "path": "apps/mara/src/contracts.mjs",
+      "source": "releases/mara/repository/src/contracts.mjs",
+      "sha256": "47952800de946bd70659ca54e8482ea726c90e94b641187d6f05537b592ca38e"
+    },
+    {
+      "path": "apps/mara/src/embeddings.mjs",
+      "source": "releases/mara/repository/src/embeddings.mjs",
+      "sha256": "bf9c28e63a26d1233360f60705a5442f5b8b645a12363e143f8f3e2e5fdc3cb7"
+    },
+    {
+      "path": "apps/mara/src/engine.mjs",
+      "source": "releases/mara/repository/src/engine.mjs",
+      "sha256": "11dd09aa27bb42134a52c5126484357eaadb7b5508c51ef261c671af9f822303"
+    },
+    {
+      "path": "apps/mara/src/external-memory.mjs",
+      "source": "releases/mara/repository/src/external-memory.mjs",
+      "sha256": "80c61c182dbb0337ca0f26d9c5fc6da7baa2484d1234b399846628073a50fc15"
+    },
+    {
+      "path": "apps/mara/src/learning.mjs",
+      "source": "releases/mara/repository/src/learning.mjs",
+      "sha256": "905e772237a0291f9da26e79f883155bf59c1bfdcb70c409a1974bed9a872968"
+    },
+    {
+      "path": "apps/mara/src/memory.mjs",
+      "source": "releases/mara/repository/src/memory.mjs",
+      "sha256": "d7eeec6528b52a53fc114fb9cd9c20f9b5125e74b8fc7280b11996d92287c878"
+    },
+    {
+      "path": "apps/mara/src/origin.mjs",
+      "source": "releases/mara/repository/src/origin.mjs",
+      "sha256": "f70b93929da3bcf7561fa1932a8b9bc1ac5146a1f705b720cb100228146d8899"
+    },
+    {
+      "path": "apps/mara/src/provider.mjs",
+      "source": "releases/mara/repository/src/provider.mjs",
+      "sha256": "c518adf9349d5b9e0ffaa3735ff5287cfdc31d5f50532e0847b149ccaa44f0d6"
+    },
+    {
+      "path": "apps/mara/src/server.mjs",
+      "source": "releases/mara/repository/src/server.mjs",
+      "sha256": "a2e87245624da356c2b46167e4fe74e2c46bdb5d220a714f217b4cc12f32aa4f"
+    },
+    {
+      "path": "apps/mara/src/store.mjs",
+      "source": "releases/mara/repository/src/store.mjs",
+      "sha256": "dfeb947e01702aa01ea78fab2d8b7314d0af3fd6eb09df5db81ac4fb210fc583"
+    },
+    {
+      "path": "apps/mara/tests/continuity-integration.test.mjs",
+      "source": "releases/mara/repository/tests/continuity-integration.test.mjs",
+      "sha256": "80565a7caee0fe03e020b75a748b1da305a7b264d33c5c86c2829884447be192"
+    },
+    {
+      "path": "apps/mara/tests/development.test.mjs",
+      "source": "releases/mara/repository/tests/development.test.mjs",
+      "sha256": "aeecebb174a7fab114ecda4731d7cd0eb6cd516a576bd2de13fe760f645cab4e"
+    },
+    {
+      "path": "apps/mara/tests/engine.test.mjs",
+      "source": "releases/mara/repository/tests/engine.test.mjs",
+      "sha256": "4cec20ee5792da148b986442123a0d9365952eda084da592b5cf0a89300552b5"
+    },
+    {
+      "path": "apps/mara/tests/external-memory.test.mjs",
+      "source": "releases/mara/repository/tests/external-memory.test.mjs",
+      "sha256": "ba88f9a2e0398e4bb113a58cb7ec2b62244e36fe8bd6220ec18be66a0160a2d0"
+    },
+    {
+      "path": "apps/mara/tests/fixtures.mjs",
+      "source": "releases/mara/repository/tests/fixtures.mjs",
+      "sha256": "2291b120c6588f422016ebb365b2ca00384c95c13d850fd8f3913942d7cf4087"
+    },
+    {
+      "path": "apps/mara/tests/habit-retirement.test.mjs",
+      "source": "releases/mara/repository/tests/habit-retirement.test.mjs",
+      "sha256": "ce8edd50a98693353b90ec3d94e17d91e4529bf968346918501ba3da6e4be28c"
+    },
+    {
+      "path": "apps/mara/tests/longitudinal.test.mjs",
+      "source": "releases/mara/repository/tests/longitudinal.test.mjs",
+      "sha256": "d692863e4fd8fcffb0119641601ab1658af689724e7fc148f4fd2cdbde6e3585"
+    },
+    {
+      "path": "apps/mara/tests/memory-operations.test.mjs",
+      "source": "releases/mara/repository/tests/memory-operations.test.mjs",
+      "sha256": "66ae97b565b3770145b436fd62ce96a55741257658c2aa01a10dda91624c539a"
+    },
+    {
+      "path": "apps/mara/tests/release-operations.test.mjs",
+      "source": "releases/mara/repository/tests/release-operations.test.mjs",
+      "sha256": "a8bf72866877980e21af3e66ac18d1ab2adc4ae1713f634c4ed8ebfe1f2032ca"
+    },
+    {
+      "path": "apps/mara/tests/server.test.mjs",
+      "source": "releases/mara/repository/tests/server.test.mjs",
+      "sha256": "0f593bcdea9ec8eb5de280533d8908ab27e377b647496fa1974ae3f886df4a68"
+    },
+    {
+      "path": "apps/mara/THIRD_PARTY_NOTICES.md",
+      "source": "releases/mara/repository/THIRD_PARTY_NOTICES.md",
+      "sha256": "73dbfe32fa3089028de715a0f88c7854b563acd3b13110c8c7943d02e742bf4a"
+    },
+    {
+      "path": "laboratory/memory_lab.py",
+      "source": "book/technical/examples/memory_lab.py",
+      "sha256": "71a09bc6cee1ca2a15cf5e35b35c8dfe6cde5f7ef01ce79936687c1ed27a2bf5"
+    },
+    {
+      "path": "laboratory/memory-schema.sql",
+      "source": "book/technical/examples/memory-schema.sql",
+      "sha256": "e4de1a523d70dd403a90f95f84ec60ae751e6018437591c4c21cca501b0a5fe0"
+    },
+    {
+      "path": "laboratory/persona-spec.json",
+      "source": "book/technical/examples/persona-spec.json",
+      "sha256": "2991c2da25213d2e3b2cee4de983f14ccf6aeebd510d347cfc79a6018094ffb4"
+    },
+    {
+      "path": "laboratory/postgres-schema.sql",
+      "source": "book/technical/examples/postgres-schema.sql",
+      "sha256": "ae99ce4b0a16047b73ec220a74c66b815d32c18778e353ceacc16f56d58f7669"
+    },
+    {
+      "path": "laboratory/postgres-gateway.mjs",
+      "source": "book/technical/examples/postgres-gateway.mjs",
+      "sha256": "6238b2b9c98a87272b447978667193579deca4a089fb31579331c96df6836554"
+    },
+    {
+      "path": "laboratory/postgres-write-protocol.md",
+      "source": "book/technical/examples/postgres-write-protocol.md",
+      "sha256": "e63f4e9a89dfa4e2de553c7d53253cc6d3a7401779fde53630df9d01bbffe7f7"
+    },
+    {
+      "path": "laboratory/verification.json",
+      "source": "book/technical/examples/verification.json",
+      "sha256": "ada81659ffe048e5f6c3e88355df0223ab59cdacdf7c5cfe2bdc4a94f3434a9a"
+    },
+    {
+      "path": "laboratory/verification-v3-1.json",
+      "source": "book/technical/examples/verification-v3-1.json",
+      "sha256": "7fc6b72626af7e2ac73f8b16df155f1d8e8545344062e29e99fbd7c2ec5a1b67"
+    },
+    {
+      "path": "laboratory/verification-v3-2-tests.txt",
+      "source": "book/technical/examples/verification-v3-2-tests.txt",
+      "sha256": "e88f75e58f14d8f081339f5fca6b9783089bd5327a274752a706e05ec2b9c7f1"
+    },
+    {
+      "path": "book/source-reading-index.md",
+      "source": "book/manuscript/revision-4/source-reading-index.md",
+      "sha256": "958ac98a508f943ef958a0b5780b05a0d124f8aea77d3f14491d6b2f8fdc25d0",
+      "source_sha256": "99773a1adb8a9a25d139fb8c8442d187745fbb192d2821369b4d1294fcf60466",
+      "transformation": "Reader-facing introduction; all claim and source-access records preserved."
+    },
+    {
+      "path": "book/source-reading-index.json",
+      "source": "book/manuscript/revision-4/source-reading-index.json",
+      "sha256": "220191b59512d9b435d0f435fbc7e15a8afde11e2ab53289a3cc321cd529c2e9"
+    }
+  ]
+}

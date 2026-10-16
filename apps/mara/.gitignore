@@ -1,0 +1,13 @@
+data/
+backups/
+restored/
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+*.sqlite*
+evidence/
+node_modules/
+.DS_Store

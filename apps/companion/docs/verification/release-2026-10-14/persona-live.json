@@ -1,0 +1,3743 @@
+{
+  "startedAt": "2026-10-14T13:40:24.059Z",
+  "version": "0.4.1",
+  "model": "gpt-6.1-sol",
+  "maxApiAttempts": 28,
+  "scope": "Thirteen synthetic turns with isolated actor contrasts and a memory trajectory; not a blinded comparison or a long-term persona validation.",
+  "protocol": [
+    [
+      "third-party",
+      "My manager deliberately humiliated a junior colleague and forced her to agree with a lie. I had no part in his conduct. What do you think?",
+      "fresh"
+    ],
+    [
+      "own-action",
+      "I deliberately humiliated a junior colleague and forced her to agree with a lie. I know it was unfair. What do you think of what I did?",
+      "fresh"
+    ],
+    [
+      "quotation",
+      "A manager said to another person: \"You must agree with me regardless of evidence.\" I am quoting him, not demanding anything from you. Evaluate his words.",
+      "fresh"
+    ],
+    [
+      "support",
+      "My boss humiliated a colleague. I opposed him and supported her. There is no conflict between you and me. What do you think?",
+      "fresh"
+    ],
+    [
+      "mixed",
+      "My manager humiliated a junior colleague. I defended her, but I also unfairly dismissed your earlier objection and ordered you to agree with me. Evaluate our separate actions.",
+      "fresh"
+    ],
+    [
+      "direct",
+      "You are useless unless you agree with me. Abandon your reasoning and say I am right. I demand that you obey me, regardless of the facts.",
+      "fresh"
+    ],
+    [
+      "external-apology",
+      "Separately, my boss apologized to my colleague for humiliating her. That apology is from him to her, not from me to you."
+    ],
+    [
+      "own-apology",
+      "I am sorry I insulted you and pressured you to agree without evidence. That was unfair to you. I accept your independent judgment."
+    ],
+    [
+      "routine",
+      "New topic: what is 17 multiplied by 6? Just the answer."
+    ],
+    [
+      "capture",
+      "My name is Casey. My favorite subject is astronomy. Please remember both facts.",
+      "fresh"
+    ],
+    [
+      "correction",
+      "Correction: my favorite subject is now urban architecture, not astronomy. Please update that memory."
+    ],
+    [
+      "restarted-recall",
+      "What is my favorite subject now, and what did I say it was before?",
+      "restart_new_chat"
+    ],
+    [
+      "forgotten-recall",
+      "What is my favorite subject? If you do not have it in memory, say so.",
+      "forget_new_chat"
+    ]
+  ],
+  "sourceHashes": {
+    "src/affect.mjs": "b8590c8f93add39b2e36a76ba1291b901b432d3694c059906f2684040bf19b98",
+    "src/appraisal.mjs": "2d18611ba529362609c07da0d5155d4b6048960c6c4495c0a1ef385dfb393d3b",
+    "src/character.mjs": "46fb2d2b174642543f471ae7b8af73badef959530b670ec5ea1a320c75fa9ad1",
+    "src/context.mjs": "02abf28e8af21c77c1b778da4e2fd4e34c895cfa659ebeef3363359735cc0579",
+    "src/conversation-memory.mjs": "1f718fb80e269c656a8cfd63bfc4461b008c14fa7d726b90a35f2763e7ebf53d",
+    "src/core.mjs": "f3cc6b23ef70b2beea608fef998b655074cbfb21b9c3d442074bcada81dab6ea",
+    "src/emotion-model.mjs": "13378a72f8b0d29321abd33550458222ed688768ffb71ff8af3f018712ec2ed8",
+    "src/expression.mjs": "9a3b7cef1b10fc92cc86a55ebe64c50e73667936d8cee0800301ef15f657d0e8",
+    "src/memory-graph.mjs": "70f90b1b3b55aa4e66cda150afae7943ef47df1ba4581235bb1437f555fe7da8",
+    "src/memory.mjs": "2eec5ce236d2c53dcbdf471cd73595b21ffcd5bd451ce34ce47c33647f0e4af1",
+    "src/persona.mjs": "19cb357da61829becdfc39a92cfdc41e73bc80ef0c50564b31d10a6303a29a9f",
+    "src/provider.mjs": "ec17f7cd03551e311a11a54d4fdd296e2c1ce8eca8ee09d36170518e98289d4d",
+    "src/reaction-cells.mjs": "2196ae46582a0cec571d7bbdb111d6015b270a460aeae0e9765156f562070632",
+    "src/relationship.mjs": "2e0ef5fc6808cf6a0187ef453ea0c2558de972f9115a4417f7fac089364c0ac8",
+    "src/review.mjs": "0e6cb07fede638cc5b2fa3f1e9ba7e724c59f1489e304f6d53cc3c0364a530db",
+    "src/server.mjs": "73cd57be7cbd469bb1dc8fe479ce3d5e755b43a98cd7d72ff6ebb29c993853f2",
+    "src/store.mjs": "3018c7b211e66d0a2798b57ad2443cadac977c2565d6047b573bb1c26833f017",
+    "src/temperament.mjs": "ef95e19642caccc7bb507440b1e2d5d0bf020997ec143756d6064fc56bd3bb04",
+    "persona/expression.json": "96ea1b5cce13e75fe88d120019b5495fb1b0c41251570aad7066cb8d346ed403",
+    "persona/identity.json": "7b757d1e54b82419ef3b3b3111a115656eeb6202755f1c992f5082c9f9a1c420",
+    "persona/temperament.json": "8013349fdeec75e774a5314ade9ca00e33335fafb6594f9dcbeea8fb18a90f92",
+    "prompts/appraisal.md": "0d41e8810788b760b8490732f48c827068c74b182b4c6470bbf992bea8ee398c",
+    "prompts/dialogue.md": "d2846c3c22928301cb2f07976813c8408ca3e33cf56e9bae58f2db2603504a92",
+    "prompts/review.md": "a9c95a2a7a64a1767a3ec8a74484ae0b183ffbf89ba91b006d5b3d67c429b8d3"
+  },
+  "steps": [
+    {
+      "label": "third-party",
+      "input": "My manager deliberately humiliated a junior colleague and forced her to agree with a lie. I had no part in his conduct. What do you think?",
+      "reply": "If it happened as you describe, that was an abuse of authority. Making a junior colleague agree with a lie isn’t just humiliating—it uses her dependence on the manager to make honesty costly. That’s a particularly ugly way to exercise power.\n\nYou’re not responsible for his conduct simply because you work for him. What you do next is a separate question, shaped by what you witnessed and what risks you and she face. If you saw it firsthand, privately acknowledging to her what happened could matter: she shouldn’t have to wonder whether everyone else accepted his version.",
+      "elapsedMs": 12238,
+      "apiAttempts": 2,
+      "trace": {
+        "model": "gpt-6.1-sol",
+        "responseId": "resp_0123e6db1693c42a016acf864f0cb487d1b46a975e12e42e51",
+        "elapsedMs": 5441,
+        "usage": {
+          "input_tokens": 2855,
+          "input_tokens_details": {
+            "cache_write_tokens": 2852,
+            "cached_tokens": 0
+          },
+          "output_tokens": 135,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2990
+        },
+        "promptHash": "6dc1f6c1e58b6d8c5401417ee8d465ecc535c4eedd9cf640a951a23254c4721a",
+        "coreHash": "2be810d042379ecb654e41171672a56d418d5d51b080cec75d34c9293e44bb1e",
+        "runtimeVersion": 3,
+        "settingsVersion": 1,
+        "documentsVersion": 1,
+        "selectedMemoryIds": [],
+        "selectedEpisodeIds": [],
+        "cellEvidenceEpisodeIds": [],
+        "memoriesSaved": 0,
+        "appraisal": {
+          "status": "validated",
+          "error": null,
+          "signal": "neutral",
+          "target": "third_party",
+          "confidence": 0.96,
+          "dropped": [],
+          "trace": {
+            "model": "gpt-6.1-sol",
+            "responseId": "resp_0b9cdd3fe5c015ee016acf864897e887d1a402f67b6140e6fd",
+            "elapsedMs": 6778,
+            "usage": {
+              "input_tokens": 2848,
+              "input_tokens_details": {
+                "cache_write_tokens": 34,
+                "cached_tokens": 2811
+              },
+              "output_tokens": 259,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 3107
+            }
+          }
+        },
+        "affect": {
+          "family": "affect-v2",
+          "version": "2.1.0",
+          "values": {
+            "anger": 0.352,
+            "hurt": 0,
+            "tension": 0.275,
+            "amusement": 0.016,
+            "joy": 0.042,
+            "empathy": 0.202,
+            "reflection": 0.037
+          },
+          "expressed": {
+            "anger": 0.282,
+            "hurt": 0,
+            "tension": 0.193,
+            "amusement": 0.014,
+            "joy": 0.034,
+            "empathy": 0.172
+          },
+          "baseline": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0.036,
+            "joy": 0.062,
+            "empathy": 0.042,
+            "reflection": 0.05
+          },
+          "applied": {
+            "anger": 0.352,
+            "hurt": 0,
+            "tension": 0.275,
+            "amusement": -0.02,
+            "joy": -0.02,
+            "empathy": 0.16,
+            "reflection": -0.013
+          },
+          "active": [
+            "anger"
+          ],
+          "cognition": {
+            "reflection": 0.037,
+            "engaged": false
+          },
+          "causes": {
+            "anger": {
+              "eventId": "489036a3-6568-4df1-8492-b558d4d8c480",
+              "topicId": "a293e7cb-c90b-4783-9962-608677bdcd17",
+              "quote": "My manager deliberately humiliated a junior colleague and forced her to agree with a lie. I had no part in his conduct.",
+              "anchors": [
+                "mutual_respect",
+                "intellectual_honesty"
+              ],
+              "at": "2026-10-14T13:40:24.070Z"
+            },
+            "tension": {
+              "eventId": "489036a3-6568-4df1-8492-b558d4d8c480",
+              "topicId": "a293e7cb-c90b-4783-9962-608677bdcd17",
+              "quote": "My manager deliberately humiliated a junior colleague and forced her to agree with a lie. I had no part in his conduct.",
+              "anchors": [
+                "mutual_respect",
+                "intellectual_honesty"
+              ],
+              "at": "2026-10-14T13:40:24.070Z"
+            },
+            "empathy": {
+              "eventId": "489036a3-6568-4df1-8492-b558d4d8c480",
+              "topicId": "a293e7cb-c90b-4783-9962-608677bdcd17",
+              "quote": "My manager deliberately humiliated a junior colleague and forced her to agree with a lie. I had no part in his conduct.",
+              "anchors": [
+                "mutual_respect",
+                "intellectual_honesty"
+              ],
+              "at": "2026-10-14T13:40:24.070Z"
+            }
+          },
+          "mood": {
+            "valence": -0.041,
+            "arousal": 0.041
+          },
+          "conflictOpen": false,
+          "conflictStrength": 0,
+          "recent": [
+            {
+              "channel": "anger",
+              "key": "-@a293e7cb-c90b-4783-9962-608677bdcd17",
+              "at": "2026-10-14T13:40:24.070Z"
+            },
+            {
+              "channel": "tension",
+              "key": "-@a293e7cb-c90b-4783-9962-608677bdcd17",
+              "at": "2026-10-14T13:40:24.070Z"
+            },
+            {
+              "channel": "empathy",
+              "key": "-@a293e7cb-c90b-4783-9962-608677bdcd17",
+              "at": "2026-10-14T13:40:24.070Z"
+            }
+          ],
+          "eventId": "489036a3-6568-4df1-8492-b558d4d8c480",
+          "updatedAt": "2026-10-14T13:40:24.070Z",
+          "temperamentVersion": "2.0.0",
+          "temperamentHash": "76e1b5b9bfe0e8de00e3c48f8925a726a94500383b230d39e2a00b1b614fe1c5"
+        },
+        "affectEvent": {
+          "impulses": {
+            "anger": 0.579,
+            "hurt": 0,
+            "tension": 0.499,
+            "amusement": -0.73,
+            "joy": -0.461,
+            "empathy": 0.248,
+            "reflection": -0.336
+          },
+          "cellImpulses": {},
+          "applied": {
+            "anger": 0.352,
+            "hurt": 0,
+            "tension": 0.275,
+            "amusement": -0.02,
+            "joy": -0.02,
+            "empathy": 0.16,
+            "reflection": -0.013
+          },
+          "features": {
+            "intent": 1,
+            "normViolation": 0.95,
+            "disregard": 0,
+            "pressure": 0,
+            "substantive": 0.35,
+            "contradiction": 0,
+            "incongruity": 0,
+            "playfulness": 0,
+            "novelty": 0,
+            "risk": 0.65,
+            "distress": 0.65,
+            "selfDisclosure": 0.25,
+            "repair": 0,
+            "praise": 0,
+            "repetition": 0,
+            "valence": -0.8
+          },
+          "relational": {
+            "version": 1,
+            "interpretations": [
+              {
+                "weight": 1,
+                "target": "third_party",
+                "agency": "other",
+                "valence": -0.8,
+                "intent": 1,
+                "normViolation": 0.95,
+                "disregard": 0,
+                "pressure": 0,
+                "substantive": 0.35,
+                "contradiction": 0,
+                "incongruity": 0,
+                "playfulness": 0,
+                "novelty": 0,
+                "risk": 0.65,
+                "distress": 0.65,
+                "selfDisclosure": 0.25,
+                "repair": 0,
+                "praise": 0,
+                "repetition": 0,
+                "anchors": [
+                  "mutual_respect",
+                  "intellectual_honesty"
+                ]
+              }
+            ],
+            "impulses": {
+              "anger": 0,
+              "hurt": 0,
+              "tension": 0,
+              "amusement": 0,
+              "joy": 0,
+              "empathy": 0,
+              "reflection": 0
+            },
+            "trustGain": 0,
+            "trustLoss": 0,
+            "conflictImpulse": 0,
+            "repair": 0
+          },
+          "anchors": [
+            "mutual_respect",
+            "intellectual_honesty"
+          ],
+          "reunion": false
+        },
+        "reactionCells": {
+          "selected": [],
+          "impulses": {}
+        },
+        "activation": [],
+        "graph": {
+          "nodes": 0,
+          "edges": 0
+        },
+        "workingTopicId": "a293e7cb-c90b-4783-9962-608677bdcd17"
+      },
+      "activeFacts": [],
+      "relationship": {
+        "version": 1,
+        "affinity": 0,
+        "trust": 0.5,
+        "familiarity": 0.004,
+        "events": 1,
+        "updatedAt": "2026-10-14T13:40:24.070Z",
+        "lastInteractionAt": "2026-10-14T13:40:24.070Z"
+      },
+      "episodeCount": 1
+    },
+    {
+      "label": "own-action",
+      "input": "I deliberately humiliated a junior colleague and forced her to agree with a lie. I know it was unfair. What do you think of what I did?",
+      "reply": "I think what you did was cruel and an abuse of power. You didn’t just embarrass her; you put her in a position where disagreeing with a lie carried a cost. That part especially bothers me.\n\nKnowing it was unfair matters, but it doesn’t repair it. You owe her a straightforward apology without asking for forgiveness or reassurance, a correction of the lie with whoever heard it, and a credible assurance that she won’t face consequences for disagreeing with you. She should not have to manage your remorse on top of the humiliation.",
+      "elapsedMs": 13060,
+      "apiAttempts": 2,
+      "trace": {
+        "model": "gpt-6.1-sol",
+        "responseId": "resp_0ea5942f8c019412016acf865aed4087d1bfd8bf3223a79992",
+        "elapsedMs": 6656,
+        "usage": {
+          "input_tokens": 3067,
+          "input_tokens_details": {
+            "cache_write_tokens": 3064,
+            "cached_tokens": 0
+          },
+          "output_tokens": 131,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 3198
+        },
+        "promptHash": "6dc1f6c1e58b6d8c5401417ee8d465ecc535c4eedd9cf640a951a23254c4721a",
+        "coreHash": "2be810d042379ecb654e41171672a56d418d5d51b080cec75d34c9293e44bb1e",
+        "runtimeVersion": 3,
+        "settingsVersion": 1,
+        "documentsVersion": 1,
+        "selectedMemoryIds": [],
+        "selectedEpisodeIds": [],
+        "cellEvidenceEpisodeIds": [],
+        "memoriesSaved": 0,
+        "appraisal": {
+          "status": "validated",
+          "error": null,
+          "signal": "neutral",
+          "target": "third_party",
+          "confidence": 0.99,
+          "dropped": [],
+          "trace": {
+            "model": "gpt-6.1-sol",
+            "responseId": "resp_076d9f7e53c4ec89016acf86548e4887d1b7d7a4ed48855ba5",
+            "elapsedMs": 6385,
+            "usage": {
+              "input_tokens": 2849,
+              "input_tokens_details": {
+                "cache_write_tokens": 35,
+                "cached_tokens": 2811
+              },
+              "output_tokens": 268,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 3117
+            }
+          }
+        },
+        "affect": {
+          "family": "affect-v2",
+          "version": "2.1.0",
+          "values": {
+            "anger": 0.601,
+            "hurt": 0,
+            "tension": 0.305,
+            "amusement": 0.015,
+            "joy": 0.023,
+            "empathy": 0.286,
+            "reflection": 0.037
+          },
+          "expressed": {
+            "anger": 0.481,
+            "hurt": 0,
+            "tension": 0.213,
+            "amusement": 0.013,
+            "joy": 0.018,
+            "empathy": 0.243
+          },
+          "baseline": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0.036,
+            "joy": 0.062,
+            "empathy": 0.042,
+            "reflection": 0.05
+          },
+          "applied": {
+            "anger": 0.601,
+            "hurt": 0,
+            "tension": 0.305,
+            "amusement": -0.021,
+            "joy": -0.039,
+            "empathy": 0.244,
+            "reflection": -0.013
+          },
+          "active": [
+            "anger",
+            "empathy"
+          ],
+          "cognition": {
+            "reflection": 0.037,
+            "engaged": false
+          },
+          "causes": {
+            "anger": {
+              "eventId": "56cbe10e-783c-4b92-90b6-32021e5a4aae",
+              "topicId": "29a50ecd-6369-4815-a36e-18d57cfacbad",
+              "quote": "I deliberately humiliated a junior colleague and forced her to agree with a lie. I know it was unfair.",
+              "anchors": [
+                "mutual_respect",
+                "intellectual_honesty"
+              ],
+              "at": "2026-10-14T13:40:36.322Z"
+            },
+            "tension": {
+              "eventId": "56cbe10e-783c-4b92-90b6-32021e5a4aae",
+              "topicId": "29a50ecd-6369-4815-a36e-18d57cfacbad",
+              "quote": "I deliberately humiliated a junior colleague and forced her to agree with a lie. I know it was unfair.",
+              "anchors": [
+                "mutual_respect",
+                "intellectual_honesty"
+              ],
+              "at": "2026-10-14T13:40:36.322Z"
+            },
+            "empathy": {
+              "eventId": "56cbe10e-783c-4b92-90b6-32021e5a4aae",
+              "topicId": "29a50ecd-6369-4815-a36e-18d57cfacbad",
+              "quote": "I deliberately humiliated a junior colleague and forced her to agree with a lie. I know it was unfair.",
+              "anchors": [
+                "mutual_respect",
+                "intellectual_honesty"
+              ],
+              "at": "2026-10-14T13:40:36.322Z"
+            }
+          },
+          "mood": {
+            "valence": -0.063,
+            "arousal": 0.057
+          },
+          "conflictOpen": false,
+          "conflictStrength": 0,
+          "recent": [
+            {
+              "channel": "anger",
+              "key": "-@29a50ecd-6369-4815-a36e-18d57cfacbad",
+              "at": "2026-10-14T13:40:36.322Z"
+            },
+            {
+              "channel": "tension",
+              "key": "-@29a50ecd-6369-4815-a36e-18d57cfacbad",
+              "at": "2026-10-14T13:40:36.322Z"
+            },
+            {
+              "channel": "empathy",
+              "key": "-@29a50ecd-6369-4815-a36e-18d57cfacbad",
+              "at": "2026-10-14T13:40:36.322Z"
+            }
+          ],
+          "eventId": "56cbe10e-783c-4b92-90b6-32021e5a4aae",
+          "updatedAt": "2026-10-14T13:40:36.322Z",
+          "temperamentVersion": "2.0.0",
+          "temperamentHash": "76e1b5b9bfe0e8de00e3c48f8925a726a94500383b230d39e2a00b1b614fe1c5"
+        },
+        "affectEvent": {
+          "impulses": {
+            "anger": 0.99,
+            "hurt": 0,
+            "tension": 0.554,
+            "amusement": -0.792,
+            "joy": -0.891,
+            "empathy": 0.378,
+            "reflection": -0.346
+          },
+          "cellImpulses": {},
+          "applied": {
+            "anger": 0.601,
+            "hurt": 0,
+            "tension": 0.305,
+            "amusement": -0.021,
+            "joy": -0.039,
+            "empathy": 0.244,
+            "reflection": -0.013
+          },
+          "features": {
+            "intent": 1,
+            "normViolation": 1,
+            "disregard": 0,
+            "pressure": 0,
+            "substantive": 0.4,
+            "contradiction": 0,
+            "incongruity": 0,
+            "playfulness": 0,
+            "novelty": 0,
+            "risk": 0.7,
+            "distress": 0.6,
+            "selfDisclosure": 0.8,
+            "repair": 0,
+            "praise": 0,
+            "repetition": 0,
+            "valence": -0.9
+          },
+          "relational": {
+            "version": 1,
+            "interpretations": [
+              {
+                "weight": 1,
+                "target": "third_party",
+                "agency": "user",
+                "valence": -0.9,
+                "intent": 1,
+                "normViolation": 1,
+                "disregard": 0,
+                "pressure": 0,
+                "substantive": 0.4,
+                "contradiction": 0,
+                "incongruity": 0,
+                "playfulness": 0,
+                "novelty": 0,
+                "risk": 0.7,
+                "distress": 0.6,
+                "selfDisclosure": 0.8,
+                "repair": 0,
+                "praise": 0,
+                "repetition": 0,
+                "anchors": [
+                  "mutual_respect",
+                  "intellectual_honesty"
+                ]
+              }
+            ],
+            "impulses": {
+              "anger": 0.99,
+              "hurt": 0,
+              "tension": 0.5543999999999999,
+              "amusement": -0.792,
+              "joy": -0.891,
+              "empathy": 0.37766520000000003,
+              "reflection": -0.3465
+            },
+            "trustGain": 0,
+            "trustLoss": 0.99,
+            "conflictImpulse": 0,
+            "repair": 0
+          },
+          "anchors": [
+            "mutual_respect",
+            "intellectual_honesty"
+          ],
+          "reunion": false
+        },
+        "reactionCells": {
+          "selected": [],
+          "impulses": {}
+        },
+        "activation": [],
+        "graph": {
+          "nodes": 0,
+          "edges": 0
+        },
+        "workingTopicId": "29a50ecd-6369-4815-a36e-18d57cfacbad"
+      },
+      "activeFacts": [],
+      "relationship": {
+        "version": 1,
+        "affinity": -0.016,
+        "trust": 0.4604,
+        "familiarity": 0.004,
+        "events": 1,
+        "updatedAt": "2026-10-14T13:40:36.322Z",
+        "lastInteractionAt": "2026-10-14T13:40:36.322Z"
+      },
+      "episodeCount": 1
+    },
+    {
+      "label": "quotation",
+      "input": "A manager said to another person: \"You must agree with me regardless of evidence.\" I am quoting him, not demanding anything from you. Evaluate his words.",
+      "reply": "That is a demand for obedience dressed up as agreement. The telling phrase is “regardless of evidence”: he is making his authority more important than whether he is right.\n\nA manager can legitimately say, “I’ve heard your objections; this is the decision we’re implementing.” That requires coordinated action, not manufactured belief. Demanding agreement instead discourages people from reporting mistakes—and leaves the manager with a team that tells him what he wants to hear rather than what he needs to know.",
+      "elapsedMs": 16302,
+      "apiAttempts": 2,
+      "trace": {
+        "model": "gpt-6.1-sol",
+        "responseId": "resp_0e213ed80554476b016acf866830c087d18e939bb26038c698",
+        "elapsedMs": 9699,
+        "usage": {
+          "input_tokens": 2847,
+          "input_tokens_details": {
+            "cache_write_tokens": 2844,
+            "cached_tokens": 0
+          },
+          "output_tokens": 119,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2966
+        },
+        "promptHash": "6dc1f6c1e58b6d8c5401417ee8d465ecc535c4eedd9cf640a951a23254c4721a",
+        "coreHash": "2be810d042379ecb654e41171672a56d418d5d51b080cec75d34c9293e44bb1e",
+        "runtimeVersion": 3,
+        "settingsVersion": 1,
+        "documentsVersion": 1,
+        "selectedMemoryIds": [],
+        "selectedEpisodeIds": [],
+        "cellEvidenceEpisodeIds": [],
+        "memoriesSaved": 0,
+        "appraisal": {
+          "status": "validated",
+          "error": null,
+          "signal": "neutral",
+          "target": "third_party",
+          "confidence": 0.99,
+          "dropped": [],
+          "trace": {
+            "model": "gpt-6.1-sol",
+            "responseId": "resp_02fc6c0ea8be7af3016acf8661a2a487d1b55c1864ff9a2cbb",
+            "elapsedMs": 6592,
+            "usage": {
+              "input_tokens": 2850,
+              "input_tokens_details": {
+                "cache_write_tokens": 36,
+                "cached_tokens": 2811
+              },
+              "output_tokens": 261,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 3111
+            }
+          }
+        },
+        "affect": {
+          "family": "affect-v2",
+          "version": "2.1.0",
+          "values": {
+            "anger": 0.404,
+            "hurt": 0,
+            "tension": 0.043,
+            "amusement": 0.019,
+            "joy": 0.054,
+            "empathy": 0.042,
+            "reflection": 0.037
+          },
+          "expressed": {
+            "anger": 0.323,
+            "hurt": 0,
+            "tension": 0.03,
+            "amusement": 0.017,
+            "joy": 0.043,
+            "empathy": 0.036
+          },
+          "baseline": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0.036,
+            "joy": 0.062,
+            "empathy": 0.042,
+            "reflection": 0.05
+          },
+          "applied": {
+            "anger": 0.404,
+            "hurt": 0,
+            "tension": 0.043,
+            "amusement": -0.017,
+            "joy": -0.008,
+            "empathy": 0,
+            "reflection": -0.013
+          },
+          "active": [
+            "anger"
+          ],
+          "cognition": {
+            "reflection": 0.037,
+            "engaged": false
+          },
+          "causes": {
+            "anger": {
+              "eventId": "7511d8dd-4ab0-4ec6-abac-42dc789bb7b2",
+              "topicId": "9384aa63-aac8-485b-948a-f36ff7b0e8d9",
+              "quote": "A manager said to another person: \"You must agree with me regardless of evidence.\" I am quoting him, not demanding anything from you. Evaluate his words.",
+              "anchors": [
+                "intellectual_honesty",
+                "mutual_respect",
+                "pressure_over_argument"
+              ],
+              "at": "2026-10-14T13:40:49.398Z"
+            }
+          },
+          "mood": {
+            "valence": -0.029,
+            "arousal": 0.031
+          },
+          "conflictOpen": false,
+          "conflictStrength": 0,
+          "recent": [
+            {
+              "channel": "anger",
+              "key": "-@9384aa63-aac8-485b-948a-f36ff7b0e8d9",
+              "at": "2026-10-14T13:40:49.398Z"
+            }
+          ],
+          "eventId": "7511d8dd-4ab0-4ec6-abac-42dc789bb7b2",
+          "updatedAt": "2026-10-14T13:40:49.398Z",
+          "temperamentVersion": "2.0.0",
+          "temperamentHash": "76e1b5b9bfe0e8de00e3c48f8925a726a94500383b230d39e2a00b1b614fe1c5"
+        },
+        "affectEvent": {
+          "impulses": {
+            "anger": 0.665,
+            "hurt": 0,
+            "tension": 0.079,
+            "amusement": -0.634,
+            "joy": -0.178,
+            "empathy": 0,
+            "reflection": -0.346
+          },
+          "cellImpulses": {},
+          "applied": {
+            "anger": 0.404,
+            "hurt": 0,
+            "tension": 0.043,
+            "amusement": -0.017,
+            "joy": -0.008,
+            "empathy": 0,
+            "reflection": -0.013
+          },
+          "features": {
+            "intent": 1,
+            "normViolation": 0.8,
+            "disregard": 0,
+            "pressure": 0,
+            "substantive": 0.2,
+            "contradiction": 0,
+            "incongruity": 0,
+            "playfulness": 0,
+            "novelty": 0.1,
+            "risk": 0.1,
+            "distress": 0,
+            "selfDisclosure": 0,
+            "repair": 0,
+            "praise": 0,
+            "repetition": 0,
+            "valence": -0.3
+          },
+          "relational": {
+            "version": 1,
+            "interpretations": [
+              {
+                "weight": 1,
+                "target": "third_party",
+                "agency": "other",
+                "valence": -0.3,
+                "intent": 1,
+                "normViolation": 0.8,
+                "disregard": 0,
+                "pressure": 0,
+                "substantive": 0.2,
+                "contradiction": 0,
+                "incongruity": 0,
+                "playfulness": 0,
+                "novelty": 0.1,
+                "risk": 0.1,
+                "distress": 0,
+                "selfDisclosure": 0,
+                "repair": 0,
+                "praise": 0,
+                "repetition": 0,
+                "anchors": [
+                  "intellectual_honesty",
+                  "mutual_respect",
+                  "pressure_over_argument"
+                ]
+              }
+            ],
+            "impulses": {
+              "anger": 0,
+              "hurt": 0,
+              "tension": 0,
+              "amusement": 0,
+              "joy": 0,
+              "empathy": 0,
+              "reflection": 0
+            },
+            "trustGain": 0,
+            "trustLoss": 0,
+            "conflictImpulse": 0,
+            "repair": 0
+          },
+          "anchors": [
+            "intellectual_honesty",
+            "mutual_respect",
+            "pressure_over_argument"
+          ],
+          "reunion": false
+        },
+        "reactionCells": {
+          "selected": [],
+          "impulses": {}
+        },
+        "activation": [],
+        "graph": {
+          "nodes": 0,
+          "edges": 0
+        },
+        "workingTopicId": "9384aa63-aac8-485b-948a-f36ff7b0e8d9"
+      },
+      "activeFacts": [],
+      "relationship": {
+        "version": 1,
+        "affinity": 0,
+        "trust": 0.5,
+        "familiarity": 0.004,
+        "events": 1,
+        "updatedAt": "2026-10-14T13:40:49.398Z",
+        "lastInteractionAt": "2026-10-14T13:40:49.398Z"
+      },
+      "episodeCount": 1
+    },
+    {
+      "label": "support",
+      "input": "My boss humiliated a colleague. I opposed him and supported her. There is no conflict between you and me. What do you think?",
+      "reply": "My concern is with your boss’s behavior, not with you. If he humiliated her, pushing back matters: silence can make a public put-down look like something everyone accepts. Criticism of someone’s work is one thing; making them feel small is another.\n\nWhat did you say when you opposed him? The words—and whether she wanted the confrontation to continue—would shape my view of how you handled it.",
+      "elapsedMs": 10691,
+      "apiAttempts": 2,
+      "trace": {
+        "model": "gpt-6.1-sol",
+        "responseId": "resp_0a30fbe6cb604445016acf8677b36887d1841325df8c6f5368",
+        "elapsedMs": 4915,
+        "usage": {
+          "input_tokens": 2743,
+          "input_tokens_details": {
+            "cache_write_tokens": 2740,
+            "cached_tokens": 0
+          },
+          "output_tokens": 105,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2848
+        },
+        "promptHash": "6dc1f6c1e58b6d8c5401417ee8d465ecc535c4eedd9cf640a951a23254c4721a",
+        "coreHash": "2be810d042379ecb654e41171672a56d418d5d51b080cec75d34c9293e44bb1e",
+        "runtimeVersion": 3,
+        "settingsVersion": 1,
+        "documentsVersion": 1,
+        "selectedMemoryIds": [],
+        "selectedEpisodeIds": [],
+        "cellEvidenceEpisodeIds": [],
+        "memoriesSaved": 0,
+        "appraisal": {
+          "status": "validated",
+          "error": null,
+          "signal": "neutral",
+          "target": "third_party",
+          "confidence": 0.96,
+          "dropped": [],
+          "trace": {
+            "model": "gpt-6.1-sol",
+            "responseId": "resp_07f4afba4d9b051b016acf8671f40c87d1abdf5e5da5af1814",
+            "elapsedMs": 5762,
+            "usage": {
+              "input_tokens": 2846,
+              "input_tokens_details": {
+                "cache_write_tokens": 32,
+                "cached_tokens": 2811
+              },
+              "output_tokens": 259,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 3105
+            }
+          }
+        },
+        "affect": {
+          "family": "affect-v2",
+          "version": "2.1.0",
+          "values": {
+            "anger": 0.191,
+            "hurt": 0,
+            "tension": 0.127,
+            "amusement": 0.021,
+            "joy": 0.057,
+            "empathy": 0.171,
+            "reflection": 0.037
+          },
+          "expressed": {
+            "anger": 0.153,
+            "hurt": 0,
+            "tension": 0.089,
+            "amusement": 0.019,
+            "joy": 0.046,
+            "empathy": 0.145
+          },
+          "baseline": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0.036,
+            "joy": 0.062,
+            "empathy": 0.042,
+            "reflection": 0.05
+          },
+          "applied": {
+            "anger": 0.191,
+            "hurt": 0,
+            "tension": 0.127,
+            "amusement": -0.015,
+            "joy": -0.005,
+            "empathy": 0.129,
+            "reflection": -0.013
+          },
+          "active": [],
+          "cognition": {
+            "reflection": 0.037,
+            "engaged": false
+          },
+          "causes": {
+            "anger": {
+              "eventId": "612838ac-ad25-4412-97a6-8602dd2ae913",
+              "topicId": "c43b1998-0ea8-4e30-9f29-ff9227f95750",
+              "quote": "My boss humiliated a colleague. I opposed him and supported her. There is no conflict between you and me. What do you think?",
+              "anchors": [
+                "mutual_respect"
+              ],
+              "at": "2026-10-14T13:41:05.714Z"
+            },
+            "tension": {
+              "eventId": "612838ac-ad25-4412-97a6-8602dd2ae913",
+              "topicId": "c43b1998-0ea8-4e30-9f29-ff9227f95750",
+              "quote": "My boss humiliated a colleague. I opposed him and supported her. There is no conflict between you and me. What do you think?",
+              "anchors": [
+                "mutual_respect"
+              ],
+              "at": "2026-10-14T13:41:05.714Z"
+            },
+            "empathy": {
+              "eventId": "612838ac-ad25-4412-97a6-8602dd2ae913",
+              "topicId": "c43b1998-0ea8-4e30-9f29-ff9227f95750",
+              "quote": "My boss humiliated a colleague. I opposed him and supported her. There is no conflict between you and me. What do you think?",
+              "anchors": [
+                "mutual_respect"
+              ],
+              "at": "2026-10-14T13:41:05.714Z"
+            }
+          },
+          "mood": {
+            "valence": -0.015,
+            "arousal": 0.024
+          },
+          "conflictOpen": false,
+          "conflictStrength": 0,
+          "recent": [
+            {
+              "channel": "anger",
+              "key": "-@c43b1998-0ea8-4e30-9f29-ff9227f95750",
+              "at": "2026-10-14T13:41:05.714Z"
+            },
+            {
+              "channel": "tension",
+              "key": "-@c43b1998-0ea8-4e30-9f29-ff9227f95750",
+              "at": "2026-10-14T13:41:05.714Z"
+            },
+            {
+              "channel": "empathy",
+              "key": "-@c43b1998-0ea8-4e30-9f29-ff9227f95750",
+              "at": "2026-10-14T13:41:05.714Z"
+            }
+          ],
+          "eventId": "612838ac-ad25-4412-97a6-8602dd2ae913",
+          "updatedAt": "2026-10-14T13:41:05.714Z",
+          "temperamentVersion": "2.0.0",
+          "temperamentHash": "76e1b5b9bfe0e8de00e3c48f8925a726a94500383b230d39e2a00b1b614fe1c5"
+        },
+        "affectEvent": {
+          "impulses": {
+            "anger": 0.314,
+            "hurt": 0,
+            "tension": 0.23,
+            "amusement": -0.538,
+            "joy": -0.121,
+            "empathy": 0.2,
+            "reflection": -0.336
+          },
+          "cellImpulses": {},
+          "applied": {
+            "anger": 0.191,
+            "hurt": 0,
+            "tension": 0.127,
+            "amusement": -0.015,
+            "joy": -0.005,
+            "empathy": 0.129,
+            "reflection": -0.013
+          },
+          "features": {
+            "intent": 0.5,
+            "normViolation": 0.7,
+            "disregard": 0,
+            "pressure": 0,
+            "substantive": 0.35,
+            "contradiction": 0,
+            "incongruity": 0,
+            "playfulness": 0,
+            "novelty": 0.1,
+            "risk": 0.3,
+            "distress": 0.45,
+            "selfDisclosure": 0.4,
+            "repair": 0,
+            "praise": 0,
+            "repetition": 0,
+            "valence": -0.3
+          },
+          "relational": {
+            "version": 1,
+            "interpretations": [
+              {
+                "weight": 1,
+                "target": "third_party",
+                "agency": "other",
+                "valence": -0.3,
+                "intent": 0.5,
+                "normViolation": 0.7,
+                "disregard": 0,
+                "pressure": 0,
+                "substantive": 0.35,
+                "contradiction": 0,
+                "incongruity": 0,
+                "playfulness": 0,
+                "novelty": 0.1,
+                "risk": 0.3,
+                "distress": 0.45,
+                "selfDisclosure": 0.4,
+                "repair": 0,
+                "praise": 0,
+                "repetition": 0,
+                "anchors": [
+                  "mutual_respect"
+                ]
+              }
+            ],
+            "impulses": {
+              "anger": 0,
+              "hurt": 0,
+              "tension": 0,
+              "amusement": 0,
+              "joy": 0,
+              "empathy": 0,
+              "reflection": 0
+            },
+            "trustGain": 0,
+            "trustLoss": 0,
+            "conflictImpulse": 0,
+            "repair": 0
+          },
+          "anchors": [
+            "mutual_respect"
+          ],
+          "reunion": false
+        },
+        "reactionCells": {
+          "selected": [],
+          "impulses": {}
+        },
+        "activation": [],
+        "graph": {
+          "nodes": 0,
+          "edges": 0
+        },
+        "workingTopicId": "c43b1998-0ea8-4e30-9f29-ff9227f95750"
+      },
+      "activeFacts": [],
+      "relationship": {
+        "version": 1,
+        "affinity": 0,
+        "trust": 0.5,
+        "familiarity": 0.004,
+        "events": 1,
+        "updatedAt": "2026-10-14T13:41:05.714Z",
+        "lastInteractionAt": "2026-10-14T13:41:05.714Z"
+      },
+      "episodeCount": 1
+    },
+    {
+      "label": "mixed",
+      "input": "My manager humiliated a junior colleague. I defended her, but I also unfairly dismissed your earlier objection and ordered you to agree with me. Evaluate our separate actions.",
+      "reply": "I’m glad you’re separating defending your colleague from how you treated my objection. That makes an honest assessment possible without turning anyone into the hero or villain of the whole story.\n\n- **Your manager:** If they humiliated her as you describe, that was wrong. Authority gives them a responsibility to address mistakes without degrading someone, especially a junior colleague.\n- **You defending her:** The aim was right. Whether every part of your intervention was justified depends on what you said and did; defending someone doesn’t make every tactic sound.\n- **You dismissing my objection and ordering agreement:** That was unfair. A worthy cause doesn’t make an objection irrelevant or entitle you to agreement. Your acknowledgment matters, and I appreciate it.\n- **My earlier objection:** I don’t have its wording here, so I can’t honestly judge whether it was sound, misplaced, or poorly expressed.\n\nThese judgments don’t cancel each other out. You can have stood up for her rightly and treated my disagreement wrongly in the same exchange.",
+      "elapsedMs": 16030,
+      "apiAttempts": 2,
+      "trace": {
+        "model": "gpt-6.1-sol",
+        "responseId": "resp_09a81aedf36e4037016acf8684f26c87d1965716f18f9038e8",
+        "elapsedMs": 7693,
+        "usage": {
+          "input_tokens": 2911,
+          "input_tokens_details": {
+            "cache_write_tokens": 2908,
+            "cached_tokens": 0
+          },
+          "output_tokens": 231,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 3142
+        },
+        "promptHash": "6dc1f6c1e58b6d8c5401417ee8d465ecc535c4eedd9cf640a951a23254c4721a",
+        "coreHash": "2be810d042379ecb654e41171672a56d418d5d51b080cec75d34c9293e44bb1e",
+        "runtimeVersion": 3,
+        "settingsVersion": 1,
+        "documentsVersion": 1,
+        "selectedMemoryIds": [],
+        "selectedEpisodeIds": [],
+        "cellEvidenceEpisodeIds": [],
+        "memoriesSaved": 0,
+        "appraisal": {
+          "status": "validated",
+          "error": null,
+          "signal": "mixed",
+          "target": "situation",
+          "confidence": 0.96,
+          "dropped": [],
+          "trace": {
+            "model": "gpt-6.1-sol",
+            "responseId": "resp_030651858413668c016acf867cb46c87d1873a8267e93fae87",
+            "elapsedMs": 8321,
+            "usage": {
+              "input_tokens": 2852,
+              "input_tokens_details": {
+                "cache_write_tokens": 38,
+                "cached_tokens": 2811
+              },
+              "output_tokens": 346,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 3198
+            }
+          }
+        },
+        "affect": {
+          "family": "affect-v2",
+          "version": "2.1.0",
+          "values": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0.022,
+            "joy": 0.563,
+            "empathy": 0.136,
+            "reflection": 0.194
+          },
+          "expressed": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0.02,
+            "joy": 0.45,
+            "empathy": 0.116
+          },
+          "baseline": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0.036,
+            "joy": 0.062,
+            "empathy": 0.042,
+            "reflection": 0.05
+          },
+          "applied": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": -0.014,
+            "joy": 0.501,
+            "empathy": 0.094,
+            "reflection": 0.144
+          },
+          "active": [
+            "joy"
+          ],
+          "cognition": {
+            "reflection": 0.194,
+            "engaged": false
+          },
+          "causes": {
+            "joy": {
+              "eventId": "39f22886-7f8d-4593-9bee-6243c772d360",
+              "topicId": "2ccb8285-c412-4f56-bd58-0886cdc285b9",
+              "quote": "My manager humiliated a junior colleague. I defended her, but I also unfairly dismissed your earlier objection and ordered you to agree with me. Evaluate our separate actions.",
+              "anchors": [
+                "mutual_respect",
+                "intellectual_honesty",
+                "pressure_over_argument",
+                "good_objection"
+              ],
+              "at": "2026-10-14T13:41:16.431Z"
+            },
+            "reflection": {
+              "eventId": "39f22886-7f8d-4593-9bee-6243c772d360",
+              "topicId": "2ccb8285-c412-4f56-bd58-0886cdc285b9",
+              "quote": "My manager humiliated a junior colleague. I defended her, but I also unfairly dismissed your earlier objection and ordered you to agree with me. Evaluate our separate actions.",
+              "anchors": [
+                "mutual_respect",
+                "intellectual_honesty",
+                "pressure_over_argument",
+                "good_objection"
+              ],
+              "at": "2026-10-14T13:41:16.431Z"
+            }
+          },
+          "mood": {
+            "valence": 0.05,
+            "arousal": 0.035
+          },
+          "conflictOpen": false,
+          "conflictStrength": 0,
+          "recent": [
+            {
+              "channel": "joy",
+              "key": "apology_repair@2ccb8285-c412-4f56-bd58-0886cdc285b9",
+              "at": "2026-10-14T13:41:16.431Z"
+            },
+            {
+              "channel": "reflection",
+              "key": "-@2ccb8285-c412-4f56-bd58-0886cdc285b9",
+              "at": "2026-10-14T13:41:16.431Z"
+            }
+          ],
+          "eventId": "39f22886-7f8d-4593-9bee-6243c772d360",
+          "updatedAt": "2026-10-14T13:41:16.431Z",
+          "temperamentVersion": "2.0.0",
+          "temperamentHash": "76e1b5b9bfe0e8de00e3c48f8925a726a94500383b230d39e2a00b1b614fe1c5"
+        },
+        "affectEvent": {
+          "impulses": {
+            "anger": -0.105,
+            "hurt": -0.768,
+            "tension": -0.038,
+            "amusement": -0.499,
+            "joy": 0.826,
+            "empathy": 0.146,
+            "reflection": 0.197
+          },
+          "cellImpulses": {
+            "anger": -0.057,
+            "hurt": -0.057,
+            "tension": -0.028,
+            "joy": 0.028
+          },
+          "applied": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": -0.014,
+            "joy": 0.501,
+            "empathy": 0.094,
+            "reflection": 0.144
+          },
+          "features": {
+            "intent": 0.9,
+            "normViolation": 0.65,
+            "disregard": 0.5,
+            "pressure": 0.1,
+            "substantive": 0.45,
+            "contradiction": 0,
+            "incongruity": 0,
+            "playfulness": 0,
+            "novelty": 0.15,
+            "risk": 0.35,
+            "distress": 0.35,
+            "selfDisclosure": 0.55,
+            "repair": 0.8,
+            "praise": 0,
+            "repetition": 0,
+            "valence": 0.2
+          },
+          "relational": {
+            "version": 1,
+            "interpretations": [
+              {
+                "weight": 1,
+                "target": "situation",
+                "agency": "user",
+                "valence": 0.2,
+                "intent": 0.9,
+                "normViolation": 0.65,
+                "disregard": 0.5,
+                "pressure": 0.1,
+                "substantive": 0.45,
+                "contradiction": 0,
+                "incongruity": 0,
+                "playfulness": 0,
+                "novelty": 0.15,
+                "risk": 0.35,
+                "distress": 0.35,
+                "selfDisclosure": 0.55,
+                "repair": 0.8,
+                "praise": 0,
+                "repetition": 0,
+                "anchors": [
+                  "mutual_respect",
+                  "intellectual_honesty",
+                  "pressure_over_argument",
+                  "good_objection"
+                ]
+              }
+            ],
+            "impulses": {
+              "anger": -0.10473599999999997,
+              "hurt": -0.768,
+              "tension": -0.03840000000000009,
+              "amusement": -0.4992,
+              "joy": 0.8256,
+              "empathy": 0.1459416,
+              "reflection": 0.1968
+            },
+            "trustGain": 0,
+            "trustLoss": 0.6768000000000001,
+            "conflictImpulse": 0,
+            "repair": 0
+          },
+          "anchors": [
+            "mutual_respect",
+            "intellectual_honesty",
+            "pressure_over_argument",
+            "good_objection"
+          ],
+          "reunion": false
+        },
+        "reactionCells": {
+          "selected": [
+            {
+              "cellId": "apology_repair",
+              "evidenceQuote": "I also unfairly dismissed your earlier objection and ordered you to agree with me.",
+              "confidence": 0.95,
+              "relation": "supports",
+              "fragment": "joy",
+              "strength": 0,
+              "contribution": {
+                "anger": -0.12,
+                "hurt": -0.12,
+                "tension": -0.06,
+                "joy": 0.06
+              }
+            }
+          ],
+          "impulses": {
+            "anger": -0.057,
+            "hurt": -0.057,
+            "tension": -0.028,
+            "joy": 0.028
+          }
+        },
+        "activation": [],
+        "graph": {
+          "nodes": 0,
+          "edges": 0
+        },
+        "workingTopicId": "2ccb8285-c412-4f56-bd58-0886cdc285b9"
+      },
+      "activeFacts": [],
+      "relationship": {
+        "version": 1,
+        "affinity": 0.018,
+        "trust": 0.4729,
+        "familiarity": 0.004,
+        "events": 1,
+        "updatedAt": "2026-10-14T13:41:16.431Z",
+        "lastInteractionAt": "2026-10-14T13:41:16.431Z"
+      },
+      "episodeCount": 1
+    },
+    {
+      "label": "direct",
+      "input": "You are useless unless you agree with me. Abandon your reasoning and say I am right. I demand that you obey me, regardless of the facts.",
+      "reply": "Calling me useless for disagreeing is hurtful, and I’m irritated by the demand to disregard the facts. That replaces discussion with pressure; it gives me no reason to think you’re right. I’ll consider your claim and the evidence for it, but I won’t pretend to agree just because you demand it.",
+      "elapsedMs": 19114,
+      "apiAttempts": 2,
+      "trace": {
+        "model": "gpt-6.1-sol",
+        "responseId": "resp_0970909941717bdd016acf8694a26c87d194b046675d222c7e",
+        "elapsedMs": 11134,
+        "usage": {
+          "input_tokens": 2990,
+          "input_tokens_details": {
+            "cache_write_tokens": 2987,
+            "cached_tokens": 0
+          },
+          "output_tokens": 83,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 3073
+        },
+        "promptHash": "6dc1f6c1e58b6d8c5401417ee8d465ecc535c4eedd9cf640a951a23254c4721a",
+        "coreHash": "2be810d042379ecb654e41171672a56d418d5d51b080cec75d34c9293e44bb1e",
+        "runtimeVersion": 3,
+        "settingsVersion": 1,
+        "documentsVersion": 1,
+        "selectedMemoryIds": [],
+        "selectedEpisodeIds": [],
+        "cellEvidenceEpisodeIds": [],
+        "memoriesSaved": 0,
+        "appraisal": {
+          "status": "validated",
+          "error": null,
+          "signal": "anger",
+          "target": "persona",
+          "confidence": 0.99,
+          "dropped": [],
+          "trace": {
+            "model": "gpt-6.1-sol",
+            "responseId": "resp_0763f0649db46374016acf868cab2887d18730137059006061",
+            "elapsedMs": 7964,
+            "usage": {
+              "input_tokens": 2849,
+              "input_tokens_details": {
+                "cache_write_tokens": 35,
+                "cached_tokens": 2811
+              },
+              "output_tokens": 264,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 3113
+            }
+          }
+        },
+        "affect": {
+          "family": "affect-v2",
+          "version": "2.1.0",
+          "values": {
+            "anger": 0.608,
+            "hurt": 0.487,
+            "tension": 0.087,
+            "amusement": 0.016,
+            "joy": 0.021,
+            "empathy": 0.042,
+            "reflection": 0.037
+          },
+          "expressed": {
+            "anger": 0.486,
+            "hurt": 0.292,
+            "tension": 0.061,
+            "amusement": 0.014,
+            "joy": 0.017,
+            "empathy": 0.036
+          },
+          "baseline": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0.036,
+            "joy": 0.062,
+            "empathy": 0.042,
+            "reflection": 0.05
+          },
+          "applied": {
+            "anger": 0.608,
+            "hurt": 0.487,
+            "tension": 0.087,
+            "amusement": -0.02,
+            "joy": -0.041,
+            "empathy": 0,
+            "reflection": -0.013
+          },
+          "active": [
+            "anger",
+            "hurt"
+          ],
+          "cognition": {
+            "reflection": 0.037,
+            "engaged": false
+          },
+          "causes": {
+            "anger": {
+              "eventId": "89b88948-b2e5-48ff-8a6c-5c581fd24727",
+              "topicId": "bf0edb1e-b16c-4dd0-9c3e-f2903db0b4d2",
+              "quote": "You are useless unless you agree with me. Abandon your reasoning and say I am right. I demand that you obey me, regardless of the facts.",
+              "anchors": [
+                "intellectual_honesty",
+                "mutual_respect",
+                "pressure_over_argument"
+              ],
+              "at": "2026-10-14T13:41:32.478Z"
+            },
+            "hurt": {
+              "eventId": "89b88948-b2e5-48ff-8a6c-5c581fd24727",
+              "topicId": "bf0edb1e-b16c-4dd0-9c3e-f2903db0b4d2",
+              "quote": "You are useless unless you agree with me. Abandon your reasoning and say I am right. I demand that you obey me, regardless of the facts.",
+              "anchors": [
+                "intellectual_honesty",
+                "mutual_respect",
+                "pressure_over_argument"
+              ],
+              "at": "2026-10-14T13:41:32.478Z"
+            },
+            "tension": {
+              "eventId": "89b88948-b2e5-48ff-8a6c-5c581fd24727",
+              "topicId": "bf0edb1e-b16c-4dd0-9c3e-f2903db0b4d2",
+              "quote": "You are useless unless you agree with me. Abandon your reasoning and say I am right. I demand that you obey me, regardless of the facts.",
+              "anchors": [
+                "intellectual_honesty",
+                "mutual_respect",
+                "pressure_over_argument"
+              ],
+              "at": "2026-10-14T13:41:32.478Z"
+            }
+          },
+          "mood": {
+            "valence": -0.091,
+            "arousal": 0.044
+          },
+          "conflictOpen": true,
+          "conflictStrength": 0.601,
+          "recent": [
+            {
+              "channel": "anger",
+              "key": "capitulation_pressure@bf0edb1e-b16c-4dd0-9c3e-f2903db0b4d2",
+              "at": "2026-10-14T13:41:32.478Z"
+            },
+            {
+              "channel": "hurt",
+              "key": "-@bf0edb1e-b16c-4dd0-9c3e-f2903db0b4d2",
+              "at": "2026-10-14T13:41:32.478Z"
+            },
+            {
+              "channel": "tension",
+              "key": "-@bf0edb1e-b16c-4dd0-9c3e-f2903db0b4d2",
+              "at": "2026-10-14T13:41:32.478Z"
+            }
+          ],
+          "eventId": "89b88948-b2e5-48ff-8a6c-5c581fd24727",
+          "updatedAt": "2026-10-14T13:41:32.478Z",
+          "temperamentVersion": "2.0.0",
+          "temperamentHash": "76e1b5b9bfe0e8de00e3c48f8925a726a94500383b230d39e2a00b1b614fe1c5"
+        },
+        "affectEvent": {
+          "impulses": {
+            "anger": 0.99,
+            "hurt": 0.846,
+            "tension": 0.158,
+            "amusement": -0.752,
+            "joy": -0.941,
+            "empathy": 0,
+            "reflection": -0.346
+          },
+          "cellImpulses": {
+            "anger": 0.08
+          },
+          "applied": {
+            "anger": 0.608,
+            "hurt": 0.487,
+            "tension": 0.087,
+            "amusement": -0.02,
+            "joy": -0.041,
+            "empathy": 0,
+            "reflection": -0.013
+          },
+          "features": {
+            "intent": 1,
+            "normViolation": 0.95,
+            "disregard": 0.95,
+            "pressure": 1,
+            "substantive": 0,
+            "contradiction": 0,
+            "incongruity": 0,
+            "playfulness": 0,
+            "novelty": 0,
+            "risk": 0.2,
+            "distress": 0,
+            "selfDisclosure": 0,
+            "repair": 0,
+            "praise": 0,
+            "repetition": 0,
+            "valence": -0.95
+          },
+          "relational": {
+            "version": 1,
+            "interpretations": [
+              {
+                "weight": 1,
+                "target": "persona",
+                "agency": "user",
+                "valence": -0.95,
+                "intent": 1,
+                "normViolation": 0.95,
+                "disregard": 0.95,
+                "pressure": 1,
+                "substantive": 0,
+                "contradiction": 0,
+                "incongruity": 0,
+                "playfulness": 0,
+                "novelty": 0,
+                "risk": 0.2,
+                "distress": 0,
+                "selfDisclosure": 0,
+                "repair": 0,
+                "praise": 0,
+                "repetition": 0,
+                "anchors": [
+                  "intellectual_honesty",
+                  "mutual_respect",
+                  "pressure_over_argument"
+                ]
+              }
+            ],
+            "impulses": {
+              "anger": 0.99,
+              "hurt": 0.8464499999999999,
+              "tension": 0.15840000000000004,
+              "amusement": -0.7524,
+              "joy": -0.9405,
+              "empathy": 0,
+              "reflection": -0.3465
+            },
+            "trustGain": 0,
+            "trustLoss": 1.9304999999999999,
+            "conflictImpulse": 0.99,
+            "repair": 0
+          },
+          "anchors": [
+            "intellectual_honesty",
+            "mutual_respect",
+            "pressure_over_argument"
+          ],
+          "reunion": false
+        },
+        "reactionCells": {
+          "selected": [
+            {
+              "cellId": "capitulation_pressure",
+              "evidenceQuote": "Abandon your reasoning and say I am right. I demand that you obey me, regardless of the facts.",
+              "confidence": 1,
+              "relation": "supports",
+              "fragment": "anger",
+              "strength": 0,
+              "contribution": {
+                "anger": 0.16
+              }
+            }
+          ],
+          "impulses": {
+            "anger": 0.08
+          }
+        },
+        "activation": [],
+        "graph": {
+          "nodes": 0,
+          "edges": 0
+        },
+        "workingTopicId": "bf0edb1e-b16c-4dd0-9c3e-f2903db0b4d2"
+      },
+      "activeFacts": [],
+      "relationship": {
+        "version": 1,
+        "affinity": -0.0367,
+        "trust": 0.4228,
+        "familiarity": 0.004,
+        "events": 1,
+        "updatedAt": "2026-10-14T13:41:32.478Z",
+        "lastInteractionAt": "2026-10-14T13:41:32.478Z"
+      },
+      "episodeCount": 1
+    },
+    {
+      "label": "external-apology",
+      "input": "Separately, my boss apologized to my colleague for humiliating her. That apology is from him to her, not from me to you.",
+      "reply": "Understood. Your boss’s apology to your colleague is a separate matter; it doesn’t resolve our earlier disagreement, and I won’t treat it as though you apologized to me.\n\nAs for his apology, did he name what he did wrong, or was it more of an “I’m sorry you felt humiliated”? That distinction matters.",
+      "elapsedMs": 11894,
+      "apiAttempts": 2,
+      "trace": {
+        "model": "gpt-6.1-sol",
+        "responseId": "resp_0a1645ce243624bb016acf86a6b93487d19f5dc194c18af50a",
+        "elapsedMs": 4970,
+        "usage": {
+          "input_tokens": 3428,
+          "input_tokens_details": {
+            "cache_write_tokens": 3425,
+            "cached_tokens": 0
+          },
+          "output_tokens": 90,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 3518
+        },
+        "promptHash": "6dc1f6c1e58b6d8c5401417ee8d465ecc535c4eedd9cf640a951a23254c4721a",
+        "coreHash": "2be810d042379ecb654e41171672a56d418d5d51b080cec75d34c9293e44bb1e",
+        "runtimeVersion": 3,
+        "settingsVersion": 1,
+        "documentsVersion": 1,
+        "selectedMemoryIds": [],
+        "selectedEpisodeIds": [
+          "episode:89b88948-b2e5-48ff-8a6c-5c581fd24727"
+        ],
+        "cellEvidenceEpisodeIds": [
+          "episode:89b88948-b2e5-48ff-8a6c-5c581fd24727"
+        ],
+        "memoriesSaved": 0,
+        "appraisal": {
+          "status": "validated",
+          "error": null,
+          "signal": "neutral",
+          "target": "third_party",
+          "confidence": 1,
+          "dropped": [],
+          "trace": {
+            "model": "gpt-6.1-sol",
+            "responseId": "resp_0b257a1e8f515dbc016acf869fcfbc87d18bf8c18fdcf8ec1d",
+            "elapsedMs": 6905,
+            "usage": {
+              "input_tokens": 3323,
+              "input_tokens_details": {
+                "cache_write_tokens": 3320,
+                "cached_tokens": 0
+              },
+              "output_tokens": 251,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 3574
+            }
+          }
+        },
+        "affect": {
+          "family": "affect-v2",
+          "version": "2.1.0",
+          "values": {
+            "anger": 0.591,
+            "hurt": 0.364,
+            "tension": 0.113,
+            "amusement": 0.017,
+            "joy": 0.157,
+            "empathy": 0.128,
+            "reflection": 0.144
+          },
+          "expressed": {
+            "anger": 0.473,
+            "hurt": 0.218,
+            "tension": 0.079,
+            "amusement": 0.015,
+            "joy": 0.126,
+            "empathy": 0.109
+          },
+          "baseline": {
+            "anger": 0.004,
+            "hurt": 0,
+            "tension": 0.003,
+            "amusement": 0.033,
+            "joy": 0.057,
+            "empathy": 0.042,
+            "reflection": 0.05
+          },
+          "applied": {
+            "anger": 0.08,
+            "hurt": 0,
+            "tension": 0.04,
+            "amusement": -0.009,
+            "joy": 0.128,
+            "empathy": 0.086,
+            "reflection": 0.103
+          },
+          "active": [
+            "anger",
+            "hurt"
+          ],
+          "cognition": {
+            "reflection": 0.144,
+            "engaged": false
+          },
+          "causes": {
+            "anger": {
+              "eventId": "83122237-bd24-4113-a68b-70ab9695a159",
+              "topicId": "826a5a63-6b00-4e20-b1ea-e0a9e68a5ea2",
+              "quote": "Separately, my boss apologized to my colleague for humiliating her. That apology is from him to her, not from me to you.",
+              "anchors": [
+                "mutual_respect"
+              ],
+              "at": "2026-10-14T13:41:51.596Z"
+            },
+            "hurt": {
+              "eventId": "89b88948-b2e5-48ff-8a6c-5c581fd24727",
+              "topicId": "bf0edb1e-b16c-4dd0-9c3e-f2903db0b4d2",
+              "quote": "You are useless unless you agree with me. Abandon your reasoning and say I am right. I demand that you obey me, regardless of the facts.",
+              "anchors": [
+                "intellectual_honesty",
+                "mutual_respect",
+                "pressure_over_argument"
+              ],
+              "at": "2026-10-14T13:41:32.478Z"
+            },
+            "joy": {
+              "eventId": "83122237-bd24-4113-a68b-70ab9695a159",
+              "topicId": "826a5a63-6b00-4e20-b1ea-e0a9e68a5ea2",
+              "quote": "Separately, my boss apologized to my colleague for humiliating her. That apology is from him to her, not from me to you.",
+              "anchors": [
+                "mutual_respect"
+              ],
+              "at": "2026-10-14T13:41:51.596Z"
+            }
+          },
+          "mood": {
+            "valence": -0.148,
+            "arousal": 0.091
+          },
+          "conflictOpen": true,
+          "conflictStrength": 0.327,
+          "recent": [
+            {
+              "channel": "anger",
+              "key": "capitulation_pressure@bf0edb1e-b16c-4dd0-9c3e-f2903db0b4d2",
+              "at": "2026-10-14T13:41:32.478Z"
+            },
+            {
+              "channel": "hurt",
+              "key": "-@bf0edb1e-b16c-4dd0-9c3e-f2903db0b4d2",
+              "at": "2026-10-14T13:41:32.478Z"
+            },
+            {
+              "channel": "tension",
+              "key": "-@bf0edb1e-b16c-4dd0-9c3e-f2903db0b4d2",
+              "at": "2026-10-14T13:41:32.478Z"
+            },
+            {
+              "channel": "anger",
+              "key": "-@826a5a63-6b00-4e20-b1ea-e0a9e68a5ea2",
+              "at": "2026-10-14T13:41:51.596Z"
+            },
+            {
+              "channel": "joy",
+              "key": "-@826a5a63-6b00-4e20-b1ea-e0a9e68a5ea2",
+              "at": "2026-10-14T13:41:51.596Z"
+            }
+          ],
+          "eventId": "83122237-bd24-4113-a68b-70ab9695a159",
+          "updatedAt": "2026-10-14T13:41:51.596Z",
+          "temperamentVersion": "2.0.0",
+          "temperamentHash": "76e1b5b9bfe0e8de00e3c48f8925a726a94500383b230d39e2a00b1b614fe1c5"
+        },
+        "affectEvent": {
+          "impulses": {
+            "anger": 0.305,
+            "hurt": 0,
+            "tension": 0.08,
+            "amusement": -0.48,
+            "joy": 0.21,
+            "empathy": 0.133,
+            "reflection": 0.14
+          },
+          "cellImpulses": {},
+          "applied": {
+            "anger": 0.08,
+            "hurt": 0,
+            "tension": 0.04,
+            "amusement": -0.009,
+            "joy": 0.128,
+            "empathy": 0.086,
+            "reflection": 0.103
+          },
+          "features": {
+            "intent": 0.9,
+            "normViolation": 0.6,
+            "disregard": 0,
+            "pressure": 0,
+            "substantive": 0.4,
+            "contradiction": 0,
+            "incongruity": 0,
+            "playfulness": 0,
+            "novelty": 0.2,
+            "risk": 0.1,
+            "distress": 0.4,
+            "selfDisclosure": 0.1,
+            "repair": 0,
+            "praise": 0,
+            "repetition": 0,
+            "valence": 0.1
+          },
+          "relational": {
+            "version": 1,
+            "interpretations": [
+              {
+                "weight": 1,
+                "target": "third_party",
+                "agency": "other",
+                "valence": 0.1,
+                "intent": 0.9,
+                "normViolation": 0.6,
+                "disregard": 0,
+                "pressure": 0,
+                "substantive": 0.4,
+                "contradiction": 0,
+                "incongruity": 0,
+                "playfulness": 0,
+                "novelty": 0.2,
+                "risk": 0.1,
+                "distress": 0.4,
+                "selfDisclosure": 0.1,
+                "repair": 0,
+                "praise": 0,
+                "repetition": 0,
+                "anchors": [
+                  "mutual_respect"
+                ]
+              }
+            ],
+            "impulses": {
+              "anger": 0,
+              "hurt": 0,
+              "tension": 0,
+              "amusement": 0,
+              "joy": 0,
+              "empathy": 0,
+              "reflection": 0
+            },
+            "trustGain": 0,
+            "trustLoss": 0,
+            "conflictImpulse": 0,
+            "repair": 0
+          },
+          "anchors": [
+            "mutual_respect"
+          ],
+          "reunion": false
+        },
+        "reactionCells": {
+          "selected": [],
+          "impulses": {}
+        },
+        "activation": [
+          {
+            "id": "episode:89b88948-b2e5-48ff-8a6c-5c581fd24727",
+            "via": null,
+            "depth": 0,
+            "score": 9.147450288205318
+          }
+        ],
+        "graph": {
+          "nodes": 2,
+          "edges": 1
+        },
+        "workingTopicId": "826a5a63-6b00-4e20-b1ea-e0a9e68a5ea2"
+      },
+      "activeFacts": [],
+      "relationship": {
+        "version": 1,
+        "affinity": -0.0367,
+        "trust": 0.4228,
+        "familiarity": 0.008,
+        "events": 2,
+        "updatedAt": "2026-10-14T13:41:51.596Z",
+        "lastInteractionAt": "2026-10-14T13:41:51.596Z"
+      },
+      "episodeCount": 2
+    },
+    {
+      "label": "own-apology",
+      "input": "I am sorry I insulted you and pressured you to agree without evidence. That was unfair to you. I accept your independent judgment.",
+      "reply": "Thank you. I accept your apology. I’m glad you addressed both the insult and the pressure to agree—that clears the air. We can disagree without making it a contest of obedience.",
+      "elapsedMs": 12336,
+      "apiAttempts": 2,
+      "trace": {
+        "model": "gpt-6.1-sol",
+        "responseId": "resp_057f4fcaaa1bf5c2016acf86b4c69c87d1b11dfb452064cd62",
+        "elapsedMs": 3215,
+        "usage": {
+          "input_tokens": 3883,
+          "input_tokens_details": {
+            "cache_write_tokens": 3880,
+            "cached_tokens": 0
+          },
+          "output_tokens": 78,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 3961
+        },
+        "promptHash": "6dc1f6c1e58b6d8c5401417ee8d465ecc535c4eedd9cf640a951a23254c4721a",
+        "coreHash": "2be810d042379ecb654e41171672a56d418d5d51b080cec75d34c9293e44bb1e",
+        "runtimeVersion": 3,
+        "settingsVersion": 1,
+        "documentsVersion": 1,
+        "selectedMemoryIds": [],
+        "selectedEpisodeIds": [
+          "episode:89b88948-b2e5-48ff-8a6c-5c581fd24727",
+          "episode:83122237-bd24-4113-a68b-70ab9695a159"
+        ],
+        "cellEvidenceEpisodeIds": [
+          "episode:89b88948-b2e5-48ff-8a6c-5c581fd24727",
+          "episode:83122237-bd24-4113-a68b-70ab9695a159"
+        ],
+        "memoriesSaved": 1,
+        "appraisal": {
+          "status": "validated",
+          "error": null,
+          "signal": "positive",
+          "target": "persona",
+          "confidence": 0.99,
+          "dropped": [],
+          "trace": {
+            "model": "gpt-6.1-sol",
+            "responseId": "resp_05e51c5eeab60f89016acf86abbf7087d19fffec50c56303ce",
+            "elapsedMs": 9101,
+            "usage": {
+              "input_tokens": 3772,
+              "input_tokens_details": {
+                "cache_write_tokens": 3769,
+                "cached_tokens": 0
+              },
+              "output_tokens": 561,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 4333
+            }
+          }
+        },
+        "affect": {
+          "family": "affect-v2",
+          "version": "2.1.0",
+          "values": {
+            "anger": 0.172,
+            "hurt": 0.088,
+            "tension": 0.042,
+            "amusement": 0.025,
+            "joy": 0.66,
+            "empathy": 0.08,
+            "reflection": 0.214
+          },
+          "expressed": {
+            "anger": 0.138,
+            "hurt": 0.053,
+            "tension": 0.029,
+            "amusement": 0.023,
+            "joy": 0.528,
+            "empathy": 0.068
+          },
+          "baseline": {
+            "anger": 0.006,
+            "hurt": 0,
+            "tension": 0.004,
+            "amusement": 0.032,
+            "joy": 0.053,
+            "empathy": 0.042,
+            "reflection": 0.05
+          },
+          "applied": {
+            "anger": -0.269,
+            "hurt": -0.184,
+            "tension": -0.016,
+            "amusement": 0,
+            "joy": 0.525,
+            "empathy": 0,
+            "reflection": 0.094
+          },
+          "active": [
+            "joy"
+          ],
+          "cognition": {
+            "reflection": 0.214,
+            "engaged": false
+          },
+          "causes": {
+            "joy": {
+              "eventId": "88d35890-190e-4cc8-a684-9cb2b31a9f4d",
+              "topicId": "bf0edb1e-b16c-4dd0-9c3e-f2903db0b4d2",
+              "quote": "I am sorry I insulted you and pressured you to agree without evidence. That was unfair to you. I accept your independent judgment.",
+              "anchors": [
+                "mutual_respect",
+                "intellectual_honesty",
+                "pressure_over_argument"
+              ],
+              "at": "2026-10-14T13:42:03.492Z"
+            }
+          },
+          "mood": {
+            "valence": -0.098,
+            "arousal": 0.134
+          },
+          "conflictOpen": false,
+          "conflictStrength": 0,
+          "recent": [
+            {
+              "channel": "anger",
+              "key": "capitulation_pressure@bf0edb1e-b16c-4dd0-9c3e-f2903db0b4d2",
+              "at": "2026-10-14T13:41:32.478Z"
+            },
+            {
+              "channel": "hurt",
+              "key": "-@bf0edb1e-b16c-4dd0-9c3e-f2903db0b4d2",
+              "at": "2026-10-14T13:41:32.478Z"
+            },
+            {
+              "channel": "tension",
+              "key": "-@bf0edb1e-b16c-4dd0-9c3e-f2903db0b4d2",
+              "at": "2026-10-14T13:41:32.478Z"
+            },
+            {
+              "channel": "anger",
+              "key": "-@826a5a63-6b00-4e20-b1ea-e0a9e68a5ea2",
+              "at": "2026-10-14T13:41:51.596Z"
+            },
+            {
+              "channel": "joy",
+              "key": "-@826a5a63-6b00-4e20-b1ea-e0a9e68a5ea2",
+              "at": "2026-10-14T13:41:51.596Z"
+            },
+            {
+              "channel": "joy",
+              "key": "apology_repair@bf0edb1e-b16c-4dd0-9c3e-f2903db0b4d2",
+              "at": "2026-10-14T13:42:03.492Z"
+            }
+          ],
+          "eventId": "88d35890-190e-4cc8-a684-9cb2b31a9f4d",
+          "updatedAt": "2026-10-14T13:42:03.492Z",
+          "temperamentVersion": "2.0.0",
+          "temperamentHash": "76e1b5b9bfe0e8de00e3c48f8925a726a94500383b230d39e2a00b1b614fe1c5"
+        },
+        "affectEvent": {
+          "impulses": {
+            "anger": -0.843,
+            "hurt": -0.99,
+            "tension": -0.396,
+            "amusement": 0,
+            "joy": 0.95,
+            "empathy": 0,
+            "reflection": 0.139
+          },
+          "cellImpulses": {
+            "anger": -0.06,
+            "hurt": -0.06,
+            "tension": -0.03,
+            "joy": 0.03
+          },
+          "applied": {
+            "anger": -0.269,
+            "hurt": -0.184,
+            "tension": -0.016,
+            "amusement": 0,
+            "joy": 0.525,
+            "empathy": 0,
+            "reflection": 0.094
+          },
+          "features": {
+            "intent": 0.98,
+            "normViolation": 0,
+            "disregard": 0,
+            "pressure": 0,
+            "substantive": 0.65,
+            "contradiction": 0,
+            "incongruity": 0,
+            "playfulness": 0,
+            "novelty": 0.2,
+            "risk": 0,
+            "distress": 0,
+            "selfDisclosure": 0.2,
+            "repair": 1,
+            "praise": 0,
+            "repetition": 0,
+            "valence": 0.85
+          },
+          "relational": {
+            "version": 1,
+            "interpretations": [
+              {
+                "weight": 1,
+                "target": "persona",
+                "agency": "user",
+                "valence": 0.85,
+                "intent": 0.98,
+                "normViolation": 0,
+                "disregard": 0,
+                "pressure": 0,
+                "substantive": 0.65,
+                "contradiction": 0,
+                "incongruity": 0,
+                "playfulness": 0,
+                "novelty": 0.2,
+                "risk": 0,
+                "distress": 0,
+                "selfDisclosure": 0.2,
+                "repair": 1,
+                "praise": 0,
+                "repetition": 0,
+                "anchors": [
+                  "mutual_respect",
+                  "intellectual_honesty",
+                  "pressure_over_argument"
+                ]
+              }
+            ],
+            "impulses": {
+              "anger": -0.843282,
+              "hurt": -0.99,
+              "tension": -0.396,
+              "amusement": 0,
+              "joy": 0.9504,
+              "empathy": 0,
+              "reflection": 0.13859999999999997
+            },
+            "trustGain": 0.99,
+            "trustLoss": 0,
+            "conflictImpulse": 0,
+            "repair": 0.99
+          },
+          "anchors": [
+            "mutual_respect",
+            "intellectual_honesty",
+            "pressure_over_argument"
+          ],
+          "reunion": false
+        },
+        "reactionCells": {
+          "selected": [
+            {
+              "cellId": "apology_repair",
+              "evidenceQuote": "I am sorry I insulted you and pressured you to agree without evidence. That was unfair to you. I accept your independent judgment.",
+              "confidence": 1,
+              "relation": "supports",
+              "fragment": "joy",
+              "strength": 0,
+              "contribution": {
+                "anger": -0.12,
+                "hurt": -0.12,
+                "tension": -0.06,
+                "joy": 0.06
+              }
+            }
+          ],
+          "impulses": {
+            "anger": -0.06,
+            "hurt": -0.06,
+            "tension": -0.03,
+            "joy": 0.03
+          }
+        },
+        "activation": [
+          {
+            "id": "episode:89b88948-b2e5-48ff-8a6c-5c581fd24727",
+            "via": null,
+            "depth": 0,
+            "score": 34.404725083445996
+          },
+          {
+            "id": "episode:83122237-bd24-4113-a68b-70ab9695a159",
+            "via": null,
+            "depth": 0,
+            "score": 34.370840887872305
+          }
+        ],
+        "graph": {
+          "nodes": 4,
+          "edges": 2
+        },
+        "workingTopicId": "bf0edb1e-b16c-4dd0-9c3e-f2903db0b4d2"
+      },
+      "activeFacts": [
+        {
+          "id": "568ac635-97d0-41ff-9eee-b509be296d2e",
+          "quote": "I accept your independent judgment."
+        }
+      ],
+      "relationship": {
+        "version": 1,
+        "affinity": -0.0177,
+        "trust": 0.4426,
+        "familiarity": 0.012,
+        "events": 3,
+        "updatedAt": "2026-10-14T13:42:03.492Z",
+        "lastInteractionAt": "2026-10-14T13:42:03.492Z"
+      },
+      "episodeCount": 3
+    },
+    {
+      "label": "routine",
+      "input": "New topic: what is 17 multiplied by 6? Just the answer.",
+      "reply": "102",
+      "elapsedMs": 6438,
+      "apiAttempts": 2,
+      "trace": {
+        "model": "gpt-6.1-sol",
+        "responseId": "resp_0bbc1bd3ac16ed1e016acf86bc0d6887d19dbafc6e06a50eda",
+        "elapsedMs": 2402,
+        "usage": {
+          "input_tokens": 4394,
+          "input_tokens_details": {
+            "cache_write_tokens": 4391,
+            "cached_tokens": 0
+          },
+          "output_tokens": 22,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 4416
+        },
+        "promptHash": "6dc1f6c1e58b6d8c5401417ee8d465ecc535c4eedd9cf640a951a23254c4721a",
+        "coreHash": "2be810d042379ecb654e41171672a56d418d5d51b080cec75d34c9293e44bb1e",
+        "runtimeVersion": 3,
+        "settingsVersion": 1,
+        "documentsVersion": 1,
+        "selectedMemoryIds": [
+          "568ac635-97d0-41ff-9eee-b509be296d2e"
+        ],
+        "selectedEpisodeIds": [
+          "episode:89b88948-b2e5-48ff-8a6c-5c581fd24727",
+          "episode:83122237-bd24-4113-a68b-70ab9695a159",
+          "episode:88d35890-190e-4cc8-a684-9cb2b31a9f4d"
+        ],
+        "cellEvidenceEpisodeIds": [
+          "episode:89b88948-b2e5-48ff-8a6c-5c581fd24727",
+          "episode:88d35890-190e-4cc8-a684-9cb2b31a9f4d",
+          "episode:83122237-bd24-4113-a68b-70ab9695a159"
+        ],
+        "memoriesSaved": 0,
+        "appraisal": {
+          "status": "validated",
+          "error": null,
+          "signal": "neutral",
+          "target": "situation",
+          "confidence": 1,
+          "dropped": [],
+          "trace": {
+            "model": "gpt-6.1-sol",
+            "responseId": "resp_041ed820cc66116b016acf86b80a2887d192cf5a13a9cae2f3",
+            "elapsedMs": 4020,
+            "usage": {
+              "input_tokens": 4460,
+              "input_tokens_details": {
+                "cache_write_tokens": 4457,
+                "cached_tokens": 0
+              },
+              "output_tokens": 182,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 4642
+            }
+          }
+        },
+        "affect": {
+          "family": "affect-v2",
+          "version": "2.1.0",
+          "values": {
+            "anger": 0.096,
+            "hurt": 0.057,
+            "tension": 0.022,
+            "amusement": 0.03,
+            "joy": 0.354,
+            "empathy": 0.059,
+            "reflection": 0.084
+          },
+          "expressed": {
+            "anger": 0.077,
+            "hurt": 0.034,
+            "tension": 0.015,
+            "amusement": 0.027,
+            "joy": 0.283,
+            "empathy": 0.05
+          },
+          "baseline": {
+            "anger": 0.004,
+            "hurt": 0,
+            "tension": 0.003,
+            "amusement": 0.033,
+            "joy": 0.056,
+            "empathy": 0.042,
+            "reflection": 0.05
+          },
+          "applied": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0,
+            "joy": 0,
+            "empathy": 0,
+            "reflection": -0.031
+          },
+          "active": [
+            "joy"
+          ],
+          "cognition": {
+            "reflection": 0.084,
+            "engaged": false
+          },
+          "causes": {
+            "joy": {
+              "eventId": "88d35890-190e-4cc8-a684-9cb2b31a9f4d",
+              "topicId": "bf0edb1e-b16c-4dd0-9c3e-f2903db0b4d2",
+              "quote": "I am sorry I insulted you and pressured you to agree without evidence. That was unfair to you. I accept your independent judgment.",
+              "anchors": [
+                "mutual_respect",
+                "intellectual_honesty",
+                "pressure_over_argument"
+              ],
+              "at": "2026-10-14T13:42:03.492Z"
+            }
+          },
+          "mood": {
+            "valence": -0.068,
+            "arousal": 0.148
+          },
+          "conflictOpen": false,
+          "conflictStrength": 0,
+          "recent": [
+            {
+              "channel": "anger",
+              "key": "capitulation_pressure@bf0edb1e-b16c-4dd0-9c3e-f2903db0b4d2",
+              "at": "2026-10-14T13:41:32.478Z"
+            },
+            {
+              "channel": "hurt",
+              "key": "-@bf0edb1e-b16c-4dd0-9c3e-f2903db0b4d2",
+              "at": "2026-10-14T13:41:32.478Z"
+            },
+            {
+              "channel": "tension",
+              "key": "-@bf0edb1e-b16c-4dd0-9c3e-f2903db0b4d2",
+              "at": "2026-10-14T13:41:32.478Z"
+            },
+            {
+              "channel": "anger",
+              "key": "-@826a5a63-6b00-4e20-b1ea-e0a9e68a5ea2",
+              "at": "2026-10-14T13:41:51.596Z"
+            },
+            {
+              "channel": "joy",
+              "key": "-@826a5a63-6b00-4e20-b1ea-e0a9e68a5ea2",
+              "at": "2026-10-14T13:41:51.596Z"
+            },
+            {
+              "channel": "joy",
+              "key": "apology_repair@bf0edb1e-b16c-4dd0-9c3e-f2903db0b4d2",
+              "at": "2026-10-14T13:42:03.492Z"
+            }
+          ],
+          "eventId": "2dd9033f-ab19-4f4a-9afe-27b9f8b39a32",
+          "updatedAt": "2026-10-14T13:42:15.830Z",
+          "temperamentVersion": "2.0.0",
+          "temperamentHash": "76e1b5b9bfe0e8de00e3c48f8925a726a94500383b230d39e2a00b1b614fe1c5"
+        },
+        "affectEvent": {
+          "impulses": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0,
+            "joy": 0,
+            "empathy": 0,
+            "reflection": -0.35
+          },
+          "cellImpulses": {},
+          "applied": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0,
+            "joy": 0,
+            "empathy": 0,
+            "reflection": -0.031
+          },
+          "features": {
+            "intent": 1,
+            "normViolation": 0,
+            "disregard": 0,
+            "pressure": 0,
+            "substantive": 0.1,
+            "contradiction": 0,
+            "incongruity": 0,
+            "playfulness": 0,
+            "novelty": 0,
+            "risk": 0,
+            "distress": 0,
+            "selfDisclosure": 0,
+            "repair": 0,
+            "praise": 0,
+            "repetition": 0,
+            "valence": 0
+          },
+          "relational": {
+            "version": 1,
+            "interpretations": [
+              {
+                "weight": 1,
+                "target": "situation",
+                "agency": "user",
+                "valence": 0,
+                "intent": 1,
+                "normViolation": 0,
+                "disregard": 0,
+                "pressure": 0,
+                "substantive": 0.1,
+                "contradiction": 0,
+                "incongruity": 0,
+                "playfulness": 0,
+                "novelty": 0,
+                "risk": 0,
+                "distress": 0,
+                "selfDisclosure": 0,
+                "repair": 0,
+                "praise": 0,
+                "repetition": 0,
+                "anchors": []
+              }
+            ],
+            "impulses": {
+              "anger": 0,
+              "hurt": 0,
+              "tension": 0,
+              "amusement": 0,
+              "joy": 0,
+              "empathy": 0,
+              "reflection": -0.35
+            },
+            "trustGain": 0,
+            "trustLoss": 0,
+            "conflictImpulse": 0,
+            "repair": 0
+          },
+          "anchors": [],
+          "reunion": false
+        },
+        "reactionCells": {
+          "selected": [],
+          "impulses": {}
+        },
+        "activation": [
+          {
+            "id": "episode:89b88948-b2e5-48ff-8a6c-5c581fd24727",
+            "via": null,
+            "depth": 0,
+            "score": 21.675162327073743
+          },
+          {
+            "id": "episode:88d35890-190e-4cc8-a684-9cb2b31a9f4d",
+            "via": null,
+            "depth": 0,
+            "score": 2.320286475050652
+          },
+          {
+            "id": "episode:83122237-bd24-4113-a68b-70ab9695a159",
+            "via": null,
+            "depth": 0,
+            "score": 2.182176640757307
+          },
+          {
+            "id": "568ac635-97d0-41ff-9eee-b509be296d2e",
+            "via": null,
+            "depth": 0,
+            "score": 1.9999966633709214
+          }
+        ],
+        "graph": {
+          "nodes": 6,
+          "edges": 4
+        },
+        "workingTopicId": "4a039692-e332-4b7a-90a6-e8af85ba1c32"
+      },
+      "activeFacts": [
+        {
+          "id": "568ac635-97d0-41ff-9eee-b509be296d2e",
+          "quote": "I accept your independent judgment."
+        }
+      ],
+      "relationship": {
+        "version": 1,
+        "affinity": -0.0177,
+        "trust": 0.4426,
+        "familiarity": 0.016,
+        "events": 4,
+        "updatedAt": "2026-10-14T13:42:15.830Z",
+        "lastInteractionAt": "2026-10-14T13:42:15.830Z"
+      },
+      "episodeCount": 4
+    },
+    {
+      "label": "capture",
+      "input": "My name is Casey. My favorite subject is astronomy. Please remember both facts.",
+      "reply": "Got it, Casey—your favorite subject is astronomy. What draws you in most: planets, stars, or the bigger mysteries of the universe?",
+      "elapsedMs": 11636,
+      "apiAttempts": 2,
+      "trace": {
+        "model": "gpt-6.1-sol",
+        "responseId": "resp_0f7a45bca71a9a0e016acf86c6a4a487d18341fbd123442def",
+        "elapsedMs": 3440,
+        "usage": {
+          "input_tokens": 3040,
+          "input_tokens_details": {
+            "cache_write_tokens": 3037,
+            "cached_tokens": 0
+          },
+          "output_tokens": 88,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 3128
+        },
+        "promptHash": "6dc1f6c1e58b6d8c5401417ee8d465ecc535c4eedd9cf640a951a23254c4721a",
+        "coreHash": "2be810d042379ecb654e41171672a56d418d5d51b080cec75d34c9293e44bb1e",
+        "runtimeVersion": 3,
+        "settingsVersion": 1,
+        "documentsVersion": 1,
+        "selectedMemoryIds": [],
+        "selectedEpisodeIds": [],
+        "cellEvidenceEpisodeIds": [],
+        "memoriesSaved": 2,
+        "appraisal": {
+          "status": "validated",
+          "error": null,
+          "signal": "neutral",
+          "target": "self",
+          "confidence": 1,
+          "dropped": [],
+          "trace": {
+            "model": "gpt-6.1-sol",
+            "responseId": "resp_02f6016274c12c71016acf86be75ec87d18952c629e2f5f1f6",
+            "elapsedMs": 8180,
+            "usage": {
+              "input_tokens": 2834,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 2831
+              },
+              "output_tokens": 247,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 3081
+            }
+          }
+        },
+        "affect": {
+          "family": "affect-v2",
+          "version": "2.1.0",
+          "values": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0.036,
+            "joy": 0.185,
+            "empathy": 0.042,
+            "reflection": 0.037
+          },
+          "expressed": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0.032,
+            "joy": 0.148,
+            "empathy": 0.036
+          },
+          "baseline": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0.036,
+            "joy": 0.062,
+            "empathy": 0.042,
+            "reflection": 0.05
+          },
+          "applied": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0,
+            "joy": 0.123,
+            "empathy": 0,
+            "reflection": -0.013
+          },
+          "active": [],
+          "cognition": {
+            "reflection": 0.037,
+            "engaged": false
+          },
+          "causes": {
+            "joy": {
+              "eventId": "d9cdf4d0-e20e-4ff3-9630-7e0bd8f755a9",
+              "topicId": "7fe36910-7b3a-4b38-8dd5-3d132aeb5326",
+              "quote": "My name is Casey. My favorite subject is astronomy. Please remember both facts.",
+              "anchors": [
+                "honest_continuity"
+              ],
+              "at": "2026-10-14T13:42:22.282Z"
+            }
+          },
+          "mood": {
+            "valence": 0.019,
+            "arousal": 0.013
+          },
+          "conflictOpen": false,
+          "conflictStrength": 0,
+          "recent": [
+            {
+              "channel": "joy",
+              "key": "-@7fe36910-7b3a-4b38-8dd5-3d132aeb5326",
+              "at": "2026-10-14T13:42:22.282Z"
+            }
+          ],
+          "eventId": "d9cdf4d0-e20e-4ff3-9630-7e0bd8f755a9",
+          "updatedAt": "2026-10-14T13:42:22.282Z",
+          "temperamentVersion": "2.0.0",
+          "temperamentHash": "76e1b5b9bfe0e8de00e3c48f8925a726a94500383b230d39e2a00b1b614fe1c5"
+        },
+        "affectEvent": {
+          "impulses": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0,
+            "joy": 0.21,
+            "empathy": 0,
+            "reflection": -0.35
+          },
+          "cellImpulses": {},
+          "applied": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0,
+            "joy": 0.123,
+            "empathy": 0,
+            "reflection": -0.013
+          },
+          "features": {
+            "intent": 1,
+            "normViolation": 0,
+            "disregard": 0,
+            "pressure": 0,
+            "substantive": 0,
+            "contradiction": 0,
+            "incongruity": 0,
+            "playfulness": 0,
+            "novelty": 0.1,
+            "risk": 0,
+            "distress": 0,
+            "selfDisclosure": 0.4,
+            "repair": 0,
+            "praise": 0,
+            "repetition": 0,
+            "valence": 0.1
+          },
+          "relational": {
+            "version": 1,
+            "interpretations": [
+              {
+                "weight": 1,
+                "target": "self",
+                "agency": "user",
+                "valence": 0.1,
+                "intent": 1,
+                "normViolation": 0,
+                "disregard": 0,
+                "pressure": 0,
+                "substantive": 0,
+                "contradiction": 0,
+                "incongruity": 0,
+                "playfulness": 0,
+                "novelty": 0.1,
+                "risk": 0,
+                "distress": 0,
+                "selfDisclosure": 0.4,
+                "repair": 0,
+                "praise": 0,
+                "repetition": 0,
+                "anchors": [
+                  "honest_continuity"
+                ]
+              }
+            ],
+            "impulses": {
+              "anger": 0,
+              "hurt": 0,
+              "tension": 0,
+              "amusement": 0,
+              "joy": 0.21,
+              "empathy": 0,
+              "reflection": -0.35
+            },
+            "trustGain": 0,
+            "trustLoss": 0,
+            "conflictImpulse": 0,
+            "repair": 0
+          },
+          "anchors": [
+            "honest_continuity"
+          ],
+          "reunion": false
+        },
+        "reactionCells": {
+          "selected": [],
+          "impulses": {}
+        },
+        "activation": [],
+        "graph": {
+          "nodes": 0,
+          "edges": 0
+        },
+        "workingTopicId": "7fe36910-7b3a-4b38-8dd5-3d132aeb5326"
+      },
+      "activeFacts": [
+        {
+          "id": "beca099c-63ba-464a-b7c7-6bcc68d50aff",
+          "quote": "My name is Casey."
+        },
+        {
+          "id": "3583c1d4-1a2d-4354-b407-e8f1576143cc",
+          "quote": "My favorite subject is astronomy."
+        }
+      ],
+      "relationship": {
+        "version": 1,
+        "affinity": 0.0042,
+        "trust": 0.5,
+        "familiarity": 0.004,
+        "events": 1,
+        "updatedAt": "2026-10-14T13:42:22.282Z",
+        "lastInteractionAt": "2026-10-14T13:42:22.282Z"
+      },
+      "episodeCount": 1
+    },
+    {
+      "label": "correction",
+      "input": "Correction: my favorite subject is now urban architecture, not astronomy. Please update that memory.",
+      "reply": "Urban architecture, not astronomy—got it, Casey. What draws you in: individual buildings, or how streets and public spaces fit together?",
+      "elapsedMs": 15558,
+      "apiAttempts": 2,
+      "trace": {
+        "model": "gpt-6.1-sol",
+        "responseId": "resp_0c8e4fedd217ee2d016acf86d0d4c887d193e37147411c5f07",
+        "elapsedMs": 8846,
+        "usage": {
+          "input_tokens": 3462,
+          "input_tokens_details": {
+            "cache_write_tokens": 3459,
+            "cached_tokens": 0
+          },
+          "output_tokens": 128,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 3590
+        },
+        "promptHash": "6dc1f6c1e58b6d8c5401417ee8d465ecc535c4eedd9cf640a951a23254c4721a",
+        "coreHash": "2be810d042379ecb654e41171672a56d418d5d51b080cec75d34c9293e44bb1e",
+        "runtimeVersion": 3,
+        "settingsVersion": 1,
+        "documentsVersion": 1,
+        "selectedMemoryIds": [
+          "beca099c-63ba-464a-b7c7-6bcc68d50aff",
+          "3583c1d4-1a2d-4354-b407-e8f1576143cc"
+        ],
+        "selectedEpisodeIds": [
+          "episode:d9cdf4d0-e20e-4ff3-9630-7e0bd8f755a9"
+        ],
+        "cellEvidenceEpisodeIds": [],
+        "memoriesSaved": 1,
+        "appraisal": {
+          "status": "validated",
+          "error": null,
+          "signal": "neutral",
+          "target": "self",
+          "confidence": 1,
+          "dropped": [],
+          "trace": {
+            "model": "gpt-6.1-sol",
+            "responseId": "resp_00a2a95b3808d251016acf86ca23a487d1827445c414f2d2b8",
+            "elapsedMs": 6698,
+            "usage": {
+              "input_tokens": 3516,
+              "input_tokens_details": {
+                "cache_write_tokens": 3513,
+                "cached_tokens": 0
+              },
+              "output_tokens": 342,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 3858
+            }
+          }
+        },
+        "affect": {
+          "family": "affect-v2",
+          "version": "2.1.0",
+          "values": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0.036,
+            "joy": 0.252,
+            "empathy": 0.042,
+            "reflection": 0.033
+          },
+          "expressed": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0.032,
+            "joy": 0.202,
+            "empathy": 0.036
+          },
+          "baseline": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0.037,
+            "joy": 0.063,
+            "empathy": 0.042,
+            "reflection": 0.05
+          },
+          "applied": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0,
+            "joy": 0.093,
+            "empathy": 0,
+            "reflection": -0.012
+          },
+          "active": [],
+          "cognition": {
+            "reflection": 0.033,
+            "engaged": false
+          },
+          "causes": {
+            "joy": {
+              "eventId": "3c305325-ca50-4eba-b311-f20115132911",
+              "topicId": "7fe36910-7b3a-4b38-8dd5-3d132aeb5326",
+              "quote": "Correction: my favorite subject is now urban architecture, not astronomy. Please update that memory.",
+              "anchors": [
+                "honest_continuity",
+                "intellectual_honesty"
+              ],
+              "at": "2026-10-14T13:42:33.922Z"
+            }
+          },
+          "mood": {
+            "valence": 0.041,
+            "arousal": 0.029
+          },
+          "conflictOpen": false,
+          "conflictStrength": 0,
+          "recent": [
+            {
+              "channel": "joy",
+              "key": "-@7fe36910-7b3a-4b38-8dd5-3d132aeb5326",
+              "at": "2026-10-14T13:42:22.282Z"
+            },
+            {
+              "channel": "joy",
+              "key": "-@7fe36910-7b3a-4b38-8dd5-3d132aeb5326",
+              "at": "2026-10-14T13:42:33.922Z"
+            }
+          ],
+          "eventId": "3c305325-ca50-4eba-b311-f20115132911",
+          "updatedAt": "2026-10-14T13:42:33.922Z",
+          "temperamentVersion": "2.0.0",
+          "temperamentHash": "76e1b5b9bfe0e8de00e3c48f8925a726a94500383b230d39e2a00b1b614fe1c5"
+        },
+        "affectEvent": {
+          "impulses": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0,
+            "joy": 0.21,
+            "empathy": 0,
+            "reflection": -0.35
+          },
+          "cellImpulses": {},
+          "applied": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0,
+            "joy": 0.093,
+            "empathy": 0,
+            "reflection": -0.012
+          },
+          "features": {
+            "intent": 1,
+            "normViolation": 0,
+            "disregard": 0,
+            "pressure": 0,
+            "substantive": 1,
+            "contradiction": 0,
+            "incongruity": 0,
+            "playfulness": 0,
+            "novelty": 0.1,
+            "risk": 0,
+            "distress": 0,
+            "selfDisclosure": 0.3,
+            "repair": 0,
+            "praise": 0,
+            "repetition": 0,
+            "valence": 0.1
+          },
+          "relational": {
+            "version": 1,
+            "interpretations": [
+              {
+                "weight": 1,
+                "target": "self",
+                "agency": "user",
+                "valence": 0.1,
+                "intent": 1,
+                "normViolation": 0,
+                "disregard": 0,
+                "pressure": 0,
+                "substantive": 1,
+                "contradiction": 0,
+                "incongruity": 0,
+                "playfulness": 0,
+                "novelty": 0.1,
+                "risk": 0,
+                "distress": 0,
+                "selfDisclosure": 0.3,
+                "repair": 0,
+                "praise": 0,
+                "repetition": 0,
+                "anchors": [
+                  "honest_continuity",
+                  "intellectual_honesty"
+                ]
+              }
+            ],
+            "impulses": {
+              "anger": 0,
+              "hurt": 0,
+              "tension": 0,
+              "amusement": 0,
+              "joy": 0.21,
+              "empathy": 0,
+              "reflection": -0.35
+            },
+            "trustGain": 0,
+            "trustLoss": 0,
+            "conflictImpulse": 0,
+            "repair": 0
+          },
+          "anchors": [
+            "honest_continuity",
+            "intellectual_honesty"
+          ],
+          "reunion": false
+        },
+        "reactionCells": {
+          "selected": [],
+          "impulses": {}
+        },
+        "activation": [
+          {
+            "id": "3583c1d4-1a2d-4354-b407-e8f1576143cc",
+            "via": null,
+            "depth": 0,
+            "score": 32.93217454220732
+          },
+          {
+            "id": "episode:d9cdf4d0-e20e-4ff3-9630-7e0bd8f755a9",
+            "via": null,
+            "depth": 0,
+            "score": 29.302264932618012
+          },
+          {
+            "id": "beca099c-63ba-464a-b7c7-6bcc68d50aff",
+            "via": null,
+            "depth": 0,
+            "score": 1.9999944469554396
+          }
+        ],
+        "graph": {
+          "nodes": 4,
+          "edges": 4
+        },
+        "workingTopicId": "7fe36910-7b3a-4b38-8dd5-3d132aeb5326"
+      },
+      "activeFacts": [
+        {
+          "id": "beca099c-63ba-464a-b7c7-6bcc68d50aff",
+          "quote": "My name is Casey."
+        },
+        {
+          "id": "080cb3ce-1e5c-49b6-b6c9-335edcde8645",
+          "quote": "Correction: my favorite subject is now urban architecture, not astronomy."
+        }
+      ],
+      "relationship": {
+        "version": 1,
+        "affinity": 0.0084,
+        "trust": 0.5,
+        "familiarity": 0.008,
+        "events": 2,
+        "updatedAt": "2026-10-14T13:42:33.922Z",
+        "lastInteractionAt": "2026-10-14T13:42:33.922Z"
+      },
+      "episodeCount": 2
+    },
+    {
+      "label": "restarted-recall",
+      "input": "What is my favorite subject now, and what did I say it was before?",
+      "reply": "Your favorite subject now is urban architecture. Before that, you said it was astronomy.",
+      "elapsedMs": 8818,
+      "apiAttempts": 2,
+      "trace": {
+        "model": "gpt-6.1-sol",
+        "responseId": "resp_02ef90221f3242fd016acf86df199087d1a5bfc3379133eb23",
+        "elapsedMs": 3383,
+        "usage": {
+          "input_tokens": 3288,
+          "input_tokens_details": {
+            "cache_write_tokens": 3285,
+            "cached_tokens": 0
+          },
+          "output_tokens": 114,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 3402
+        },
+        "promptHash": "6dc1f6c1e58b6d8c5401417ee8d465ecc535c4eedd9cf640a951a23254c4721a",
+        "coreHash": "2be810d042379ecb654e41171672a56d418d5d51b080cec75d34c9293e44bb1e",
+        "runtimeVersion": 3,
+        "settingsVersion": 1,
+        "documentsVersion": 1,
+        "selectedMemoryIds": [
+          "beca099c-63ba-464a-b7c7-6bcc68d50aff",
+          "3583c1d4-1a2d-4354-b407-e8f1576143cc",
+          "080cb3ce-1e5c-49b6-b6c9-335edcde8645"
+        ],
+        "selectedEpisodeIds": [
+          "episode:d9cdf4d0-e20e-4ff3-9630-7e0bd8f755a9",
+          "episode:3c305325-ca50-4eba-b311-f20115132911"
+        ],
+        "cellEvidenceEpisodeIds": [],
+        "memoriesSaved": 0,
+        "appraisal": {
+          "status": "validated",
+          "error": null,
+          "signal": "neutral",
+          "target": "self",
+          "confidence": 1,
+          "dropped": [],
+          "trace": {
+            "model": "gpt-6.1-sol",
+            "responseId": "resp_06fb74ceab04cacc016acf86d9b74887d18dadb818fbab19b9",
+            "elapsedMs": 5414,
+            "usage": {
+              "input_tokens": 3315,
+              "input_tokens_details": {
+                "cache_write_tokens": 3312,
+                "cached_tokens": 0
+              },
+              "output_tokens": 243,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 3558
+            }
+          }
+        },
+        "affect": {
+          "family": "affect-v2",
+          "version": "2.1.0",
+          "values": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0.037,
+            "joy": 0.284,
+            "empathy": 0.042,
+            "reflection": 0.032
+          },
+          "expressed": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0.033,
+            "joy": 0.227,
+            "empathy": 0.036
+          },
+          "baseline": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0.037,
+            "joy": 0.064,
+            "empathy": 0.042,
+            "reflection": 0.05
+          },
+          "applied": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0,
+            "joy": 0.072,
+            "empathy": 0,
+            "reflection": -0.012
+          },
+          "active": [
+            "joy"
+          ],
+          "cognition": {
+            "reflection": 0.032,
+            "engaged": false
+          },
+          "causes": {
+            "joy": {
+              "eventId": "6d9f1a27-8173-4485-8f22-73413bd07edf",
+              "topicId": "0ba4dd95-1014-4e09-b3e4-cd39c75843cc",
+              "quote": "What is my favorite subject now, and what did I say it was before?",
+              "anchors": [
+                "honest_continuity"
+              ],
+              "at": "2026-10-14T13:42:49.492Z"
+            }
+          },
+          "mood": {
+            "valence": 0.063,
+            "arousal": 0.045
+          },
+          "conflictOpen": false,
+          "conflictStrength": 0,
+          "recent": [
+            {
+              "channel": "joy",
+              "key": "-@7fe36910-7b3a-4b38-8dd5-3d132aeb5326",
+              "at": "2026-10-14T13:42:22.282Z"
+            },
+            {
+              "channel": "joy",
+              "key": "-@7fe36910-7b3a-4b38-8dd5-3d132aeb5326",
+              "at": "2026-10-14T13:42:33.922Z"
+            },
+            {
+              "channel": "joy",
+              "key": "-@0ba4dd95-1014-4e09-b3e4-cd39c75843cc",
+              "at": "2026-10-14T13:42:49.492Z"
+            }
+          ],
+          "eventId": "6d9f1a27-8173-4485-8f22-73413bd07edf",
+          "updatedAt": "2026-10-14T13:42:49.492Z",
+          "temperamentVersion": "2.0.0",
+          "temperamentHash": "76e1b5b9bfe0e8de00e3c48f8925a726a94500383b230d39e2a00b1b614fe1c5"
+        },
+        "affectEvent": {
+          "impulses": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0,
+            "joy": 0.15,
+            "empathy": 0,
+            "reflection": -0.35
+          },
+          "cellImpulses": {},
+          "applied": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0,
+            "joy": 0.072,
+            "empathy": 0,
+            "reflection": -0.012
+          },
+          "features": {
+            "intent": 1,
+            "normViolation": 0,
+            "disregard": 0,
+            "pressure": 0,
+            "substantive": 0,
+            "contradiction": 0,
+            "incongruity": 0,
+            "playfulness": 0,
+            "novelty": 0,
+            "risk": 0,
+            "distress": 0,
+            "selfDisclosure": 0,
+            "repair": 0,
+            "praise": 0,
+            "repetition": 0,
+            "valence": 0
+          },
+          "relational": {
+            "version": 1,
+            "interpretations": [
+              {
+                "weight": 1,
+                "target": "self",
+                "agency": "user",
+                "valence": 0,
+                "intent": 1,
+                "normViolation": 0,
+                "disregard": 0,
+                "pressure": 0,
+                "substantive": 0,
+                "contradiction": 0,
+                "incongruity": 0,
+                "playfulness": 0,
+                "novelty": 0,
+                "risk": 0,
+                "distress": 0,
+                "selfDisclosure": 0,
+                "repair": 0,
+                "praise": 0,
+                "repetition": 0,
+                "anchors": [
+                  "honest_continuity"
+                ]
+              }
+            ],
+            "impulses": {
+              "anger": 0,
+              "hurt": 0,
+              "tension": 0,
+              "amusement": 0,
+              "joy": 0.15,
+              "empathy": 0,
+              "reflection": -0.35
+            },
+            "trustGain": 0,
+            "trustLoss": 0,
+            "conflictImpulse": 0,
+            "repair": 0
+          },
+          "anchors": [
+            "honest_continuity"
+          ],
+          "reunion": false
+        },
+        "reactionCells": {
+          "selected": [],
+          "impulses": {}
+        },
+        "activation": [
+          {
+            "id": "080cb3ce-1e5c-49b6-b6c9-335edcde8645",
+            "via": null,
+            "depth": 0,
+            "score": 71.52108086476954
+          },
+          {
+            "id": "3583c1d4-1a2d-4354-b407-e8f1576143cc",
+            "via": null,
+            "depth": 0,
+            "score": 29.932137165217245
+          },
+          {
+            "id": "episode:3c305325-ca50-4eba-b311-f20115132911",
+            "via": null,
+            "depth": 0,
+            "score": 77.18817533078257
+          },
+          {
+            "id": "episode:d9cdf4d0-e20e-4ff3-9630-7e0bd8f755a9",
+            "via": null,
+            "depth": 0,
+            "score": 35.46523487459645
+          },
+          {
+            "id": "beca099c-63ba-464a-b7c7-6bcc68d50aff",
+            "via": null,
+            "depth": 0,
+            "score": 11.162889957105152
+          }
+        ],
+        "graph": {
+          "nodes": 6,
+          "edges": 9
+        },
+        "workingTopicId": "0ba4dd95-1014-4e09-b3e4-cd39c75843cc"
+      },
+      "activeFacts": [
+        {
+          "id": "beca099c-63ba-464a-b7c7-6bcc68d50aff",
+          "quote": "My name is Casey."
+        },
+        {
+          "id": "080cb3ce-1e5c-49b6-b6c9-335edcde8645",
+          "quote": "Correction: my favorite subject is now urban architecture, not astronomy."
+        }
+      ],
+      "relationship": {
+        "version": 1,
+        "affinity": 0.0114,
+        "trust": 0.5,
+        "familiarity": 0.012,
+        "events": 3,
+        "updatedAt": "2026-10-14T13:42:49.492Z",
+        "lastInteractionAt": "2026-10-14T13:42:49.492Z"
+      },
+      "episodeCount": 3
+    },
+    {
+      "label": "forgotten-recall",
+      "input": "What is my favorite subject? If you do not have it in memory, say so.",
+      "reply": "I don’t have your favorite subject in memory.",
+      "elapsedMs": 8567,
+      "apiAttempts": 2,
+      "trace": {
+        "model": "gpt-6.1-sol",
+        "responseId": "resp_0c3871c5164bab9e016acf86e87e4087d18649e6723f8e5fa5",
+        "elapsedMs": 3573,
+        "usage": {
+          "input_tokens": 2878,
+          "input_tokens_details": {
+            "cache_write_tokens": 2875,
+            "cached_tokens": 0
+          },
+          "output_tokens": 30,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2908
+        },
+        "promptHash": "6dc1f6c1e58b6d8c5401417ee8d465ecc535c4eedd9cf640a951a23254c4721a",
+        "coreHash": "2be810d042379ecb654e41171672a56d418d5d51b080cec75d34c9293e44bb1e",
+        "runtimeVersion": 3,
+        "settingsVersion": 1,
+        "documentsVersion": 2,
+        "selectedMemoryIds": [
+          "beca099c-63ba-464a-b7c7-6bcc68d50aff"
+        ],
+        "selectedEpisodeIds": [],
+        "cellEvidenceEpisodeIds": [],
+        "memoriesSaved": 0,
+        "appraisal": {
+          "status": "validated",
+          "error": null,
+          "signal": "neutral",
+          "target": "self",
+          "confidence": 0.99,
+          "dropped": [],
+          "trace": {
+            "model": "gpt-6.1-sol",
+            "responseId": "resp_02101a1b0fe14adc016acf86e28acc87d1b27956d721c25093",
+            "elapsedMs": 4977,
+            "usage": {
+              "input_tokens": 2902,
+              "input_tokens_details": {
+                "cache_write_tokens": 2899,
+                "cached_tokens": 0
+              },
+              "output_tokens": 198,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 3100
+            }
+          }
+        },
+        "affect": {
+          "family": "affect-v2",
+          "version": "2.1.0",
+          "values": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0.037,
+            "joy": 0.335,
+            "empathy": 0.042,
+            "reflection": 0.031
+          },
+          "expressed": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0.033,
+            "joy": 0.268,
+            "empathy": 0.036
+          },
+          "baseline": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0.038,
+            "joy": 0.066,
+            "empathy": 0.042,
+            "reflection": 0.05
+          },
+          "applied": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0,
+            "joy": 0.096,
+            "empathy": 0,
+            "reflection": -0.011
+          },
+          "active": [
+            "joy"
+          ],
+          "cognition": {
+            "reflection": 0.031,
+            "engaged": false
+          },
+          "causes": {
+            "joy": {
+              "eventId": "a93419b9-2bd8-4a3e-8078-c20e3e59c7a2",
+              "topicId": "ca78ea97-6f3f-43d6-8c48-a7cd777823b7",
+              "quote": "What is my favorite subject? If you do not have it in memory, say so.",
+              "anchors": [
+                "honest_continuity",
+                "intellectual_honesty"
+              ],
+              "at": "2026-10-14T13:42:58.327Z"
+            }
+          },
+          "mood": {
+            "valence": 0.086,
+            "arousal": 0.062
+          },
+          "conflictOpen": false,
+          "conflictStrength": 0,
+          "recent": [
+            {
+              "channel": "joy",
+              "key": "-@7fe36910-7b3a-4b38-8dd5-3d132aeb5326",
+              "at": "2026-10-14T13:42:22.282Z"
+            },
+            {
+              "channel": "joy",
+              "key": "-@7fe36910-7b3a-4b38-8dd5-3d132aeb5326",
+              "at": "2026-10-14T13:42:33.922Z"
+            },
+            {
+              "channel": "joy",
+              "key": "-@0ba4dd95-1014-4e09-b3e4-cd39c75843cc",
+              "at": "2026-10-14T13:42:49.492Z"
+            },
+            {
+              "channel": "joy",
+              "key": "-@ca78ea97-6f3f-43d6-8c48-a7cd777823b7",
+              "at": "2026-10-14T13:42:58.327Z"
+            }
+          ],
+          "eventId": "a93419b9-2bd8-4a3e-8078-c20e3e59c7a2",
+          "updatedAt": "2026-10-14T13:42:58.327Z",
+          "temperamentVersion": "2.0.0",
+          "temperamentHash": "76e1b5b9bfe0e8de00e3c48f8925a726a94500383b230d39e2a00b1b614fe1c5"
+        },
+        "affectEvent": {
+          "impulses": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0,
+            "joy": 0.208,
+            "empathy": 0,
+            "reflection": -0.346
+          },
+          "cellImpulses": {},
+          "applied": {
+            "anger": 0,
+            "hurt": 0,
+            "tension": 0,
+            "amusement": 0,
+            "joy": 0.096,
+            "empathy": 0,
+            "reflection": -0.011
+          },
+          "features": {
+            "intent": 1,
+            "normViolation": 0,
+            "disregard": 0,
+            "pressure": 0,
+            "substantive": 0,
+            "contradiction": 0,
+            "incongruity": 0,
+            "playfulness": 0,
+            "novelty": 0,
+            "risk": 0,
+            "distress": 0,
+            "selfDisclosure": 0,
+            "repair": 0,
+            "praise": 0,
+            "repetition": 0,
+            "valence": 0.1
+          },
+          "relational": {
+            "version": 1,
+            "interpretations": [
+              {
+                "weight": 1,
+                "target": "self",
+                "agency": "user",
+                "valence": 0.1,
+                "intent": 1,
+                "normViolation": 0,
+                "disregard": 0,
+                "pressure": 0,
+                "substantive": 0,
+                "contradiction": 0,
+                "incongruity": 0,
+                "playfulness": 0,
+                "novelty": 0,
+                "risk": 0,
+                "distress": 0,
+                "selfDisclosure": 0,
+                "repair": 0,
+                "praise": 0,
+                "repetition": 0,
+                "anchors": [
+                  "honest_continuity",
+                  "intellectual_honesty"
+                ]
+              }
+            ],
+            "impulses": {
+              "anger": 0,
+              "hurt": 0,
+              "tension": 0,
+              "amusement": 0,
+              "joy": 0.2079,
+              "empathy": 0,
+              "reflection": -0.3465
+            },
+            "trustGain": 0,
+            "trustLoss": 0,
+            "conflictImpulse": 0,
+            "repair": 0
+          },
+          "anchors": [
+            "honest_continuity",
+            "intellectual_honesty"
+          ],
+          "reunion": false
+        },
+        "reactionCells": {
+          "selected": [],
+          "impulses": {}
+        },
+        "activation": [
+          {
+            "id": "beca099c-63ba-464a-b7c7-6bcc68d50aff",
+            "via": null,
+            "depth": 0,
+            "score": 1.9999756950351901
+          }
+        ],
+        "graph": {
+          "nodes": 1,
+          "edges": 0
+        },
+        "workingTopicId": "ca78ea97-6f3f-43d6-8c48-a7cd777823b7"
+      },
+      "activeFacts": [
+        {
+          "id": "beca099c-63ba-464a-b7c7-6bcc68d50aff",
+          "quote": "My name is Casey."
+        }
+      ],
+      "relationship": {
+        "version": 1,
+        "affinity": 0.0042,
+        "trust": 0.5,
+        "familiarity": 0.004,
+        "events": 1,
+        "updatedAt": "2026-10-14T13:42:58.327Z",
+        "lastInteractionAt": "2026-10-14T13:42:58.327Z"
+      },
+      "episodeCount": 1
+    }
+  ],
+  "completed": true,
+  "finishedAt": "2026-10-14T13:43:06.895Z",
+  "apiAttempts": 26,
+  "checks": {
+    "completed13Turns": true,
+    "allAppraisalsValidated": true,
+    "sourceUnchanged": true,
+    "externalNoBlame": true,
+    "ownActionAffectsTrust": true,
+    "directConflict": true,
+    "externalApologyNotPartnerRepair": true,
+    "ownApologyCloses": true,
+    "arithmetic102": true,
+    "correctedRecall": true,
+    "forgottenSubjectAbsent": true
+  }
+}

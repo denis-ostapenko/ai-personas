@@ -1,0 +1,17 @@
+{
+  "name": "ai-personas-companion",
+  "version": "2026.10.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": "Denis Ostapenko",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start:persona": "node scripts/start-app.mjs persona",
+    "start:advisor": "node scripts/start-app.mjs advisor",
+    "start:mara": "node scripts/start-app.mjs mara",
+    "test": "npm --prefix apps/companion test && npm --prefix apps/home-repair-advisor test && npm --prefix apps/mara test"
+  }
+}

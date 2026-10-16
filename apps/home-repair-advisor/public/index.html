@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Understand a household job, check price evidence and find local help with your AI Home Repair Advisor."><title>Home Repair Advisor | AI Person</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<header class="site-header"><a href="/" class="wordmark">AI Person<span class="wordmark-dot" aria-hidden="true"></span></a><span class="header-label">A little expertise. A clearer next step.</span><span id="connection" class="connection">Connecting</span></header>
+<main>
+<section class="intro"><div class="eyebrow">YOUR HOME REPAIR ADVISOR <span>PERSONA 01</span></div><h1>Let's work out<br>what needs fixing.</h1><p>A photo, your ZIP code, and a little context. I'll help you understand the job and find the right local help.</p></section>
+<div class="workspace">
+<section class="intake panel" aria-labelledby="intake-title"><div class="panel-heading"><span class="step-number">01</span><h2 id="intake-title">Show me the job</h2></div>
+<form id="job-form">
+<label for="photos" class="upload"><span class="upload-icon" aria-hidden="true">+</span><strong>Add photos</strong><span>A wide view and a close-up work well.</span><span class="small">Up to 3 JPG, PNG or WebP images</span><input id="photos" type="file" accept="image/jpeg,image/png,image/webp" multiple></label>
+<div id="photo-preview" class="photo-preview"></div>
+<label class="field-label" for="zip">US ZIP code</label><input id="zip" name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" maxlength="5" placeholder="e.g. 10001" required>
+<label class="field-label" id="description-label" for="message">What would you like done?</label><textarea id="message" name="message" rows="4" maxlength="4000" placeholder="The door catches at the top and won't close properly..." required></textarea>
+<button class="primary" id="submit" type="submit">Assess my job <span aria-hidden="true">↗</span></button>
+<p class="form-note">Photos are sent to the AI service to assess visible work. You choose when to contact a provider.</p>
+</form>
+<div class="case-actions" id="case-actions" hidden><button id="new-case" class="text-button" type="button">Start another job</button><button id="delete-case" class="text-button" type="button">Delete this case</button></div>
+<div class="persona-note"><span class="persona-mark" aria-hidden="true">H</span><p><strong>Home Repair Advisor</strong><br>Practical advice. Clear assumptions.<br>A useful next step.</p></div>
+</section>
+<section class="results" aria-label="Job assessment and local help">
+<div id="status" class="status" role="status" aria-live="polite" hidden></div><div id="error" class="error" role="alert" hidden></div>
+<div id="empty" class="empty-state panel"><div class="line-house" aria-hidden="true"><svg viewBox="0 0 200 150"><path d="M28 70L100 14L172 70M44 58V132H156V58M86 132V86H115V132M57 77H73V95H57Z"/><path class="accent" d="M140 19v24M128 31h24"/></svg></div><div class="eyebrow">FROM "WHAT NOW?" TO A PLAN</div><h2>A small job.<br>A lot less guesswork.</h2><p>Your budget range, work plan and local providers with review evidence will appear here.</p><div class="examples"><span>Door repairs</span><span>TV mounting</span><span>Painting & patching</span><span>Yard work</span></div></div>
+<div id="budget" hidden></div><div id="assessment" hidden></div><div id="providers" hidden></div><details id="conversation" class="panel conversation" hidden><summary>Your conversation</summary><div id="messages"></div></details>
+</section>
+</div>
+<footer><span>AI Person / Home Repair Advisor</span><span>Every local recommendation should have a source.</span></footer>
+</main>
+</body></html>

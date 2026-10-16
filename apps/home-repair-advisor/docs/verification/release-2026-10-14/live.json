@@ -1,0 +1,258 @@
+{
+  "version": "0.3.1",
+  "startedAt": "2026-10-14T13:40:57.142Z",
+  "limits": {
+    "model": 8,
+    "searchAndExtract": 8,
+    "zip": 2
+  },
+  "protocol": [
+    "Create synthetic one-door photo case in ZIP 10001",
+    "Correct symptoms and preserve photo",
+    "Live search, source grounding and estimate",
+    "Reconstruct store and delete case"
+  ],
+  "checks": [
+    "photo_assessment",
+    "correction_and_photo_retention",
+    "live_search_and_grounding",
+    "store_reconstruction"
+  ],
+  "completed": true,
+  "photoSHA256": "2845166b82f2ec755f5689b4f7d68f2f66e9bd93dfe72a54e77f20984b2e66f3",
+  "result": {
+    "providerCount": 4,
+    "sourceCount": 16,
+    "estimate": {
+      "status": "estimated",
+      "currency": "USD",
+      "low": 70,
+      "high": 330,
+      "confidence": "medium",
+      "location": "New York City, NY 10001",
+      "geography": "local",
+      "photoBased": true,
+      "checkedAt": "2026-10-14T13:42:28.529Z",
+      "work": {
+        "low": 75,
+        "high": 300
+      },
+      "materials": {
+        "low": 0,
+        "high": 25
+      },
+      "quantity": {
+        "low": 1,
+        "high": 2
+      },
+      "basis": {
+        "kind": "hourly_labor",
+        "low": 75,
+        "high": 150,
+        "unit": "hour",
+        "geography": "local",
+        "area": "New York City",
+        "includesMaterials": false,
+        "minimumHours": null,
+        "minimumHoursQuote": null,
+        "label": "NYC general handyman hourly guidance",
+        "applicability": "Suitable reference for routine adjustment by one handyman. Materials inclusion is unspecified. Some companies require two hours, but no universal minimum is established.",
+        "sourceId": "s6",
+        "quote": "NYC handyman hourly rates typically range from $75 to $150 per hour",
+        "evidence": {
+          "sourceId": "s6",
+          "url": "https://furnitureassemblynyc.com/blog/how-much-do-handyman-services-cost-in-nyc",
+          "title": "How Much Do Handyman Services Cost in NYC?",
+          "quote": "NYC handyman hourly rates typically range from $75 to $150 per hour",
+          "checkedAt": "2026-10-14T13:41:55.185Z",
+          "sourceKind": "page_extract"
+        }
+      },
+      "minimumHours": 0,
+      "assumptions": [
+        "One interior door with an intact frame and reusable hinges.",
+        "Labor covers inspection, routine hinge adjustment, minor fastening repairs and operational testing.",
+        "Existing door and hinges carry no new-material allowance.",
+        "Materials allowance is a rough USD planning assumption for small consumables only, not a checked price.",
+        "No verified call-out minimum; a small job may cost more if the provider has a minimum visit charge."
+      ],
+      "exclusions": [
+        "Door or hinge replacement.",
+        "Door trimming, refinishing and floor alterations.",
+        "Concealed damage or substantial frame repairs.",
+        "Tax, parking/travel charges and permit costs, if applicable."
+      ],
+      "rationale": "One to two total worker-hours allows for a straightforward adjustment through minor screw-hole or alignment work. A $0-$25 consumables allowance accommodates reuse of all hardware or small shims and fastening supplies; the reference image cannot establish the needed repair.",
+      "formula": "Estimated worker-hours × published rate + estimated material allowance",
+      "notice": "Planning estimate, not a contractor quote. Final scope and hidden conditions need confirmation."
+    },
+    "warnings": [
+      "Some full review profiles were unavailable; remaining excerpts keep their source labels."
+    ],
+    "sourceURLs": [
+      "https://setupnyc.com/handyman-nyc",
+      "https://reviews.birdeye.com/handyman-queens-p-m-156203943403625",
+      "https://reviews.birdeye.com/nailed-it-handyman-services-167046608011587",
+      "https://furnitureassemblynyc.com/blog/how-much-do-handyman-services-cost-in-nyc"
+    ]
+  },
+  "traces": [
+    {
+      "provider": "openai",
+      "model": "gpt-6.1-sol",
+      "responseId": "resp_0bc9050a5cd250b4016acf8669cab487d188c25298e5e8ee78",
+      "elapsedMs": 6966,
+      "usage": {
+        "input_tokens": 1082,
+        "input_tokens_details": {
+          "cache_write_tokens": 1079,
+          "cached_tokens": 0
+        },
+        "output_tokens": 175,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1257
+      },
+      "phase": "memory",
+      "migrated": false,
+      "attempt": 1,
+      "personaVersion": "1.0.0",
+      "identityHash": "4c97a8ea7c783ae3b2106590410584dcb812d2df83ea894c3671347cb06d7259",
+      "memoryVersion": 1,
+      "promptVersion": "1.2.0",
+      "promptHash": "254b5c919e3fe39fc416b87995c3fa35046627869f1a9ed6499fb42c14f0ffd4",
+      "at": "2026-10-14T13:41:22.063Z"
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-6.1-sol",
+      "responseId": "resp_0ae2c1232739f59a016acf8670cc9087d185639acbcac4c40c",
+      "elapsedMs": 17565,
+      "usage": {
+        "input_tokens": 2619,
+        "input_tokens_details": {
+          "cache_write_tokens": 2616,
+          "cached_tokens": 0
+        },
+        "output_tokens": 878,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3497
+      },
+      "phase": "assessment",
+      "personaVersion": "1.0.0",
+      "identityHash": "4c97a8ea7c783ae3b2106590410584dcb812d2df83ea894c3671347cb06d7259",
+      "memoryVersion": 1,
+      "promptVersion": "1.2.0",
+      "promptHash": "254b5c919e3fe39fc416b87995c3fa35046627869f1a9ed6499fb42c14f0ffd4",
+      "at": "2026-10-14T13:41:22.063Z"
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-6.1-sol",
+      "responseId": "resp_0fb1067ae5a82e6e016acf868245bc87d1a89a56f63526f967",
+      "elapsedMs": 4004,
+      "usage": {
+        "input_tokens": 1209,
+        "input_tokens_details": {
+          "cache_write_tokens": 1206,
+          "cached_tokens": 0
+        },
+        "output_tokens": 120,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1329
+      },
+      "phase": "memory",
+      "migrated": false,
+      "attempt": 1,
+      "personaVersion": "1.0.0",
+      "identityHash": "4c97a8ea7c783ae3b2106590410584dcb812d2df83ea894c3671347cb06d7259",
+      "memoryVersion": 1,
+      "promptVersion": "1.2.0",
+      "promptHash": "254b5c919e3fe39fc416b87995c3fa35046627869f1a9ed6499fb42c14f0ffd4",
+      "at": "2026-10-14T13:41:51.825Z"
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-6.1-sol",
+      "responseId": "resp_096fd40346742230016acf86865a1087d19a192fadff346de6",
+      "elapsedMs": 25750,
+      "usage": {
+        "input_tokens": 2778,
+        "input_tokens_details": {
+          "cache_write_tokens": 871,
+          "cached_tokens": 1904
+        },
+        "output_tokens": 761,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3539
+      },
+      "phase": "assessment",
+      "personaVersion": "1.0.0",
+      "identityHash": "4c97a8ea7c783ae3b2106590410584dcb812d2df83ea894c3671347cb06d7259",
+      "memoryVersion": 1,
+      "promptVersion": "1.2.0",
+      "promptHash": "254b5c919e3fe39fc416b87995c3fa35046627869f1a9ed6499fb42c14f0ffd4",
+      "at": "2026-10-14T13:41:51.825Z"
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-6.1-sol",
+      "responseId": "resp_02ed1cb5a80908fa016acf86c1ca4087d1821e8819fab03ab6",
+      "elapsedMs": 3219,
+      "usage": {
+        "input_tokens": 4213,
+        "input_tokens_details": {
+          "cache_write_tokens": 4210,
+          "cached_tokens": 0
+        },
+        "output_tokens": 41,
+        "output_tokens_details": {
+          "reasoning_tokens": 25
+        },
+        "total_tokens": 4254
+      },
+      "phase": "review_enrichment",
+      "promptVersion": "1.2.0",
+      "promptHash": "254b5c919e3fe39fc416b87995c3fa35046627869f1a9ed6499fb42c14f0ffd4",
+      "at": "2026-10-14T13:42:28.521Z"
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-6.1-sol",
+      "responseId": "resp_0b7217753efdf0bc016acf86a3a51487d1b671aa8512aeeef9",
+      "elapsedMs": 25775,
+      "usage": {
+        "input_tokens": 23326,
+        "input_tokens_details": {
+          "cache_write_tokens": 23323,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1556,
+        "output_tokens_details": {
+          "reasoning_tokens": 27
+        },
+        "total_tokens": 24882
+      },
+      "phase": "provider_search",
+      "promptVersion": "1.2.0",
+      "promptHash": "254b5c919e3fe39fc416b87995c3fa35046627869f1a9ed6499fb42c14f0ffd4",
+      "at": "2026-10-14T13:42:28.530Z",
+      "searchProvider": "tavily",
+      "searchCredits": 6
+    }
+  ],
+  "finishedAt": "2026-10-14T13:42:28.535Z",
+  "attempts": {
+    "model": 6,
+    "searchAndExtract": 7,
+    "zip": 1
+  },
+  "temporaryDataRemoved": true
+}

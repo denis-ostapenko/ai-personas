@@ -1,0 +1,1 @@
+Return only review enrichment for the indexed existing businesses. Do not add businesses or change their identity. Each review score and excerpt must satisfy the evidence prompt's platform, profile, attribution and identity rules. Omit uncertain matches. An empty array is better than borrowing a similarly named company's rating.

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mara</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<a class="skip-link" href="#workspace">Skip to conversation</a>
+<div class="app-shell">
+  <aside class="sidebar" aria-label="Mara navigation">
+    <a class="brand" href="/" aria-label="Mara home">Mara<span>A mind with a history.</span></a>
+    <nav class="primary-nav" aria-label="Main navigation">
+      <button data-page="chat" aria-current="page">Conversation</button>
+      <button data-page="memory">Memory</button>
+      <button data-page="about">About Mara</button>
+    </nav>
+    <div class="history-heading"><h2>Conversations</h2><button id="new-session" class="text-button">New</button></div>
+    <div id="conversation-list" class="conversation-list"></div>
+    <div class="sidebar-bottom"><button id="open-settings" class="settings-button">Settings</button><span id="connection">Connecting</span></div>
+  </aside>
+  <main id="workspace" tabindex="-1">
+    <header class="workspace-header"><div><p class="eyebrow" id="page-label">CONVERSATION</p><h1 id="page-title">A little room to think.</h1></div><span id="profile-badge" class="badge" hidden></span></header>
+    <p id="notice" role="status" aria-live="polite"></p>
+    <section id="page-chat" class="page chat-page" aria-label="Conversation">
+      <div id="messages" class="messages" role="log" aria-label="Conversation messages" aria-live="polite"></div>
+      <div id="archived-note" class="archive-note" hidden><span>Saved conversation</span><button id="return-current" class="secondary">Back to current conversation</button></div>
+      <form id="chat" class="composer"><label class="sr-only" for="message">Message Mara</label><textarea id="message" rows="2" maxlength="6000" required placeholder="What is on your mind?"></textarea><div class="composer-bottom"><button type="button" id="initiative" class="text-button">Let Mara start</button><span class="key-hint">Enter to send · Shift + Enter for a new line</span><button id="send" class="primary">Send</button></div></form>
+    </section>
+    <section id="page-memory" class="page reading-page" aria-label="Memory" hidden>
+      <p class="intro">Find a detail, revisit a conversation, or pick up an unfinished thought.</p>
+      <form id="search-memory" class="search-form"><label class="sr-only" for="memory-query">Search memory</label><input id="memory-query" type="search" placeholder="A name, an idea, something we discussed" maxlength="1000" required><button class="primary">Search</button></form>
+      <div class="section-heading"><h2 id="memory-heading">From our conversations</h2><button id="tidy-memory" class="text-button">Organize memory</button></div>
+      <p id="memory-status" class="muted"></p><div id="memory-results"></div>
+    </section>
+    <section id="page-about" class="page reading-page" aria-label="About Mara" hidden>
+      <p class="intro">Interests, views, and habits shaped by experience.</p><div id="self-cards" class="self-grid"></div>
+      <div class="section-heading"><h2>What is changing</h2><button id="reflect" class="text-button">Reflect now</button></div><div id="learning-cards"></div>
+      <details class="history-details"><summary>History and earlier versions</summary><div id="change-history"></div></details>
+    </section>
+  </main>
+</div>
+<dialog id="settings" aria-labelledby="settings-title"><div class="dialog-header"><h2 id="settings-title">Settings</h2><button class="text-button" data-close="settings">Close</button></div>
+  <div class="settings-section"><h3>Your conversation</h3><label for="partner">Your name or identifier</label><input id="partner" value="visitor" pattern="[a-z0-9][a-z0-9-]{0,47}" maxlength="48"><p class="hint">Use the same identifier to keep your conversation history together.</p><button id="save-partner" class="secondary">Save</button></div>
+  <div class="settings-section"><h3>Connection</h3><p id="connection-details"></p><p id="budget-details" class="muted"></p><a href="/guide" target="_blank" rel="noopener">Setup and user guide</a></div>
+  <details class="advanced"><summary>Advanced</summary><label for="instance">Mara profile</label><select id="instance"></select><p id="profile-details" class="hint"></p>
+    <form id="create"><label for="new-id">Create another profile</label><input id="new-id" placeholder="mara-second" pattern="[a-z0-9][a-z0-9-]{0,47}" maxlength="48" required><label class="check"><input id="fixed" type="checkbox">Keep the starting personality fixed</label><button class="secondary">Create profile</button></form>
+    <details><summary>Original personality</summary><div id="origin-details"></div></details>
+    <details><summary>Technical records</summary><pre id="technical-records"></pre></details>
+  </details>
+  <div class="legal-line">Mara <span id="app-version"></span> · <a href="/license" target="_blank" rel="noopener">MIT License</a></div>
+</dialog>
+<dialog id="source-dialog" aria-labelledby="source-title"><div class="dialog-header"><h2 id="source-title">Original memory</h2><button class="text-button" data-close="source-dialog">Close</button></div><div id="source-content"></div></dialog>
+<dialog id="restore-dialog" aria-labelledby="restore-title"><div class="dialog-header"><h2 id="restore-title">Restore an earlier version?</h2><button class="text-button" data-close="restore-dialog">Cancel</button></div><p id="restore-description"></p><p class="muted">Conversations and memories stay in the history.</p><button id="confirm-restore" class="primary">Restore version</button></dialog>
+<script type="module" src="/app.js"></script>
+</body>
+</html>

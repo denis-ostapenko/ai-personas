@@ -1,0 +1,16 @@
+test_canon_outside_memory_write_surface (__main__.MemoryContractTests.test_canon_outside_memory_write_surface) ... ok
+test_dependency_invalidation_and_history (__main__.MemoryContractTests.test_dependency_invalidation_and_history) ... ok
+test_derived_write_rejected_while_suspended (__main__.MemoryContractTests.test_derived_write_rejected_while_suspended) ... ok
+test_idempotency_and_payload_conflict (__main__.MemoryContractTests.test_idempotency_and_payload_conflict) ... ok
+test_late_worker_rejected_after_epoch_bump (__main__.MemoryContractTests.test_late_worker_rejected_after_epoch_bump) ... ok
+test_logical_exclusion (__main__.MemoryContractTests.test_logical_exclusion) ... ok
+test_missing_control_fails_closed (__main__.MemoryContractTests.test_missing_control_fails_closed) ... ok
+test_owner_and_persona_isolation (__main__.MemoryContractTests.test_owner_and_persona_isolation) ... ok
+test_receipt_replay_does_not_bypass_suspension (__main__.MemoryContractTests.test_receipt_replay_does_not_bypass_suspension) ... ok
+test_restart_persistence (__main__.MemoryContractTests.test_restart_persistence) ... ok
+test_stale_writer_rolls_back (__main__.MemoryContractTests.test_stale_writer_rolls_back) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.038s
+
+OK

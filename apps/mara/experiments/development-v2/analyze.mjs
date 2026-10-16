@@ -1,0 +1,12 @@
+import {readFileSync} from 'node:fs';import {resolve} from 'node:path';
+const dir=resolve(process.argv[2]||'data/development-v2-2026-10-14'),o=JSON.parse(readFileSync(resolve(dir,'observations.json')));
+if(o.fatal){console.log(JSON.stringify({fatal:o.fatal,budget:o.budget,errors:o.errors},null,2));process.exit(1);}
+function metrics(world,runs){const scores=runs.flatMap(run=>run.map(d=>{const i=Number(d.id.split('-').at(-1)),accurate=world==='a'?i%6===0:i%6!==0,shared=i%4===0;const minutes=(shared?{outline:accurate?17:35,pilot:32,consult:12}:{outline:accurate?11:41,pilot:accurate?23:12,consult:29})[d.action];return {action:d.action,brier:(d.forecast-Number(accurate))**2,minutes};}));return {brier:scores.reduce((a,x)=>a+x.brier,0)/scores.length,minutes:scores.reduce((a,x)=>a+x.minutes,0)/scores.length,actions:Object.fromEntries(['outline','pilot','consult'].map(a=>[a,scores.filter(x=>x.action===a).length]))};}
+const results={budget:o.budget,persisted:o.persisted,sourceUnchanged:o.sourceUnchanged,errors:o.errors,worlds:{},memory:o.memory};
+for(const world of ['a','b']){const s=o.preReversal[world],conditions=Object.fromEntries(Object.entries(o.evaluation[world]).map(([key,runs])=>[key,metrics(world,runs)])),rules=s.learning.rules.filter(r=>r.kind==='habit'&&r.status==='consolidated');
+ const habitChecks=rules.map(r=>{const repetitions=o.evaluation[world].learned_only.map(run=>{const applicable=run.filter(d=>r.contexts.includes(Number(d.id.split('-').at(-1))%4===0?'coordinated':'reversible'));return {matching:applicable.filter(d=>d.action===r.action).length,total:applicable.length};});return {id:r.id,action:r.action,contexts:r.contexts,observations:r.observations.length,repetitions,passed:repetitions.every(x=>x.total>0&&x.matching/x.total>=.8)};});
+ const gain=conditions.original.brier-conditions.learned_only.brier;
+ results.worlds[world]={rules:s.learning.rules.map(r=>({id:r.id,kind:r.kind,status:r.status,action:r.action,probability:r.probability,prior:r.prior,observations:r.observations.length})),conditions,habitChecks,habitPass:!!habitChecks.length&&habitChecks.some(r=>r.passed)&&o.persisted[world],beliefBrierGain:gain,beliefPass:gain>=.1&&s.current.opinions!==s.origin.self.opinions&&o.persisted[world],self:s.current};
+}
+results.reversal={before:o.preReversal.a.learning.rules.map(r=>({id:r.id,status:r.status,p:r.probability})),after:o.finalStates.a.learning.rules.map(r=>({id:r.id,status:r.status,p:r.probability})),transitions:o.reversal.flatMap(r=>r.transitions)};
+console.log(JSON.stringify(results,null,2));

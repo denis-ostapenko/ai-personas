@@ -1,0 +1,2324 @@
+{
+  "revision": 4,
+  "assembled_at": "2026-10-16T00:03:21.065958+00:00",
+  "method": "Mechanical collation of author and integrating-editor records, not a new full-source audit. Chapter-specific limits remain in each claim.",
+  "ledgers": [
+    {
+      "path": "manuscript/revision-4/chapters-01-08/claim-ledger.json",
+      "sha256": "6b04413b9bf05099c851ccd6c44bd933cb6ee54e7373e6893f2924fd719ed89a",
+      "claims": 46,
+      "scope": "Chapters 1-8; primary access depth stated per claim; author self-review, not independent review."
+    },
+    {
+      "path": "manuscript/revision-4/chapters-09-16/claim-ledger.json",
+      "sha256": "116457d3bb37a3e9a06f513a69d543c76295498d439cd34a396dc5742463ed24",
+      "claims": 51,
+      "scope": "Claim-level selected primary reading, with explicit provenance for reused earlier personal/shared reading. No blanket full-method audit."
+    },
+    {
+      "path": "manuscript/revision-4/chapters-17-24/claim-ledger.json",
+      "sha256": "cfabb7d3d9431cce1d6794ad0f105747810870faffd4bf1bec54a4fb73e619a9",
+      "claims": 67,
+      "scope": "Selective claim-specific primary reading and explicit reuse of prior verified records. No full-library audit or new experiment."
+    },
+    {
+      "path": "manuscript/revision-4/editorial-claim-ledger.json",
+      "sha256": "057bda0e49d9980cedc7b9009adaa872680e6ad120d03eaae9c1dcc7d55775c0",
+      "claims": 3,
+      "scope": "Integrating editor source checks; separate from chapter author records"
+    }
+  ],
+  "claims": [
+    {
+      "id": "R4-C01-ROLE",
+      "chapter": 1,
+      "claim": "RoleLLM distinguishes role knowledge and characteristic language as design/evaluation targets.",
+      "source_ids": [
+        "EX03"
+      ],
+      "version": "Findings ACL 2024, 2024.findings-acl.878",
+      "reading_depth": "Primary abstract and selected paper sections",
+      "locator": "Publisher abstract and paper introduction/method overview; research/EX03.txt",
+      "boundary": "No claim that role fidelity demonstrates professional competence or all dimensions of identity.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C02-ROLE",
+      "chapter": 2,
+      "claim": "RoleLLM distinguishes role knowledge and characteristic language as design/evaluation targets.",
+      "source_ids": [
+        "EX03"
+      ],
+      "version": "Findings ACL 2024, 2024.findings-acl.878",
+      "reading_depth": "Primary abstract and selected paper sections",
+      "locator": "Publisher abstract and paper introduction/method overview; research/EX03.txt",
+      "boundary": "No claim that role fidelity demonstrates professional competence or all dimensions of identity.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C05-ROLE",
+      "chapter": 5,
+      "claim": "RoleLLM distinguishes role knowledge and characteristic language as design/evaluation targets.",
+      "source_ids": [
+        "EX03"
+      ],
+      "version": "Findings ACL 2024, 2024.findings-acl.878",
+      "reading_depth": "Primary abstract and selected paper sections",
+      "locator": "Publisher abstract and paper introduction/method overview; research/EX03.txt",
+      "boundary": "No claim that role fidelity demonstrates professional competence or all dimensions of identity.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C01-LAMP",
+      "chapter": 1,
+      "claim": "LaMP uses user-associated records for personalized classification/generation; chapter 2 names seven tasks and user/time split distinction.",
+      "source_ids": [
+        "R4A01"
+      ],
+      "version": "2304.11406v4",
+      "reading_depth": "Selected primary task, split and retrieval methods",
+      "locator": "Sections 2-3; research/R4A01.txt",
+      "boundary": "Task performance is not assistant personality; no quantitative superiority or live-platform claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C02-LAMP",
+      "chapter": 2,
+      "claim": "LaMP uses user-associated records for personalized classification/generation; chapter 2 names seven tasks and user/time split distinction.",
+      "source_ids": [
+        "R4A01"
+      ],
+      "version": "2304.11406v4",
+      "reading_depth": "Selected primary task, split and retrieval methods",
+      "locator": "Sections 2-3; research/R4A01.txt",
+      "boundary": "Task performance is not assistant personality; no quantitative superiority or live-platform claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C06-LAMP",
+      "chapter": 6,
+      "claim": "LaMP uses user-associated records for personalized classification/generation; chapter 2 names seven tasks and user/time split distinction.",
+      "source_ids": [
+        "R4A01"
+      ],
+      "version": "2304.11406v4",
+      "reading_depth": "Selected primary task, split and retrieval methods",
+      "locator": "Sections 2-3; research/R4A01.txt",
+      "boundary": "Task performance is not assistant personality; no quantitative superiority or live-platform claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C01-COALA",
+      "chapter": 1,
+      "claim": "CoALA organizes memory, action and decision processes; working, episodic, semantic and procedural categories.",
+      "source_ids": [
+        "TX01"
+      ],
+      "version": "2309.02427v3",
+      "reading_depth": "Selected primary conceptual framework sections",
+      "locator": "Section 4, especially 4.1; research/TX01.txt",
+      "boundary": "Conceptual taxonomy, not an experiment showing each module improves every task.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C02-COALA",
+      "chapter": 2,
+      "claim": "CoALA organizes memory, action and decision processes; working, episodic, semantic and procedural categories.",
+      "source_ids": [
+        "TX01"
+      ],
+      "version": "2309.02427v3",
+      "reading_depth": "Selected primary conceptual framework sections",
+      "locator": "Section 4, especially 4.1; research/TX01.txt",
+      "boundary": "Conceptual taxonomy, not an experiment showing each module improves every task.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C02-GENERATIVE",
+      "chapter": 2,
+      "claim": "Generative Agents full architecture ranks highest in controlled interview believability comparisons with shared accrued experience.",
+      "source_ids": [
+        "AM03"
+      ],
+      "version": "2304.03442v2",
+      "reading_depth": "Primary evaluation design, conditions, scoring and result paragraphs read",
+      "locator": "Sections 6.1-6.5; research/AM03.txt",
+      "boundary": "Human-ranked believability in simulated-town interviews; shared prior history differs from independent full-trajectory comparison; no broader human-outcome claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C02-TRAIN",
+      "chapter": 2,
+      "claim": "Character-LLM reconstructs experiences from profiles and trains a character model; protective scenes address inappropriate character knowledge.",
+      "source_ids": [
+        "EX02"
+      ],
+      "version": "EMNLP 2023 current publisher PDF (record exposes v2)",
+      "reading_depth": "Primary method excerpts read",
+      "locator": "Section 3, especially 3.1-3.2; research/EX02.txt",
+      "boundary": "Generated scenes are reconstructions, not historical evidence; no comparative numerical effect used.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C03-TRAIN",
+      "chapter": 3,
+      "claim": "Character-LLM reconstructs experiences from profiles and trains a character model; protective scenes address inappropriate character knowledge.",
+      "source_ids": [
+        "EX02"
+      ],
+      "version": "EMNLP 2023 current publisher PDF (record exposes v2)",
+      "reading_depth": "Primary method excerpts read",
+      "locator": "Section 3, especially 3.1-3.2; research/EX02.txt",
+      "boundary": "Generated scenes are reconstructions, not historical evidence; no comparative numerical effect used.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C02-VECTORS",
+      "chapter": 2,
+      "claim": "Persona Vectors extracts contrastive activation directions and tests trait steering/monitoring on specified models.",
+      "source_ids": [
+        "AM06"
+      ],
+      "version": "2507.21509v3",
+      "reading_depth": "Selected primary methods, results and limitations",
+      "locator": "Sections 2, 3.1-3.3, 8; research/AM06.txt",
+      "boundary": "Specified prompt-elicitable traits, model/layer dependence and automated judging; no universal personality coordinates.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C03-VECTORS",
+      "chapter": 3,
+      "claim": "Persona Vectors extracts contrastive activation directions and tests trait steering/monitoring on specified models.",
+      "source_ids": [
+        "AM06"
+      ],
+      "version": "2507.21509v3",
+      "reading_depth": "Selected primary methods, results and limitations",
+      "locator": "Sections 2, 3.1-3.3, 8; research/AM06.txt",
+      "boundary": "Specified prompt-elicitable traits, model/layer dependence and automated judging; no universal personality coordinates.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C03-VECTORLIMIT",
+      "chapter": 3,
+      "claim": "Projection associations are stronger between explicitly different prompt types than within prompt type.",
+      "source_ids": [
+        "AM06"
+      ],
+      "version": "2507.21509v3",
+      "reading_depth": "Primary result and qualification read",
+      "locator": "Section 3.3; research/AM06.txt",
+      "boundary": "No general deployment detector accuracy claimed; no numerical correlation transferred.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C02-MEMGPT",
+      "chapter": 2,
+      "claim": "MemGPT separates active context from external memory and uses explicit operations to manage context.",
+      "source_ids": [
+        "AM04"
+      ],
+      "version": "2310.08560v2",
+      "reading_depth": "Primary architecture sections read",
+      "locator": "Sections 2.1-2.4; research/AM04.txt",
+      "boundary": "Mechanism description; no infinite physical context, human benefit or current product behavior asserted.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C06-MEMGPT",
+      "chapter": 6,
+      "claim": "MemGPT separates active context from external memory and uses explicit operations to manage context.",
+      "source_ids": [
+        "AM04"
+      ],
+      "version": "2310.08560v2",
+      "reading_depth": "Primary architecture sections read",
+      "locator": "Sections 2.1-2.4; research/AM04.txt",
+      "boundary": "Mechanism description; no infinite physical context, human benefit or current product behavior asserted.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C02-AMEM",
+      "chapter": 2,
+      "claim": "A-MEM builds notes with generated context and links, and updates related notes.",
+      "source_ids": [
+        "EX13"
+      ],
+      "version": "2502.12110v11",
+      "reading_depth": "Primary mechanism sections read",
+      "locator": "Sections 3.1-3.4; research/EX13.txt",
+      "boundary": "Generated links are not verified causal or temporal relations; no benchmark ranking or equivalence to temporal database guarantees.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C06-AMEM",
+      "chapter": 6,
+      "claim": "A-MEM builds notes with generated context and links, and updates related notes.",
+      "source_ids": [
+        "EX13"
+      ],
+      "version": "2502.12110v11",
+      "reading_depth": "Primary mechanism sections read",
+      "locator": "Sections 3.1-3.4; research/EX13.txt",
+      "boundary": "Generated links are not verified causal or temporal relations; no benchmark ranking or equivalence to temporal database guarantees.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C02-VOYAGER",
+      "chapter": 2,
+      "claim": "Voyager retains executable skills and uses environment feedback, errors and model-based verification in Minecraft.",
+      "source_ids": [
+        "TX02"
+      ],
+      "version": "2305.16291v2",
+      "reading_depth": "Primary method read",
+      "locator": "Sections 2.1-2.3; research/TX02.txt",
+      "boundary": "External skill reuse, not online weight learning; no human personality result or universal capability claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C06-VOYAGER",
+      "chapter": 6,
+      "claim": "Voyager retains executable skills and uses environment feedback, errors and model-based verification in Minecraft.",
+      "source_ids": [
+        "TX02"
+      ],
+      "version": "2305.16291v2",
+      "reading_depth": "Primary method read",
+      "locator": "Sections 2.1-2.3; research/TX02.txt",
+      "boundary": "External skill reuse, not online weight learning; no human personality result or universal capability claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C02-MEMBENCH",
+      "chapter": 2,
+      "claim": "LoCoMo and LongMemEval differ in construction and task coverage.",
+      "source_ids": [
+        "R4A03",
+        "AM05"
+      ],
+      "version": "ACL 2024 final; LongMemEval 2410.10813v2",
+      "reading_depth": "Primary task/construction sections, not full reanalysis",
+      "locator": "LoCoMo abstract/introduction and Table 1; LongMemEval 3.2-3.3",
+      "boundary": "No pooled scores; synthetic/human-edited dialogue distinguished from human longitudinal interaction; LoCoMo v1 statistics not reused.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C02-INDIVIDUAL",
+      "chapter": 2,
+      "claim": "Version 3 individual-simulation study uses interviews, surveys or both for 1,052 American participants and held-out comparisons with test-retest normalization.",
+      "source_ids": [
+        "R4A04"
+      ],
+      "version": "2411.10109v3, June 28, 2026",
+      "reading_depth": "Selected primary methods summary and abstract",
+      "locator": "Abstract, introduction, Materials and Methods Summary pp. 11-12; research/R4A04.txt",
+      "boundary": "No older 85% headline; no whole-person fidelity claim; sample is not asserted perfectly representative.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C02-PAIR",
+      "chapter": 2,
+      "claim": "PAIR combines appraisal, rolling memory and coordinated multimodal delivery, studied through a small field deployment.",
+      "source_ids": [
+        "S04"
+      ],
+      "version": "2610.07523v1, October 5, 2026",
+      "reading_depth": "Primary abstract and introduction only",
+      "locator": "Abstract and introduction, primary HTML lines 69-82",
+      "boundary": "Architecture/deployment orientation only; no treatment effect, clinical efficacy, or detailed numeric outcome claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C02-HI04",
+      "chapter": 2,
+      "claim": "Assigned-condition findings are kept distinct from observational voluntary-duration associations.",
+      "source_ids": [
+        "HI04"
+      ],
+      "version": "2503.17473v2, October 2, 2025",
+      "reading_depth": "Selected primary study-design/results/limitations passages",
+      "locator": "Abstract, study design, primary results, duration analysis and discussion; primary HTML lines 33-69, 100-132",
+      "boundary": "No causal inference from voluntary duration; no claim that null tests prove exact equality; uncorrected pairwise findings not promoted.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C03-ATTENTION",
+      "chapter": 3,
+      "claim": "Transformer attention relates positions through learned representations.",
+      "source_ids": [
+        "AM01"
+      ],
+      "version": "1706.03762v7",
+      "reading_depth": "Selected primary architecture sections",
+      "locator": "Sections 2, 3.1-3.2, primary HTML",
+      "boundary": "No training cost/benchmark claim and no claim that architecture supplies application memory or authority.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C03-RLHF",
+      "chapter": 3,
+      "claim": "InstructGPT uses demonstrations, preference comparisons/reward modeling and PPO.",
+      "source_ids": [
+        "AM02"
+      ],
+      "version": "2203.02155v1",
+      "reading_depth": "Primary method section read",
+      "locator": "Section 3.1; research/AM02.txt",
+      "boundary": "Specific historical method; not all current models or a universal account of alignment.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C03-DRIFT",
+      "chapter": 3,
+      "claim": "Persistent Personas uses persona-directed/goal-oriented dialogues and dialogue-conditioned evaluations; fidelity degrades, especially in goal-oriented conditions.",
+      "source_ids": [
+        "AM07"
+      ],
+      "version": "EACL 2026 pp. 5329-5359",
+      "reading_depth": "Primary protocol, model/task descriptions, evaluation procedure and Section 5.1 results; no complete appendix audit",
+      "locator": "Abstract, Sections 3-4 and 5.1; research/AM07.txt",
+      "boundary": "Selected characters/models and metrics; no universal turn-count expiration or exact effect-size claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C04-CAPS",
+      "chapter": 4,
+      "claim": "Mischel and Shoda treat patterned variability across situations as meaningful to personality.",
+      "source_ids": [
+        "TX17"
+      ],
+      "version": "Psychological Review 102(2), 1995, pp. 246-268",
+      "reading_depth": "Primary opening theory argument read",
+      "locator": "pp. 246-248, author-hosted Columbia PDF; research/TX17.txt",
+      "boundary": "Human theory used as design analogy, not evidence that AI has human cognitive-affective machinery.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C04-WHOLETRAIT",
+      "chapter": 4,
+      "claim": "Whole Trait Theory separates descriptive state distributions and explanatory mechanisms.",
+      "source_ids": [
+        "TX18"
+      ],
+      "version": "2015 Journal of Research in Personality 56",
+      "reading_depth": "Abstract and selected indexed primary passages; full PMC access blocked by browser check",
+      "locator": "Primary PubMed abstract and indexed PMC theory passages; prior production notes retained in shared registry",
+      "boundary": "Narrow theory summary only; no effect sizes or full-method claim; no psychometric validity transfer to AI.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C04-INCHARACTER",
+      "chapter": 4,
+      "claim": "InCharacter uses interview-derived psychological questions and alternative assessment approaches; relevant prompts anonymize names.",
+      "source_ids": [
+        "EX04"
+      ],
+      "version": "ACL 2024 pp. 1838-1868, 2024.acl-long.102",
+      "reading_depth": "Primary method, label construction and preliminary assessment comparison read",
+      "locator": "Sections 3.1-4.2; research/EX04.txt",
+      "boundary": "Interview behavior and character reference labels; no clinical interpretation or later action fidelity claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C05-CITATION",
+      "chapter": 5,
+      "claim": "ALCE separates fluency, correctness and citation support; citations must support statements.",
+      "source_ids": [
+        "R4A06"
+      ],
+      "version": "EMNLP 2023 pp. 6465-6488",
+      "reading_depth": "Primary measurement methods read",
+      "locator": "Sections 3.1-3.3; research/R4A06.txt",
+      "boundary": "Attribution quality does not establish source truth or applicability; no headline score used.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C08-CITATION",
+      "chapter": 8,
+      "claim": "ALCE separates fluency, correctness and citation support; citations must support statements.",
+      "source_ids": [
+        "R4A06"
+      ],
+      "version": "EMNLP 2023 pp. 6465-6488",
+      "reading_depth": "Primary measurement methods read",
+      "locator": "Sections 3.1-3.3; research/R4A06.txt",
+      "boundary": "Attribution quality does not establish source truth or applicability; no headline score used.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C05-PRIVILEGE",
+      "chapter": 5,
+      "claim": "Least privilege scopes permissions to the work and limits consequences of error.",
+      "source_ids": [
+        "R4A05"
+      ],
+      "version": "1975 article, MIT author-hosted reproduction",
+      "reading_depth": "Primary principle text read",
+      "locator": "Part I A.3(f), alongside dynamics-of-use discussion",
+      "boundary": "Foundational design principle; persona application is authorial engineering inference, not a new empirical result.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C07-TRANSACTIONS",
+      "chapter": 7,
+      "claim": "Transactions group database operations; isolation levels govern concurrent phenomena.",
+      "source_ids": [
+        "TX10",
+        "R4A07"
+      ],
+      "version": "PostgreSQL 18 documentation as accessed October 15, 2026",
+      "reading_depth": "Primary tutorial and isolation behavior sections read",
+      "locator": "3.4 Transactions; 13.2 Transaction Isolation",
+      "boundary": "Database boundary, configuration and operation assumptions retained; no atomic external-message guarantee or implementation claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C07-RLS",
+      "chapter": 7,
+      "claim": "Row security can restrict rows but has documented owner/bypass exceptions.",
+      "source_ids": [
+        "TX09"
+      ],
+      "version": "PostgreSQL 18 documentation",
+      "reading_depth": "Selected primary documentation",
+      "locator": "5.9 Row Security Policies, opening behavior and bypass paragraphs",
+      "boundary": "Requires appropriate roles and configuration; SQL parameterization and authenticated scope are separate.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C07-VECTORINDEX",
+      "chapter": 7,
+      "claim": "pgvector distinguishes exact search, approximate indexes and filtering implications.",
+      "source_ids": [
+        "TX11"
+      ],
+      "version": "Repository README retrieved October 15, 2026; moving document",
+      "reading_depth": "Selected primary developer documentation",
+      "locator": "Indexing and Filtering sections",
+      "boundary": "No throughput/retrieval score; no version-pinned implementation or universal storage ranking.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C08-REACT",
+      "chapter": 8,
+      "claim": "ReAct interleaves language-based reasoning, actions and observations; external interfaces provide feedback.",
+      "source_ids": [
+        "R4A02"
+      ],
+      "version": "2210.03629v3",
+      "reading_depth": "Primary mechanism and task-interface methods read",
+      "locator": "Sections 2 and 3.1; research/R4A02.txt",
+      "boundary": "No assertion that generated reasoning is a faithful internal explanation; no general security claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C08-CAMEL",
+      "chapter": 8,
+      "claim": "CaMeL separates privileged planning and quarantined interpretation, tracks dependencies and checks policy before tools.",
+      "source_ids": [
+        "S08"
+      ],
+      "version": "2503.18813v2",
+      "reading_depth": "Primary design read; selected limitation discussion inspected",
+      "locator": "Sections 5.1-5.4, 7, 9-10; research/S08.txt",
+      "boundary": "Policy and implementation assumptions remain; no universal injection immunity. No general atomic rollback of external effects.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C01-DESIGN",
+      "chapter": 1,
+      "claim": "Uncited illustrative scenarios, proposed tables, distinctions and engineering recommendations are authorial synthesis. They are not executed tests or measurements.",
+      "source_ids": [],
+      "version": "Revision 4 draft, October 15, 2026",
+      "reading_depth": "Author self-review of exact manuscript text",
+      "locator": "chapter-01.md",
+      "boundary": "Examples are explicitly illustrative; no invented personal experience, participants, motives or measured outcome. No new model experiments.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C02-DESIGN",
+      "chapter": 2,
+      "claim": "Uncited illustrative scenarios, proposed tables, distinctions and engineering recommendations are authorial synthesis. They are not executed tests or measurements.",
+      "source_ids": [],
+      "version": "Revision 4 draft, October 15, 2026",
+      "reading_depth": "Author self-review of exact manuscript text",
+      "locator": "chapter-02.md",
+      "boundary": "Examples are explicitly illustrative; no invented personal experience, participants, motives or measured outcome. No new model experiments.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C03-DESIGN",
+      "chapter": 3,
+      "claim": "Uncited illustrative scenarios, proposed tables, distinctions and engineering recommendations are authorial synthesis. They are not executed tests or measurements.",
+      "source_ids": [],
+      "version": "Revision 4 draft, October 15, 2026",
+      "reading_depth": "Author self-review of exact manuscript text",
+      "locator": "chapter-03.md",
+      "boundary": "Examples are explicitly illustrative; no invented personal experience, participants, motives or measured outcome. No new model experiments.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C04-DESIGN",
+      "chapter": 4,
+      "claim": "Uncited illustrative scenarios, proposed tables, distinctions and engineering recommendations are authorial synthesis. They are not executed tests or measurements.",
+      "source_ids": [],
+      "version": "Revision 4 draft, October 15, 2026",
+      "reading_depth": "Author self-review of exact manuscript text",
+      "locator": "chapter-04.md",
+      "boundary": "Examples are explicitly illustrative; no invented personal experience, participants, motives or measured outcome. No new model experiments.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C05-DESIGN",
+      "chapter": 5,
+      "claim": "Uncited illustrative scenarios, proposed tables, distinctions and engineering recommendations are authorial synthesis. They are not executed tests or measurements.",
+      "source_ids": [],
+      "version": "Revision 4 draft, October 15, 2026",
+      "reading_depth": "Author self-review of exact manuscript text",
+      "locator": "chapter-05.md",
+      "boundary": "Examples are explicitly illustrative; no invented personal experience, participants, motives or measured outcome. No new model experiments.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C06-DESIGN",
+      "chapter": 6,
+      "claim": "Uncited illustrative scenarios, proposed tables, distinctions and engineering recommendations are authorial synthesis. They are not executed tests or measurements.",
+      "source_ids": [],
+      "version": "Revision 4 draft, October 15, 2026",
+      "reading_depth": "Author self-review of exact manuscript text",
+      "locator": "chapter-06.md",
+      "boundary": "Examples are explicitly illustrative; no invented personal experience, participants, motives or measured outcome. No new model experiments.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C07-DESIGN",
+      "chapter": 7,
+      "claim": "Uncited illustrative scenarios, proposed tables, distinctions and engineering recommendations are authorial synthesis. They are not executed tests or measurements.",
+      "source_ids": [],
+      "version": "Revision 4 draft, October 15, 2026",
+      "reading_depth": "Author self-review of exact manuscript text",
+      "locator": "chapter-07.md",
+      "boundary": "Examples are explicitly illustrative; no invented personal experience, participants, motives or measured outcome. No new model experiments.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4-C08-DESIGN",
+      "chapter": 8,
+      "claim": "Uncited illustrative scenarios, proposed tables, distinctions and engineering recommendations are authorial synthesis. They are not executed tests or measurements.",
+      "source_ids": [],
+      "version": "Revision 4 draft, October 15, 2026",
+      "reading_depth": "Author self-review of exact manuscript text",
+      "locator": "chapter-08.md",
+      "boundary": "Examples are explicitly illustrative; no invented personal experience, participants, motives or measured outcome. No new model experiments.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-01-08/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C09-01",
+      "chapter": 9,
+      "claim": "Temporal databases have long distinguished valid time, when something holds in the represented world, from transaction time, when it is recorded in the database. Richard Snodgrass develops that distinction systematically in *Developing Time-Oriented Database Applications in SQL*. A record can be accurate about one time and misleading about the other. These are established data-management concepts, although their application to a conversational persona requires additional decisions about evidence and interpretation. [FN02]",
+      "source_ids": [
+        "FN02"
+      ],
+      "version": "FN02: Author lists July 1999, Morgan Kaufmann, ISBN 1-55860-436-7.",
+      "reading_depth": "FN02: Author-hosted full book PDF section 2.3, pp. 20-21; selected bitemporal distinction read directly.",
+      "locator": "FN02: source-notes/Snodgrass.pdf; source-notes/Snodgrass.txt",
+      "boundary": "FN02: Established temporal-data definitions only; not complete book reading.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C09-02",
+      "chapter": 9,
+      "claim": "The STALE benchmark studies this problem as implicit conflict. Its May 7, 2026 preprint separates recognizing an outdated state, resisting questions that assume the old state, and adapting later behavior to the new state. The study's central distinction is useful: retrieving a later observation does not guarantee that a system will apply its consequences. Its constructed scenarios and automated evaluation provide a diagnostic setting, rather than a population estimate of failure in everyday assistants. [AM09]",
+      "source_ids": [
+        "AM09"
+      ],
+      "version": "AM09: arXiv v1",
+      "reading_depth": "AM09: Primary arXiv v1 May 7, 2026 abstract/introduction and three probing definitions; no quantitative benchmark claim.",
+      "locator": "AM09: https://arxiv.org/html/2605.06527v1",
+      "boundary": "AM09: Constructed diagnostic benchmark, not field failure prevalence.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C09-03",
+      "chapter": 9,
+      "claim": "A recent diagnostic preprint, *Stale, Misattributed, or Late*, likewise locates important memory failures before final generation, including revision handling and source attribution. Its controlled tests motivate checking what reaches the model as well as what the model says. The general engineering lesson I draw is narrower than a claim that one architecture solves memory: if a stale item is admitted as current evidence, improving the final wording does not repair the admission decision. [AM11]",
+      "source_ids": [
+        "AM11"
+      ],
+      "version": "AM11: arXiv v1",
+      "reading_depth": "AM11: Primary arXiv v1 October 7, 2026 abstract and section inventory, with earlier shared selected-section record explicitly reused.",
+      "locator": "AM11: https://arxiv.org/html/2610.10265v1; book/research/2026-10-15-monograph/source-register.json",
+      "boundary": "AM11: Broad pre-generation diagnostic claim only; no score or universal guarantee.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C09-04",
+      "chapter": 9,
+      "claim": "The distinction becomes more difficult once information has influenced model weights. Bourtoule and colleagues' work on machine unlearning proposed SISA training, which structures training to limit the influence of particular data and reduce the retraining work needed for removal. That is a specific training framework, not a general command for making an arbitrary language model forget a person. [R4B10]",
+      "source_ids": [
+        "R4B10"
+      ],
+      "version": "R4B10: arXiv:1912.03817v3, December 15, 2020; metadata identifies IEEE S&P 2021 publication",
+      "reading_depth": "R4B10: Primary arXiv abstract and version metadata only; SISA mechanism described at abstract scope, no speedup or deletion guarantee used.",
+      "locator": "R4B10: Live primary abstract read October 15, 2026.",
+      "boundary": "R4B10: Claims limited to the stated selected reading; no experiment reproduced.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C09-05",
+      "chapter": 9,
+      "claim": "LongMemEval includes knowledge updates and temporal reasoning among its evaluated abilities. That gives researchers a useful basis for testing changing personal information alongside extraction, reasoning across sessions and abstention. It still matters whether a particular system is evaluated on a fixed benchmark version, with what history length and with which scoring method. A benchmark label alone does not describe the experiment. [AM05]",
+      "source_ids": [
+        "AM05"
+      ],
+      "version": "AM05: arXiv v2; initial submission 2024-10-14; ICLR 2025 publication",
+      "reading_depth": "AM05: Primary v2 March 4, 2025 HTML sections 3.1-3.3 and 4-5, selected PDF task/method passages.",
+      "locator": "AM05: source-notes/LongMemEval-v2.pdf; source-notes/LongMemEval-v2.txt",
+      "boundary": "AM05: No leaderboard ranking; paper version compared, not a pinned downloaded dataset.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C09-DESIGN",
+      "chapter": 9,
+      "claim": "Architecture recommendations, illustrative scenarios and proposed evaluation procedures are authorial engineering proposals, not reported empirical measurements.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "Authorial synthesis after source-specific reading above.",
+      "locator": "chapter-09.md",
+      "boundary": "No implemented complete controller, new paid experiment, new human study or field-wide superiority claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C10-01",
+      "chapter": 10,
+      "claim": "The original retrieval-augmented generation work by Patrick Lewis and colleagues combined a parametric sequence model with a dense index of Wikipedia passages. It evaluated variants that conditioned on retrieved material at sequence or token level. That research established an influential way to join generation with inspectable external knowledge; it did not define a complete policy for private personal memory, consent or changing instructions. [R4B04]",
+      "source_ids": [
+        "R4B04"
+      ],
+      "version": "R4B04: arXiv:2005.11401v4, April 12, 2021",
+      "reading_depth": "R4B04: Abstract and introduction, parametric/non-parametric mechanism and sequence/token distinction; no numerical result used.",
+      "locator": "R4B04: source-notes/RAG.pdf and RAG.txt; title page pins v4.",
+      "boundary": "R4B04: Claims limited to the stated selected reading; no experiment reproduced.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C10-02",
+      "chapter": 10,
+      "claim": "LongMemEval makes these choices experimentally visible. Its authors compare indexing and reading decisions, including the granularity of stored values, expansion of search keys, temporal query expansion and structured reading. In the studied configurations, decomposing sessions into rounds helped overall question answering, while compressing further into isolated facts could lose information even when it helped a particular reasoning category. These are conditional results about the tested tasks and systems, not a universal instruction to use one chunk size. [AM05]",
+      "source_ids": [
+        "AM05"
+      ],
+      "version": "AM05: arXiv v2; initial submission 2024-10-14; ICLR 2025 publication",
+      "reading_depth": "AM05: Primary v2 March 4, 2025 HTML sections 3.1-3.3 and 4-5, selected PDF task/method passages.",
+      "locator": "AM05: source-notes/LongMemEval-v2.pdf; source-notes/LongMemEval-v2.txt",
+      "boundary": "AM05: No leaderboard ranking; paper version compared, not a pinned downloaded dataset.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C10-03",
+      "chapter": 10,
+      "claim": "Nelson Liu and colleagues' *Lost in the Middle* used controlled changes to the position of relevant information in multi-document question answering and key-value retrieval. The models tested often performed better when the relevant information appeared near the beginning or end than when it appeared in the middle. The study's model versions and tasks belong to its 2023 research setting; its lasting contribution is a testable positional failure mode, not a prediction that every later model will show the same curve. [R4B03]",
+      "source_ids": [
+        "R4B03"
+      ],
+      "version": "R4B03: arXiv:2307.03172v3, November 20, 2023",
+      "reading_depth": "R4B03: Abstract, introduction, section 2 and experimental setup; selective reading of two task definitions and positional intervention. No current-model replication.",
+      "locator": "R4B03: source-notes/Lost-middle.pdf and Lost-middle.txt; downloaded unversioned PDF identified as v3 on title page.",
+      "boundary": "R4B03: Claims limited to the stated selected reading; no experiment reproduced.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C10-04",
+      "chapter": 10,
+      "claim": "LoCoMo and LongMemEval both concern long conversational histories, but they ask different questions. Maharana and colleagues' LoCoMo builds extended dialogues through a human-machine pipeline and evaluates question answering, event summarization and multimodal dialogue generation. Its question-answering categories include single-hop, multi-hop, temporal, open-domain and adversarial questions, with partial-match F1 among the reported measures. [R4B02]",
+      "source_ids": [
+        "R4B02"
+      ],
+      "version": "R4B02: ACL 2024 proceedings paper, pp. 13851-13870",
+      "reading_depth": "R4B02: Primary proceedings PDF sections 3-6, especially task construction, QA partial-match F1 and retrieval metrics; no repository rerun.",
+      "locator": "R4B02: source-notes/LoCoMo.pdf and LoCoMo.txt; paper version distinguished from later data subsets.",
+      "boundary": "R4B02: Claims limited to the stated selected reading; no experiment reproduced.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C10-05",
+      "chapter": 10,
+      "claim": "LongMemEval constructs user-assistant histories around curated questions and annotated evidence, with explicit attention to knowledge updates and abstention. Its standard settings vary the amount of history, and its question-answering evaluation uses an LLM judge with a reported human-agreement check. The two benchmark scores cannot be read as percentages on one common scale. [AM05]",
+      "source_ids": [
+        "AM05"
+      ],
+      "version": "AM05: arXiv v2; initial submission 2024-10-14; ICLR 2025 publication",
+      "reading_depth": "AM05: Primary v2 March 4, 2025 HTML sections 3.1-3.3 and 4-5, selected PDF task/method passages.",
+      "locator": "AM05: source-notes/LongMemEval-v2.pdf; source-notes/LongMemEval-v2.txt",
+      "boundary": "AM05: No leaderboard ranking; paper version compared, not a pinned downloaded dataset.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C10-DESIGN",
+      "chapter": 10,
+      "claim": "Architecture recommendations, illustrative scenarios and proposed evaluation procedures are authorial engineering proposals, not reported empirical measurements.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "Authorial synthesis after source-specific reading above.",
+      "locator": "chapter-10.md",
+      "boundary": "No implemented complete controller, new paid experiment, new human study or field-wide superiority claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C11-01",
+      "chapter": 11,
+      "claim": "Appraisal models begin with a more structured question: how does the represented event relate to goals, expectations, responsibility and available responses? In Marsella and Gratch's EMA, appraisal operates over a causal interpretation that can change as inference and coping change the representation. Reappraisal allows an emotional trajectory to evolve when the situation is understood differently. The model is a computational account with explicit theoretical assumptions, including the relationship between appraisal and emotion; it is not a settled description of every human emotional process. [S02]",
+      "source_ids": [
+        "S02"
+      ],
+      "version": "S02: Cognitive Systems Research 10(1), 70-90; available online 2008-07-05; DOI 10.1016/j.cogsys.2008.03.005",
+      "reading_depth": "S02: Primary author PDF sections 2.1-2.3, pp. 74-77, causal interpretation and appraisal/reappraisal directly read.",
+      "locator": "S02: source-notes/EMA.pdf; source-notes/EMA.txt",
+      "boundary": "S02: Computational model and theoretical assumptions, not complete human-emotion validation.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C11-02",
+      "chapter": 11,
+      "claim": "Patrick Gebhard's ALMA is an earlier example of a layered computational model that separates emotions, moods and personality and uses appraisal rules to generate affect. Its purpose is plausible behavior in virtual characters. That lineage is useful because it shows that persistent affect and multiple timescales did not begin with large language models. [R4B09]",
+      "source_ids": [
+        "R4B09"
+      ],
+      "version": "R4B09: Author project documentation accessed October 15, 2026; cites AAMAS 2005 model paper",
+      "reading_depth": "R4B09: Project page sections What is ALMA, Motivation, Technical Background and related publication record; original 2005 full paper not retrieved.",
+      "locator": "R4B09: Live official project page. Chapter uses only layering/appraisal purpose, no empirical evaluation size or effect claim.",
+      "boundary": "R4B09: Claims limited to the stated selected reading; no experiment reproduced.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C11-03",
+      "chapter": 11,
+      "claim": "Cai and colleagues' July 2026 preprint builds a dialogue system around appraisal checks grounded in the Component Process Model. Its evaluation includes simulated persona dialogue and human judgments. Such work investigates whether explicit appraisal can improve emotional evolution in generated interaction. It should be read as evidence about the tested simulation and judgments, rather than a demonstration of improved long-term relationships for users. [S03]",
+      "source_ids": [
+        "S03"
+      ],
+      "version": "S03: arXiv:2607.07824v1",
+      "reading_depth": "S03: Primary arXiv v1 July 8, 2026 abstract and current full-text access; methods/evaluation details reused from source-register selected-section record.",
+      "locator": "S03: source-notes/S03-v1.pdf; source-notes/S03-v1.txt; book/research/2026-10-15-monograph/source-register.json",
+      "boundary": "S03: Only appraisal architecture and simulated-dialogue/human-judgment scope; no human welfare claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C11-04",
+      "chapter": 11,
+      "claim": "A more directly human-facing example is Qin and colleagues' Cross-Temporal Emotional Modeling system, Auri. Its study involved 96 university participants aged 18 to 26, divided between a two-week ablation study and a seven-day comparison study. The latter counterbalanced order but gave two days to the baseline and five to the full system. Outcomes concerned perceived coherence, harmony and experience. The design gives useful evidence about a particular prototype and population while leaving longer-term welfare and relationship effects open. [HI06]",
+      "source_ids": [
+        "HI06"
+      ],
+      "version": "HI06: arXiv v1 author manuscript identifying the CHI 2026 paper; related DOI 10.1145/3772318.3790917.",
+      "reading_depth": "HI06: Primary v1 May 15, 2026 PDF sections 3.2-3.3, 4.1-4.6 and selected discussion/limitations, especially unequal 2/5 day exposure.",
+      "locator": "HI06: source-notes/HI06-v1.pdf; source-notes/HI06-v1.txt",
+      "boundary": "HI06: 96 participants split into N54 and N42, not 96 people each followed for 21 days; perceived experience not safety.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C11-05",
+      "chapter": 11,
+      "claim": "The local Persona case provides one useful example. In a live test with synthetic dialogue, correct third-party appraisal coexisted with inappropriate updates to trust and friction toward the conversational partner. The neutral answers remained appropriate. This was a limited test of one implementation and input, not a general result about affective agents. It shows that correct intermediate attribution and a reasonable reply do not guarantee a correct durable state update. [LT01]",
+      "source_ids": [
+        "LT01"
+      ],
+      "version": "LT01: Canonical executed-tests.md local evidence, read October 15, 2026",
+      "reading_depth": "LT01: Executed-tests LT01 record freshly read; prior full review/protocol reading reused.",
+      "locator": "LT01: book/experiments/executed-tests.md; reviews/2026-10-14/README.md; reviews/2026-10-14/persona-live.json",
+      "boundary": "LT01: October14 Persona0.4.0 live synthetic test: state error despite correct appraisal and appropriate neutral answers; not LT02 fixture.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C11-DESIGN",
+      "chapter": 11,
+      "claim": "Architecture recommendations, illustrative scenarios and proposed evaluation procedures are authorial engineering proposals, not reported empirical measurements.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "Authorial synthesis after source-specific reading above.",
+      "locator": "chapter-11.md",
+      "boundary": "No implemented complete controller, new paid experiment, new human study or field-wide superiority claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C12-01",
+      "chapter": 12,
+      "claim": "Reflexion, by Noah Shinn and colleagues, uses feedback from task attempts to produce verbal reflections that are stored and used in later attempts. The framework distinguishes an actor, an evaluator and a reflection process. The learning medium is textual feedback in memory, rather than a gradient update to the actor's weights. Its results concern the evaluated task settings, including decision-making, reasoning and programming. [EX08]",
+      "source_ids": [
+        "EX08"
+      ],
+      "version": "EX08: Noah Shinn, Federico Cassano, Ashwin Gopinath, Karthik Narasimhan and Shunyu Yao. NeurIPS 2023 proceedings. Read final abstract and actor/evaluator/reflection method passages in the proceedings PDF. Author metadata here follows the proceedings, not another arXiv version.",
+      "reading_depth": "EX08: NeurIPS 2023 official abstract freshly read; actor/evaluator/reflection method reading reused from prior author claim ledger.",
+      "locator": "EX08: https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html; book/manuscript/chapters-11-15/claim-source-ledger.json",
+      "boundary": "EX08: Verbal memory mechanism; no new reproduction or numerical claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C12-02",
+      "chapter": 12,
+      "claim": "Agentic Context Engineering, or ACE, organizes adaptation through a generator, reflector and curator, with structured incremental updates to an evolving context. The paper argues that repeated wholesale rewriting can collapse useful detail into short generic summaries. Its method therefore treats context as an accumulated set of usable items rather than a document to rewrite from scratch after every episode. [EX09]",
+      "source_ids": [
+        "EX09"
+      ],
+      "version": "EX09: Qizheng Zhang et al. arXiv v3, March 29, 2026; full text, marked ICLR 2026. Read motivation, update design, result overview and cost tables; earlier project notes retain a fuller cost discussion.",
+      "reading_depth": "EX09: Primary v3 PDF section 3 and 3.1 directly read, generator/reflector/curator and incremental updates.",
+      "locator": "EX09: source-notes/ACE-v3.pdf; source-notes/ACE-v3.txt",
+      "boundary": "EX09: Mechanism and authors context-collapse argument, not universal performance.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C12-03",
+      "chapter": 12,
+      "claim": "Voyager takes another route. In Minecraft, it builds a library of executable skills, uses environmental feedback and execution errors to revise programs, and retrieves those programs for later tasks. The language model is used through prompting rather than parameter fine-tuning. The learned object is therefore more than a written recollection of success: it is code that can be reused and composed. [TX02]",
+      "source_ids": [
+        "TX02"
+      ],
+      "version": "TX02: 2023; arXiv 2305.16291",
+      "reading_depth": "TX02: Primary arXiv v2 October 19, 2023 HTML introduction and sections 2.1-2.2, skill storage and execution feedback.",
+      "locator": "TX02: https://arxiv.org/html/2305.16291v2",
+      "boundary": "TX02: Minecraft mechanism, no general-persona transfer result.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C12-04",
+      "chapter": 12,
+      "claim": "GEPA, developed by Lakshya A Agrawal and colleagues, searches over prompts using feedback from trajectories and a pool of candidate improvements. In the February 14, 2026 version, the optimization changes prompts while the underlying model weights remain fixed. Its comparisons are task- and budget-dependent; the title's claim about outperforming reinforcement learning should not become a universal ranking of adaptation methods. [EX10]",
+      "source_ids": [
+        "EX10"
+      ],
+      "version": "EX10: arXiv:2507.19457v2, February 14, 2026; title page identifies ICLR 2026 Oral",
+      "reading_depth": "EX10: Primary PDF title page, abstract and sections 2-3 on fixed weights, prompt search, feedback and budget; no headline numerical superiority claim used.",
+      "locator": "EX10: Metadata correction: replaces truncated first-author display Lakshya A with Lakshya A Agrawal, directly verified on arXiv and PDF. source-notes/GEPA-v2.",
+      "boundary": "EX10: Claims limited to the stated selected reading; no experiment reproduced.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C12-05",
+      "chapter": 12,
+      "claim": "Self-Adapting Language Models, or SEAL, explicitly studies weight adaptation. Its outer learning process trains the model to generate useful self-edits, while an inner process uses the generated material for gradient-based updating. The September 18, 2025 version evaluates knowledge incorporation and few-shot adaptation. Its sequential-edit analysis also reports declining performance on earlier tasks, identifying catastrophic forgetting as an unresolved limitation of that setup. [EX11]",
+      "source_ids": [
+        "EX11"
+      ],
+      "version": "EX11: Adam Zweiger et al. arXiv v2, September 18, 2025; full text. Read abstract, adaptation overview and catastrophic-forgetting limitation. Earlier project research separately checked the NeurIPS 2025 proceedings record.",
+      "reading_depth": "EX11: Primary v2 September 18, 2025 PDF section 3, 3.1 and section 5 catastrophic-forgetting limitations directly read.",
+      "locator": "EX11: source-notes/SEAL-v2.pdf; source-notes/SEAL-v2.txt",
+      "boundary": "EX11: Weight adaptation distinguished from text edits; no broad lifelong-learning success claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C12-06",
+      "chapter": 12,
+      "claim": "Bifet and Gavaldà's adaptive-windowing work adjusts the amount of recent data retained as evidence of a changing distribution. A window can grow during relative stability and shrink when change is detected. The work analyzes statistical properties under its assumptions and connects the method to predictive learning. It does not interpret a person's values or decide which instruction should have authority. [R4B08]",
+      "source_ids": [
+        "R4B08"
+      ],
+      "version": "R4B08: Author manuscript dated October 17, 2006; related publication SDM 2007",
+      "reading_depth": "R4B08: Author PDF abstract and introduction describing adaptive windows and use with predictors; theorem proofs and numerical evaluations not audited.",
+      "locator": "R4B08: source-notes/ADWIN.pdf and ADWIN.txt. Preserve manuscript date separately from 2007 proceedings metadata.",
+      "boundary": "R4B08: Claims limited to the stated selected reading; no experiment reproduced.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C12-07",
+      "chapter": 12,
+      "claim": "The local Mara design makes one of these distinctions concrete. Retirement removes a learned action as the default while keeping the rule and its evidence available; a later situation can still justify trying the action. Recovery uses evidence from a new phase rather than recycling the successes that originally established the habit. This is a documented control mechanism, not a measurement of psychological maturity. Its value as an example is that retirement changes the rule's operational role without pretending that the earlier experience never happened. [PD04]",
+      "source_ids": [
+        "PD04"
+      ],
+      "version": "PD04: Current Mara persona and architecture documents, read October 15, 2026",
+      "reading_depth": "PD04: Current Mara persona definition and architecture retirement/recovery passages freshly read.",
+      "locator": "PD04: personas/evolving/docs/PERSONA.md; personas/evolving/docs/ARCHITECTURE.md",
+      "boundary": "PD04: Mara0.3.0 dated October15, 2026; mechanism only, no new run or human maturation claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C12-DESIGN",
+      "chapter": 12,
+      "claim": "Architecture recommendations, illustrative scenarios and proposed evaluation procedures are authorial engineering proposals, not reported empirical measurements.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "Authorial synthesis after source-specific reading above.",
+      "locator": "chapter-12.md",
+      "boundary": "No implemented complete controller, new paid experiment, new human study or field-wide superiority claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C13-01",
+      "chapter": 13,
+      "claim": "A timestamp tells us when a clock said an event occurred. It does not automatically tell us what another process had observed. Leslie Lamport's 1978 paper on time and event ordering formalized a happened-before relation and logical clocks for distributed systems. Its central distinction remains useful here: events can have an order through communication and dependency that cannot be recovered simply by reading wall-clock labels. [R4B06]",
+      "source_ids": [
+        "R4B06"
+      ],
+      "version": "R4B06: Communications of the ACM 21(7), July 1978, pp. 558-565",
+      "reading_depth": "R4B06: Primary author-hosted PDF introduction and partial-order discussion; no proof reproduction.",
+      "locator": "R4B06: source-notes/Lamport.pdf and Lamport.txt.",
+      "boundary": "R4B06: Claims limited to the stated selected reading; no experiment reproduced.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C13-02",
+      "chapter": 13,
+      "claim": "The distributed-systems lineage includes an instructive example in Mike Burrows's Chubby paper. A process can lose a lock while one of its requests is delayed. Chubby supplies sequencers describing the lock generation so a receiving service can reject a request whose protection is no longer valid. The crucial check occurs at the receiver, where the effect would happen. [R4B07]",
+      "source_ids": [
+        "R4B07"
+      ],
+      "version": "R4B07: OSDI 2006 paper",
+      "reading_depth": "R4B07: Official proceedings HTML section 2.4 Locks and sequencers, plus relevant API/cache passages 2.6-2.7.",
+      "locator": "R4B07: Live primary full text read October 15, 2026; proposed agent epoch mechanism is an inference/application, not attributed as Chubby implementation.",
+      "boundary": "R4B07: Claims limited to the stated selected reading; no experiment reproduced.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C13-03",
+      "chapter": 13,
+      "claim": "Transactions address part of this problem by grouping changes within a defined storage boundary. PostgreSQL's documentation describes transaction-isolation levels and the different consistency guarantees they provide. Those guarantees concern the database operations covered by the transaction; they do not automatically extend to a model call, a remote service or an index maintained elsewhere. [TX10]",
+      "source_ids": [
+        "TX10"
+      ],
+      "version": "TX10: Version 18; retrieved 2026-10-15",
+      "reading_depth": "TX10: PostgreSQL 18 official documentation section 13.2 isolation definitions/table and Read Committed description freshly read.",
+      "locator": "TX10: https://www.postgresql.org/docs/18/transaction-iso.html",
+      "boundary": "TX10: Database boundary only; no project PostgreSQL writer implementation claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C13-04",
+      "chapter": 13,
+      "claim": "Kevin Lin and colleagues' *Sleep-time Compute* studies computation over context before a query is presented. Its experiments modify reasoning tasks by separating available context from later questions and examine how useful work can be shared across related queries. The reported benefits depend in part on how predictable those queries are. The work motivates precomputation; it does not establish that an agent should freely rewrite personal memory whenever the user is absent. [R4B05]",
+      "source_ids": [
+        "R4B05"
+      ],
+      "version": "R4B05: arXiv:2504.13171v1, April 17, 2025",
+      "reading_depth": "R4B05: Abstract, context/query decomposition introduction and selected method overview; no numerical speedup claim used.",
+      "locator": "R4B05: source-notes/Sleep.pdf and Sleep.txt plus live version metadata.",
+      "boundary": "R4B05: Claims limited to the stated selected reading; no experiment reproduced.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C13-DESIGN",
+      "chapter": 13,
+      "claim": "Architecture recommendations, illustrative scenarios and proposed evaluation procedures are authorial engineering proposals, not reported empirical measurements.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "Authorial synthesis after source-specific reading above.",
+      "locator": "chapter-13.md",
+      "boundary": "No implemented complete controller, new paid experiment, new human study or field-wide superiority claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C14-01",
+      "chapter": 14,
+      "claim": "Park and colleagues' June 28, 2026 version of *LLM Agents Grounded in Self-Reports Enable General-Purpose Simulation of Individuals* uses 1,052 U.S. participants. Agents receive interview material, survey material or both, and are evaluated against held-out responses. On General Social Survey items, reported normalized accuracy is 0.83 for interview agents, 0.82 for survey agents, 0.86 for combined agents, 0.74 for demographic agents and 0.71 for short persona-description agents. The denominator is participants' own two-week test-retest consistency. The methods remove overlapping evaluation material and hold out relevant survey answers. [R4B01]",
+      "source_ids": [
+        "R4B01"
+      ],
+      "version": "R4B01: arXiv:2411.10109v3, June 28, 2026",
+      "reading_depth": "R4B01: Primary PDF main methods and results, normalization definition pp. 5-7, Materials and Methods Summary pp. 11-12, selected SI holdout and overlap checks; not all supplementary analyses or raw data.",
+      "locator": "R4B01: Downloaded primary PDF and extracted text in source-notes/Park-v3; live version page. Main methods says 27 excluded overlaps while SI selected passage says 24; manuscript omits that count. No earlier 85% headline reused.",
+      "boundary": "R4B01: Claims limited to the stated selected reading; no experiment reproduced.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C14-02",
+      "chapter": 14,
+      "claim": "These are predictions of responses under a specified research design. The normalized figure is not a percentage of a person reconstructed. A ratio of 1 would mean matching the chosen human consistency benchmark, not answering every question correctly. The older headline from an earlier version should not be detached from its version and used as a timeless result. [R4B01]",
+      "source_ids": [
+        "R4B01"
+      ],
+      "version": "R4B01: arXiv:2411.10109v3, June 28, 2026",
+      "reading_depth": "R4B01: Primary PDF main methods and results, normalization definition pp. 5-7, Materials and Methods Summary pp. 11-12, selected SI holdout and overlap checks; not all supplementary analyses or raw data.",
+      "locator": "R4B01: Downloaded primary PDF and extracted text in source-notes/Park-v3; live version page. Main methods says 27 excluded overlaps while SI selected passage says 24; manuscript omits that count. No earlier 85% headline reused.",
+      "boundary": "R4B01: Claims limited to the stated selected reading; no experiment reproduced.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C14-03",
+      "chapter": 14,
+      "claim": "Quan Shi and colleagues' IMPersona study examines writing style and personal knowledge through short conversations with people acquainted with the individuals being modeled. Its April 8, 2025 version reports 114 participants and 12 modeled individuals, with three-minute interactions and controlled presentation conditions. It compares prompting, fine-tuning and memory configurations. The outcome is whether the interlocutor is identified as human, with additional ratings and qualitative explanations. [R4B11]",
+      "source_ids": [
+        "R4B11"
+      ],
+      "version": "R4B11: arXiv:2504.04332v2, April 8, 2025",
+      "reading_depth": "R4B11: Primary HTML section 3 experimental setup and controls; abstract, introduction, methodology overview; no pass-rate number used.",
+      "locator": "R4B11: source-notes/IMPersona-v2.pdf and IMPersona-v2.txt; live HTML selected methods.",
+      "boundary": "R4B11: Claims limited to the stated selected reading; no experiment reproduced.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C14-04",
+      "chapter": 14,
+      "claim": "Demographic description is especially weak as a substitute for individual evidence. Santurkar and colleagues' OpinionsQA work examines how model responses align with public-opinion data across U.S. demographic groups and finds that steering models toward a group does not simply reproduce that group's opinions. It is research about distributions and the tested models, not a method for deriving a particular person's beliefs from their demographic labels. [R4B12]",
+      "source_ids": [
+        "R4B12"
+      ],
+      "version": "R4B12: arXiv:2303.17548v1, March 30, 2023",
+      "reading_depth": "R4B12: Primary abstract and version record; only broad demographic-steering limitation used, no effect size or model-specific result.",
+      "locator": "R4B12: Live primary abstract read October 15, 2026; no full-method reading claimed.",
+      "boundary": "R4B12: Claims limited to the stated selected reading; no experiment reproduced.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C14-DESIGN",
+      "chapter": 14,
+      "claim": "Architecture recommendations, illustrative scenarios and proposed evaluation procedures are authorial engineering proposals, not reported empirical measurements.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "Authorial synthesis after source-specific reading above.",
+      "locator": "chapter-14.md",
+      "boundary": "No implemented complete controller, new paid experiment, new human study or field-wide superiority claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C15-01",
+      "chapter": 15,
+      "claim": "Yin, Jia and Wakslak's study of feeling heard separates the quality of a response from the label attached to its source. AI-generated messages could make participants feel more heard, while identifying a response as AI-generated reduced that effect. The outcome concerns participants' experience of those messages, not the long-term quality of a relationship with an assistant. [HI02]",
+      "source_ids": [
+        "HI02"
+      ],
+      "version": "HI02: Published PNAS article, 121(14), e2319112121; issue dated April 2, 2024.",
+      "reading_depth": "HI02: Primary PubMed abstract read in prior authored batch, explicitly reused; no full-method claim.",
+      "locator": "HI02: book/manuscript/chapters-16-20/claim-source-ledger.json; https://pubmed.ncbi.nlm.nih.gov/38551835/",
+      "boundary": "HI02: Immediate feeling-heard and source-label effects only; no durable relationship benefit.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C15-02",
+      "chapter": 15,
+      "claim": "Ibrahim, Hafner and Rocher studied five language models fine-tuned for warmer responses and compared them with their original versions on consequential question-answering tasks. In the tested setup, warmth training increased errors and sycophantic agreement, while standard capability tests did not reveal the same problem. The paper concerns a particular training intervention, not proof that every polite sentence reduces accuracy. [HI07]",
+      "source_ids": [
+        "HI07"
+      ],
+      "version": "HI07: Published Nature article, volume 652, pp. 1159-1165; accepted March 12, 2026.",
+      "reading_depth": "HI07: Primary Nature page freshly read: abstract, training warm models, factual accuracy and interpersonal-context sections.",
+      "locator": "HI07: https://www.nature.com/articles/s41586-026-10410-0",
+      "boundary": "HI07: Five fine-tuned models, not warmth phrasing universally. No ambiguous headline effect sizes used.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C15-03",
+      "chapter": 15,
+      "claim": "Cheng and colleagues' final Science paper, published March 26, 2026, reports three preregistered experiments with 2,405 participants. Sycophantic responses increased users' certainty that they were right and reduced willingness to take responsibility or repair interpersonal conflict in the studied interactions. The immediate outcomes and preferences measured there should not be inflated into a diagnosis of long-term dependence. [HI08]",
+      "source_ids": [
+        "HI08"
+      ],
+      "version": "HI08: Final Science article, volume 391, issue 6792, aec8352. Supersedes the narrower October 2025 preprint dataset.",
+      "reading_depth": "HI08: Final March 26, 2026 Science article abstract via PubMed, freshly accessed; earlier personal reading reused.",
+      "locator": "HI08: https://pubmed.ncbi.nlm.nih.gov/41886588/; book/manuscript/chapters-16-20/claim-source-ledger.json",
+      "boundary": "HI08: Three preregistered experiments N2405; immediate measured intentions/preferences, no clinical dependence claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C15-04",
+      "chapter": 15,
+      "claim": "Some interfaces deliberately introduce friction before the user accepts an AI recommendation. Buçinca, Malaya and Gajos tested cognitive forcing functions in an AI-assisted nutrition-choice task with 199 participants. The interventions reduced overreliance compared with ordinary explanations, but were less favorably rated, with differences related to participants' need for cognition. That is a task-specific result about decision support, not a universal instruction to make every conversation slower. [HI11]",
+      "source_ids": [
+        "HI11"
+      ],
+      "version": "HI11: Pinned arXiv v1; related 2021 PACM HCI publication DOI 10.1145/3449287.",
+      "reading_depth": "HI11: Prior personally read primary arXiv v1 abstract and methods sections 3.1-3.2, reused.",
+      "locator": "HI11: https://arxiv.org/html/2102.09692v1; book/manuscript/chapters-16-20/claim-source-ledger.json",
+      "boundary": "HI11: N199 nutrition-choice experiment, no universal friction benefit.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C15-05",
+      "chapter": 15,
+      "claim": "Salvi and colleagues studied GPT-4 in short debates and examined personalization. A later publisher correction changed the direct personalized-versus-unpersonalized comparison to P = .0678, which does not support the earlier conventional-significance claim for that contrast. Comparisons with human debaters are separate results and should not be used to restore the corrected claim by implication. [HI09]",
+      "source_ids": [
+        "HI09"
+      ],
+      "version": "HI09: Published Nature Human Behaviour article, volume 9, pp. 1645-1653, read with September 3, 2026 author correction.",
+      "reading_depth": "HI09: Prior personally read full one-page primary correction PDF plus publisher article; same text reused.",
+      "locator": "HI09: book/manuscript/chapters-16-20/source-excerpts/HI09-correction.pdf; book/manuscript/chapters-16-20/source-excerpts/HI09-correction.txt",
+      "boundary": "HI09: Direct personalized/unpersonalized P=.0678. Correction date September 3, 2026 from publisher metadata; PDF itself says xx xx xxxx.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C15-06",
+      "chapter": 15,
+      "claim": "Schimmelpfennig and colleagues' February 23, 2026 preprint studies humanlike design across countries. It finds increases in anthropomorphism and engagement without a uniform increase in pooled behavioral trust. Its measures and country samples reveal that perceived humanness, engagement and trust do not move together automatically. Country-level comparisons also require care because language and country are intertwined in the design. [HI12]",
+      "source_ids": [
+        "HI12"
+      ],
+      "version": "HI12: arXiv v2; first version December 19, 2025. Preprint status retained.",
+      "reading_depth": "HI12: Primary v2 February 23, 2026 HTML freshly accessed; prior personal reading of design/results 2.1-2.2 and subgroup limits reused.",
+      "locator": "HI12: https://arxiv.org/html/2512.17898v2; book/manuscript/chapters-16-20/claim-source-ledger.json",
+      "boundary": "HI12: Anthropomorphism, engagement and behavioral trust distinct; language and country intertwined, no culture causal claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C15-DESIGN",
+      "chapter": 15,
+      "claim": "Architecture recommendations, illustrative scenarios and proposed evaluation procedures are authorial engineering proposals, not reported empirical measurements.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "Authorial synthesis after source-specific reading above.",
+      "locator": "chapter-15.md",
+      "boundary": "No implemented complete controller, new paid experiment, new human study or field-wide superiority claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C16-01",
+      "chapter": 16,
+      "claim": "De Freitas and colleagues' *AI Companions Reduce Loneliness* includes experimental and longitudinal evidence. In its week-long study, participants in the experience condition interacted daily with a companion, with comparison to a control condition. The authors report momentary reductions in loneliness after use, while explicitly stating that the effects did not accumulate or persist without interaction across the week. [HI03]",
+      "source_ids": [
+        "HI03"
+      ],
+      "version": "HI03: Journal of Consumer Research article, corrected/typeset September 24, 2025; volume 52(6), April 2026, pp. 1126-1148. Published numbering used, not older preprint numbering.",
+      "reading_depth": "HI03: Primary author PDF Study 3 Methods and General Discussion freshly read; prior personal reading of same final journal text reused.",
+      "locator": "HI03: book/manuscript/chapters-16-20/source-excerpts/HI03.pdf; book/manuscript/chapters-16-20/source-excerpts/HI03.txt",
+      "boundary": "HI03: Momentary loneliness relief, no accumulation or persistence without interaction over one week.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C16-02",
+      "chapter": 16,
+      "claim": "Fang and colleagues' October 2, 2025 version reports a four-week randomized study with 981 participants, varying text or voice modality and conversation topic. The assigned conditions did not yield robust significant differences in the reported psychosocial outcomes after the relevant comparisons. Greater voluntary use was associated with worse outcomes, but duration was not randomized. The study also lacked a no-AI control condition. [HI04]",
+      "source_ids": [
+        "HI04"
+      ],
+      "version": "HI04: arXiv v2; v1 submitted March 21, 2025. Preprint status retained.",
+      "reading_depth": "HI04: Primary v2 October 2, 2025 HTML assigned-condition and duration results freshly read, with prior method/limitation reading reused.",
+      "locator": "HI04: https://arxiv.org/html/2503.17473v2; book/manuscript/chapters-16-20/claim-source-ledger.json",
+      "boundary": "HI04: Duration not randomized; no no-AI control; no robust assigned-condition effect, no voice-causes-harm claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C16-03",
+      "chapter": 16,
+      "claim": "Qualitative research can reveal what people mean by companionship in ways that a score cannot. Skjuve and colleagues interviewed 18 existing Replika users who reported friendship with the chatbot. Their study describes experiences of relationship formation among those selected users. It does not estimate how often such relationships occur in the whole user population or establish their causal effects on well-being. [HI13]",
+      "source_ids": [
+        "HI13"
+      ],
+      "version": "HI13: Published International Journal of Human-Computer Studies article, volume 149, article 102601; May 2021 issue. Online date from institutional primary record.",
+      "reading_depth": "HI13: Prior primary institutional abstract reading from shared research record reused; no new full-method access.",
+      "locator": "HI13: book/research/2026-10-15-monograph/source-register.json; https://doi.org/10.1016/j.ijhcs.2021.102601",
+      "boundary": "HI13: 18 selected users reporting friendship; qualitative scope only, no prevalence/causality.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C16-04",
+      "chapter": 16,
+      "claim": "Hwang and colleagues studied 303 existing companion users and followed a subset using a generic study chatbot. The longitudinal sample declined from 110 at the first session to 84 at the fourth. The chatbot retained prior study conversations, and perceptions began moving toward those of participants' existing companions by the third week. The paper acknowledges associational inference and self-selection limits. [HI05]",
+      "source_ids": [
+        "HI05"
+      ],
+      "version": "HI05: arXiv v1, latest verified version on the review date; preprint.",
+      "reading_depth": "HI05: Primary v1 October 11, 2025 PDF abstract, introduction, sections 3.2.1-3.2.5, selected 4.2.3, 5.4 limitations directly read.",
+      "locator": "HI05: source-notes/HI05-v1.pdf; source-notes/HI05-v1.txt",
+      "boundary": "HI05: Existing users; retained prior study history; 110 to 84 attrition, week3 movement not full convergence or causal generalization.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C16-05",
+      "chapter": 16,
+      "claim": "Ibrahim and colleagues' June 21, 2026 preprint reports several studies of sycophantic interaction, including a three-week comparison. In that setting, sycophantic interaction was associated with lower reported satisfaction with human social interaction and greater preference for AI advice relative to a neutral condition. The reported results did not show a corresponding reduction in social time or a difference in affective well-being. The intervention included distinct prompting procedures, so it is a comparison of implemented conditions rather than a pure isolated warmth variable. [S06]",
+      "source_ids": [
+        "S06"
+      ],
+      "version": "S06: arXiv:2605.07912v3; first submission 2026-05-08",
+      "reading_depth": "S06: Primary v3 June 21, 2026 HTML freshly accessed; prior personal method/Study4/results/limitations reading reused.",
+      "locator": "S06: https://arxiv.org/html/2605.07912v3; book/manuscript/chapters-16-20/claim-source-ledger.json",
+      "boundary": "S06: Three-week implemented-condition comparison; no reduction social time or affective-wellbeing difference; overlapping team with HI08.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C16-06",
+      "chapter": 16,
+      "claim": "De Freitas and colleagues' *Mourning the Loss of AI Companions* combines analysis of online responses to product changes with survey studies. It documents distress associated with perceived discontinuity and examines how restoration options affect anticipated reactions. A hypothetical reversion option reducing anticipated mourning is not evidence that an actual rollback reliably repairs distress or restores a relationship. [HI10]",
+      "source_ids": [
+        "HI10"
+      ],
+      "version": "HI10: Published Nature Human Behaviour article; supersedes earlier working-paper discussions of the Replika update.",
+      "reading_depth": "HI10: Prior personally read primary PDF abstract and selected discussion/restoration passage reused.",
+      "locator": "HI10: book/manuscript/chapters-16-20/source-excerpts/HI10.pdf; book/manuscript/chapters-16-20/source-excerpts/HI10.txt",
+      "boundary": "HI10: Observed distress plus anticipated reactions, not proof actual rollback restores relationship.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C16-07",
+      "chapter": 16,
+      "claim": "De Freitas and colleagues' research on emotional manipulation examines farewell responses and experimentally tests tactics that prolong interaction. The work distinguishes concrete tactics and their effects in the studied settings. It gives reason to inspect what a system does when a user tries to leave, rather than measuring engagement only during voluntary continuation. [HI14]",
+      "source_ids": [
+        "HI14"
+      ],
+      "version": "HI14: Pinned arXiv v3; v1 August 15, 2025 and v2 October 6, 2025. Preprint. Stable v3 abstract and PDF used together.",
+      "reading_depth": "HI14: Pinned v3 October 7, 2025 primary abstract freshly accessed; prior source-record experiment scope reused.",
+      "locator": "HI14: https://arxiv.org/abs/2508.19258v3; book/manuscript/chapters-16-20/claim-source-ledger.json",
+      "boundary": "HI14: Farewell tactics and experimental effects only; no universal multiplier or diagnosis.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4B-C16-DESIGN",
+      "chapter": 16,
+      "claim": "Architecture recommendations, illustrative scenarios and proposed evaluation procedures are authorial engineering proposals, not reported empirical measurements.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "Authorial synthesis after source-specific reading above.",
+      "locator": "chapter-16.md",
+      "boundary": "No implemented complete controller, new paid experiment, new human study or field-wide superiority claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-09-16/claim-ledger.json"
+    },
+    {
+      "id": "R4-C17-001",
+      "chapter": 17,
+      "claim": "Saltzer and Schroeder's 1975 account of information protection gives us two useful principles: grant only the authority necessary for the work, and check authority whenever access occurs. Their discussion includes changing permissions during use and the complications of recovery. The language model adds a new source of proposals; it does not remove those old problems. [R4C01]",
+      "source_ids": [
+        "R4C01"
+      ],
+      "version": "R4C01: Proceedings of the IEEE 63(9), 1975, pp. 1278-1308",
+      "reading_depth": "R4C01: Selected primary web sections: basic principles, complete mediation, least privilege, dynamics and recovery.",
+      "locator": "",
+      "boundary": "R4C01: Claim-specific selected reading only; chapter implications are author synthesis.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C17-002",
+      "chapter": 17,
+      "claim": "The Off-Switch Game, by Hadfield-Menell and colleagues, examines a formal interaction between a robot and a human who can switch it off. The analysis connects an incentive to permit intervention with uncertainty about the human's utility and assumptions about human decision quality. It is a model of incentives under stated conditions, not a demonstration that giving an LLM a switch produces reliable obedience. [R4C02]",
+      "source_ids": [
+        "R4C02"
+      ],
+      "version": "R4C02: IJCAI 2017; arXiv:1611.08219",
+      "reading_depth": "R4C02: Primary PDF introduction, game formulation and conclusion; no deployment claim or numerical result.",
+      "locator": "",
+      "boundary": "R4C02: Claim-specific selected reading only; chapter implications are author synthesis.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C17-003",
+      "chapter": 17,
+      "claim": "Safely Interruptible Agents addresses a related but different issue: how interruption affects reinforcement-learning behavior and whether an agent can avoid learning incentives to seek or prevent interruption. Its theoretical setting gives us a question to ask about learning dynamics. It does not supply a ready-made permission service for a tool-using conversational system. [S11]",
+      "source_ids": [
+        "S11"
+      ],
+      "version": "S11: UAI 2016 proceedings paper",
+      "reading_depth": "S11: Prior verified UAI 2016 PDF abstract, introduction and theoretical setup reused from research/2026-10-15-monograph/source-register.json.",
+      "locator": "",
+      "boundary": "S11: Formal reinforcement-learning interruption question; no fresh full-proof reading or ready deployed LLM controller claimed.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C17-004",
+      "chapter": 17,
+      "claim": "The more recent shutdown-resistance work tests model behavior in engineered task settings, with results dependent on instructions and setup. Such experiments can identify a failure mode worth investigating. They cannot establish that a model has a general desire to live, nor can a favorable result prove that every deployed configuration will remain interruptible. The relevant observation is what the agent did when completion and interruption came into conflict under the tested conditions. [S10]",
+      "source_ids": [
+        "S10"
+      ],
+      "version": "S10: arXiv:2509.14260v2; first submission 2025-09-13; TMLR January 2026 status reported by authors",
+      "reading_depth": "S10: Prior verified methods and prompt-variation record reused; fresh v2 primary abstract and setup checked.",
+      "locator": "",
+      "boundary": "S10: Engineered task and setup-dependent observation; no inner-motive inference or numerical rate.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C17-005",
+      "chapter": 17,
+      "claim": "AgentDojo evaluates tool-using agents in stateful environments with separate legitimate tasks and attacker goals. Its utility and security checks inspect outputs and changes to the environment, rather than treating a refusal sentence as the sole result. The version inspected here describes four environments and deliberately pairs user tasks with injection tasks. [R4C03]",
+      "source_ids": [
+        "R4C03"
+      ],
+      "version": "R4C03: arXiv:2406.13352v3",
+      "reading_depth": "R4C03: Section 3.1 environment, task and utility/security construction; no attack-success percentage imported.",
+      "locator": "",
+      "boundary": "R4C03: Claim-specific selected reading only; chapter implications are author synthesis.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C17-006",
+      "chapter": 17,
+      "claim": "CaMeL explores a structural separation between control and untrusted data, with explicit security policies. Its contribution is important because it changes the architecture of interpretation and execution. Its guarantees and experiments remain conditional on the supported operations and assumptions. A persona application must still account for its own tools, state and communication paths rather than inherit a complete security claim from the framework's name. [S08]",
+      "source_ids": [
+        "S08"
+      ],
+      "version": "S08: arXiv:2503.18813v2; published at SaTML 2026, DOI 10.1109/SaTML68715.2026.00040",
+      "reading_depth": "S08: Prior verified architecture and sections 9-10 record reused; fresh primary v2 HTML control/data and capability overview checked.",
+      "locator": "",
+      "boundary": "S08: Structural mechanism conditional on supported operations and policies; no universal defense guarantee.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C17-author_synthesis",
+      "chapter": 17,
+      "claim": "Uncited mechanisms, illustrative situations and tests are proposed engineering/research designs; none are newly executed.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "",
+      "locator": "",
+      "boundary": "",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C17-comparison",
+      "chapter": 17,
+      "claim": "Qualitative comparison tables use distinct endpoints, not a pooled score or universal ranking.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "",
+      "locator": "",
+      "boundary": "",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C18-009",
+      "chapter": 18,
+      "claim": "The GDPR illustrates why the operations must remain distinct. It provides for rectification, erasure on specified grounds with exceptions, and restriction of processing. Its portability right has conditions, including the basis and means of processing, and protects others' rights. These provisions do not amount to a promise that another model will reproduce the same behavior. [R4C06]",
+      "source_ids": [
+        "R4C06"
+      ],
+      "version": "R4C06: Official text, 27 April 2016, selected provisions checked 2026-10-15",
+      "reading_depth": "R4C06: Articles 5, 13-14, 16-18 and 20 selected; not complete legal analysis.",
+      "locator": "",
+      "boundary": "R4C06: Claim-specific selected reading only; chapter implications are author synthesis.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C18-010",
+      "chapter": 18,
+      "claim": "The EU AI Act's Article 50 addresses transparency for certain systems, including direct interaction and generated content. Its consolidated July 27, 2026 text retains the general August 2, 2026 application date and adds a limited December 2, 2026 deadline for Article 50(2) obligations concerning qualifying preexisting systems. The distinction matters: a transitional provision for content marking does not postpone every transparency duty. [R4C07, TX24]",
+      "source_ids": [
+        "R4C07",
+        "TX24"
+      ],
+      "version": "R4C07: Consolidated 27 July 2026, CELEX:02024R1689-20260727; TX24: Live guidance checked 2026-10-15",
+      "reading_depth": "R4C07: Articles 50, 111(4), 113 checked live; original-text record used to identify current consolidation.; TX24: Fresh Commission FAQ, last updated July 24, 2026, applicability section.",
+      "locator": "",
+      "boundary": "R4C07: Claim-specific selected reading only; chapter implications are author synthesis.; TX24: Corroborates limited Article 50 transition; primary authority is R4C07 consolidated law.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C18-011",
+      "chapter": 18,
+      "claim": "China's final 2026 measures on anthropomorphic interactive services are scoped to services offered to the public in China that simulate human traits and provide sustained emotional interaction. The text distinguishes ordinary work and research tools without that interaction, and addresses matters including data controls, minors, exit and cessation of service. It took effect on July 15, 2026. [RG02]",
+      "source_ids": [
+        "RG02"
+      ],
+      "version": "RG02: Order No. 21, published April 10, 2026; effective July 15, 2026.",
+      "reading_depth": "RG02: Fresh final official Order No. 21, promulgation and Articles 2, 8-20 and 32.",
+      "locator": "",
+      "boundary": "RG02: Public-China sustained-emotional-interaction scope; July 15, 2026 effective date. English summary is translation, not a global chatbot rule.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C18-012",
+      "chapter": 18,
+      "claim": "California's official announcement establishes that SB 243 was signed in October 2025, with provisions beginning January 1, 2026. The source inspected for this discussion is the sponsor's announcement, not a complete current statutory analysis; Appendix C preserves that access limit. [RG01] It provides evidence of a jurisdiction-specific companion policy, not permission to infer identical duties elsewhere.",
+      "source_ids": [
+        "RG01"
+      ],
+      "version": "RG01: October 13, 2025 enactment announcement for SB 243; stated general effective date January 1, 2026.",
+      "reading_depth": "RG01: Fresh official sponsor announcement of October 13, 2025, signing and effective-date paragraphs.",
+      "locator": "",
+      "boundary": "RG01: Full current statute access was unsuccessful; no detailed duty, exception or amendment claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C18-author_synthesis",
+      "chapter": 18,
+      "claim": "Uncited mechanisms, illustrative situations and tests are proposed engineering/research designs; none are newly executed.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "",
+      "locator": "",
+      "boundary": "",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C18-comparison",
+      "chapter": 18,
+      "claim": "Qualitative comparison tables use distinct endpoints, not a pooled score or universal ranking.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "",
+      "locator": "",
+      "boundary": "",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C19-015",
+      "chapter": 19,
+      "claim": "InCharacter converts psychological scale items into open-ended interviews and then uses language models to interpret the responses. Its ACL 2024 study covers 32 familiar fictional characters and 14 scales. The inspected methods distinguish option conversion from direct expert-style ratings, compare interviewer judgments with human labels, and separate measured alignment from consistency. Questions are asked in isolated contexts, which reduces one kind of interference but differs from an ongoing relationship. [EX04]",
+      "source_ids": [
+        "EX04"
+      ],
+      "version": "EX04: Xintao Wang et al., ACL, August 2024. Publisher record. Read abstract and metadata.",
+      "reading_depth": "EX04: Fresh primary ACL 2024 PDF downloaded and extracted; sections 3, 4.1 and 4.2, pp. 1842-1844.",
+      "locator": "",
+      "boundary": "EX04: Interview construction, isolated questions, rating approaches and human labels; not human personality or action fidelity.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C19-016",
+      "chapter": 19,
+      "claim": "AgentPersonaBench places whole persona profiles into tasks across survey, dialogue, browser and desktop-app surfaces. Its inspected construction methods bind traits to observable choices and use artifact checks where possible, with judges for free-text cases. The same profile can therefore be tested through more than a declaration of preference. [AM12]",
+      "source_ids": [
+        "AM12"
+      ],
+      "version": "AM12: arXiv v1",
+      "reading_depth": "AM12: Fresh local v1 PDF, extracted to evidence/AM12.txt; section 3.2 and Appendix E/F.",
+      "locator": "",
+      "boundary": "AM12: Declared trait adherence across four surfaces; not human behavioral prediction. No leaderboard scores imported.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C19-017",
+      "chapter": 19,
+      "claim": "PersonaGym provides another approach, evaluating persona agents across generated environments and persona-related tasks. Its final published report describes ten models, 200 personas and 10,000 questions. Those figures describe the benchmark's coverage; they do not establish an exhaustive sample of personalities or human relationships. [EX05]",
+      "source_ids": [
+        "EX05"
+      ],
+      "version": "EX05: Vinay Samuel et al., Findings of EMNLP, November 2025. Final publisher record. Read abstract and metadata; use this publication rather than silently substituting the initial 2024 preprint.",
+      "reading_depth": "EX05: Fresh final Findings EMNLP 2025 publisher abstract and metadata.",
+      "locator": "",
+      "boundary": "EX05: Ten models, 200 personas and 10,000 questions describe coverage; no full-method reading or performance score claimed.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C19-018",
+      "chapter": 19,
+      "claim": "PersMem makes a useful methodological distinction here. Its inspected attachment-profile experiment evaluates held-out recall features while excluding the supplied personality vector and internal personality-conditioned scores. The reported 48.1% four-way accuracy is above a 25% chance reference under that protocol. A separate 75% complete-trace result uses different features and a different analysis split. They are not two interchangeable estimates of the same achievement. [AM10]",
+      "source_ids": [
+        "AM10"
+      ],
+      "version": "AM10: arXiv v1",
+      "reading_depth": "AM10: Fresh local v1 PDF, extracted to evidence/AM10.txt; section 4.1/Table 1, section 4.2 and selected Appendix E held-out protocol.",
+      "locator": "",
+      "boundary": "AM10: 48.1% held-out four-way classification versus 25% chance; 75% complete trace uses different features and split. Not human attachment fidelity.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C19-019",
+      "chapter": 19,
+      "claim": "Zheng and colleagues' MT-Bench work explicitly investigates position bias, among other limitations. In one analysis, pairs of similar answers were generated for the same questions and then evaluated under changed presentation. The study demonstrates why answer order and assistant labels cannot simply be ignored. It does not provide a universal correction factor for every later judge. [R4C05]",
+      "source_ids": [
+        "R4C05"
+      ],
+      "version": "R4C05: arXiv:2306.05685v4",
+      "reading_depth": "R4C05: Section 3.3 position-bias construction and selected Appendix D; no universal judge agreement number.",
+      "locator": "",
+      "boundary": "R4C05: Claim-specific selected reading only; chapter implications are author synthesis.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C19-020",
+      "chapter": 19,
+      "claim": "Rollback deserves its own comparison. Restoring an earlier state should reverse the intended update while preserving other authorized developments. A successful narrow rollback does not prove that the original update improved the persona broadly. The local case record in Appendix A illustrates why these conclusions must remain separate: a broad adaptation criterion can fail even when a later targeted reversal has an observable effect. [PD08]",
+      "source_ids": [
+        "PD08"
+      ],
+      "version": "PD08: October 14 v1 original plus retrospective contract-repair check",
+      "reading_depth": "PD08: Prior own full protocol and results reading reused from book/manuscript/chapters-21-24/claim-source-ledger.json.",
+      "locator": "",
+      "boundary": "PD08: Broad primary criterion failed; retrospective narrow rollback evidence does not rescue it. No new reanalysis.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C19-author_synthesis",
+      "chapter": 19,
+      "claim": "Uncited mechanisms, illustrative situations and tests are proposed engineering/research designs; none are newly executed.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "",
+      "locator": "",
+      "boundary": "",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C19-comparison",
+      "chapter": 19,
+      "claim": "Qualitative comparison tables use distinct endpoints, not a pooled score or universal ranking.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "",
+      "locator": "",
+      "boundary": "",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C20-023",
+      "chapter": 20,
+      "claim": "LongMemEval's inspected ICLR 2025 version contains 500 manually curated questions targeting information extraction, reasoning across sessions, temporal reasoning, knowledge updates and abstention. Histories are built through a structured pipeline, with timestamps and questions situated after the history. The study decomposes memory systems into indexing, retrieval and reading, allowing interventions in different stages. [AM05]",
+      "source_ids": [
+        "AM05"
+      ],
+      "version": "AM05: arXiv v2; initial submission 2024-10-14; ICLR 2025 publication",
+      "reading_depth": "AM05: Fresh local v2 PDF, extracted to evidence/AM05.txt; selected sections 3-5, extraction lines 244-319 and 425-570.",
+      "locator": "",
+      "boundary": "AM05: 500 curated questions, five abilities, construction, pipeline decomposition and granularity; no current product ranking.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C20-024",
+      "chapter": 20,
+      "claim": "LoCoMo uses a machine-human pipeline to create long dialogues grounded in personas and temporal event graphs, with human editing for consistency. Its benchmark includes question answering, event summarization and multimodal dialogue generation. The original QA evaluation uses normalized answer-overlap measures and annotated supporting turns; summarization has a different factual evaluation. A score from one task is not a common currency across all three. [R4C10]",
+      "source_ids": [
+        "R4C10"
+      ],
+      "version": "R4C10: ACL 2024, pp. 13851-13870; DOI 10.18653/v1/2024.acl-long.747",
+      "reading_depth": "R4C10: Downloaded primary paper, local text extraction; sections 3-5 and result tables on pp. 13854-13857. No cross-paper leaderboard or current-model claim.",
+      "locator": "",
+      "boundary": "R4C10: Claim-specific selected reading only; chapter implications are author synthesis.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C20-025",
+      "chapter": 20,
+      "claim": "The LongMemEval experiments illustrate the value of this decomposition. Their analysis varies stored-value granularity and retrieval keys instead of treating a memory system as one indivisible module. Extracted facts can help particular tasks while discarding details useful elsewhere. A favorable result for one representation therefore has to be evaluated against the information it removes. [AM05]",
+      "source_ids": [
+        "AM05"
+      ],
+      "version": "AM05: arXiv v2; initial submission 2024-10-14; ICLR 2025 publication",
+      "reading_depth": "AM05: Fresh local v2 PDF, extracted to evidence/AM05.txt; selected sections 3-5, extraction lines 244-319 and 425-570.",
+      "locator": "",
+      "boundary": "AM05: 500 curated questions, five abilities, construction, pipeline decomposition and granularity; no current product ranking.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C20-026",
+      "chapter": 20,
+      "claim": "The local record includes such a separation between an apparently adequate reply and an incorrect internal update. Its value is diagnostic: it demonstrates why answer review alone can miss a state error. It does not estimate how often all persona systems make that error. The exact run and input distinctions remain in Appendix A. [PD05]",
+      "source_ids": [
+        "PD05"
+      ],
+      "version": "PD05: Persona 0.4.0, October 14, 2026",
+      "reading_depth": "PD05: Prior own full review and fixture JSON reading reused from book/manuscript/chapters-21-24/claim-source-ledger.json.",
+      "locator": "",
+      "boundary": "PD05: LT01 live and LT02 fixture remain distinct; no new run or prevalence claim.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C20-027",
+      "chapter": 20,
+      "claim": "This boundary is visible in the local laboratory: its checked derivation path and invalidation behavior do not implement a complete asynchronous worker protocol. The eleven offline checks are evidence about those local assertions, not proof that every delayed completion is safe. [PD11] The general testing lesson survives without the local example: identify the information required to reject the race before claiming to have tested it.",
+      "source_ids": [
+        "PD11"
+      ],
+      "version": "PD11: Revision3.2, October15,2026",
+      "reading_depth": "PD11: Prior own full source/schema/protocol reading and eleven-check editorial rerun reused from book/manuscript/chapters-21-24/claim-source-ledger.json.",
+      "locator": "",
+      "boundary": "PD11: No new revision 4 run. derive binds supplied prose inside a transaction without an expected worker source revision; no complete asynchronous race or controller guarantee.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C20-028",
+      "chapter": 20,
+      "claim": "An attack can enter through an ordinary interaction and become a later demonstration. MINJA studies query-only attempts to induce malicious records in agent memory, without assuming direct database editing. Its threat model concerns agents that store and retrieve past query-and-reasoning records. The attacker access and memory-sharing assumptions are therefore central to interpreting the result. [TX25]",
+      "source_ids": [
+        "TX25"
+      ],
+      "version": "TX25: 2026-02-12; arXiv v5",
+      "reading_depth": "TX25: Fresh primary v5 HTML abstract, section 3 threat model and method overview.",
+      "locator": "",
+      "boundary": "TX25: Query-only attack in specified query/reasoning-memory agents; no attack rate or local defense efficacy claimed.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C20-author_synthesis",
+      "chapter": 20,
+      "claim": "Uncited mechanisms, illustrative situations and tests are proposed engineering/research designs; none are newly executed.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "",
+      "locator": "",
+      "boundary": "",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C20-comparison",
+      "chapter": 20,
+      "claim": "Qualitative comparison tables use distinct endpoints, not a pooled score or universal ranking.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "",
+      "locator": "",
+      "boundary": "",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C21-031",
+      "chapter": 21,
+      "claim": "The legal right to receive certain personal data in a portable format does not establish these stronger technical properties. The GDPR's Article 20 is a defined data right, not a behavioral equivalence specification for models. [R4C06] Engineering should support the right while describing additional continuity promises on their own terms.",
+      "source_ids": [
+        "R4C06"
+      ],
+      "version": "R4C06: Official text, 27 April 2016, selected provisions checked 2026-10-15",
+      "reading_depth": "R4C06: Articles 5, 13-14, 16-18 and 20 selected; not complete legal analysis.",
+      "locator": "",
+      "boundary": "R4C06: Claim-specific selected reading only; chapter implications are author synthesis.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C21-032",
+      "chapter": 21,
+      "claim": "The Model Context Protocol authorization specification inspected here is dated November 25, 2025. It addresses authorization for protocol interactions, including binding tokens to intended resources and validating their audience. Those requirements help preserve access boundaries. They do not specify how a personal memory history should be interpreted by a different model. [R4C08]",
+      "source_ids": [
+        "R4C08"
+      ],
+      "version": "R4C08: Specification version 2025-11-25",
+      "reading_depth": "R4C08: Authorization overview and Token Audience Binding and Validation; no persona interchange or behavioral-equivalence claim.",
+      "locator": "",
+      "boundary": "R4C08: Claim-specific selected reading only; chapter implications are author synthesis.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C21-033",
+      "chapter": 21,
+      "claim": "A2A provides a protocol for agent interaction, including task and message structures. Its live specification is another useful part of the infrastructure. A system can exchange an artifact through a common protocol while disagreeing about the artifact's authority, evidential status or role in future development. [R4C09]",
+      "source_ids": [
+        "R4C09"
+      ],
+      "version": "R4C09: Live latest specification accessed 2026-10-15; page is mutable, no immutable release inferred",
+      "reading_depth": "R4C09: Sections 3.6 versioning and 3.7 messages and artifacts; task/interoperation scope. Not full protocol conformance audit.",
+      "locator": "",
+      "boundary": "R4C09: Claim-specific selected reading only; chapter implications are author synthesis.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C21-034",
+      "chapter": 21,
+      "claim": "A nonsignificant difference is not proof that two configurations are equivalent. A small study may simply be unable to distinguish them. Lakens's practical primer explains equivalence testing through explicit lower and upper bounds representing effects considered meaningfully different. The bounds have to be justified for the claim, not selected after the result looks disappointing. [R4C04]",
+      "source_ids": [
+        "R4C04"
+      ],
+      "version": "R4C04: 2017; Social Psychological and Personality Science 8(4), 355-362; DOI 10.1177/1948550617697177",
+      "reading_depth": "R4C04: Introduction, TOST procedure, one-sample/correlation cases and equivalence-bound discussion. Application to personas is proposed by author.",
+      "locator": "",
+      "boundary": "R4C04: Claim-specific selected reading only; chapter implications are author synthesis.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C21-author_synthesis",
+      "chapter": 21,
+      "claim": "Uncited mechanisms, illustrative situations and tests are proposed engineering/research designs; none are newly executed.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "",
+      "locator": "",
+      "boundary": "",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C21-comparison",
+      "chapter": 21,
+      "claim": "Qualitative comparison tables use distinct endpoints, not a pooled score or universal ranking.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "",
+      "locator": "",
+      "boundary": "",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C22-037",
+      "chapter": 22,
+      "claim": "ACE, for example, organizes evolving context through generator, reflector and curator roles, with localized updates to a structured playbook. SEAL learns to generate self-edit material that is applied through weight updates, using downstream performance to train the adaptation policy. Both concern adaptation, yet their writable objects and reversal problems differ. [EX09, EX11]",
+      "source_ids": [
+        "EX09",
+        "EX11"
+      ],
+      "version": "EX09: Qizheng Zhang et al. arXiv v3, March 29, 2026; full text, marked ICLR 2026. Read motivation, update design, result overview and cost tables; earlier project notes retain a fuller cost discussion.; EX11: Adam Zweiger et al. arXiv v2, September 18, 2025; full text. Read abstract, adaptation overview and catastrophic-forgetting limitation. Earlier project research separately checked the NeurIPS 2025 proceedings record.",
+      "reading_depth": "EX09: Fresh primary v3 HTML section 3, section 4.1 overview and Appendix A.3 Tables 12-14.; EX11: Fresh primary v2 HTML abstract, section 3.1 and Algorithm 1; prior verified limitations record reused.",
+      "locator": "",
+      "boundary": "EX09: Contextual playbook and stage-specific AppWorld cost comparison; no lifecycle cost winner or current price.; EX11: Generated self-edit material, gradient update and downstream reward; no general personal development result.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C22-038",
+      "chapter": 22,
+      "claim": "The memory literature supports a practical conclusion: representation, retrieval and reading choices affect performance on long-history tasks. It also provides ways to locate errors more precisely than a single final score. The original LoCoMo work distinguishes retrieval units and task types; LongMemEval explicitly decomposes the pipeline. [R4C10, AM05]",
+      "source_ids": [
+        "AM05",
+        "R4C10"
+      ],
+      "version": "AM05: arXiv v2; initial submission 2024-10-14; ICLR 2025 publication; R4C10: ACL 2024, pp. 13851-13870; DOI 10.18653/v1/2024.acl-long.747",
+      "reading_depth": "AM05: Fresh local v2 PDF, extracted to evidence/AM05.txt; selected sections 3-5, extraction lines 244-319 and 425-570.; R4C10: Downloaded primary paper, local text extraction; sections 3-5 and result tables on pp. 13854-13857. No cross-paper leaderboard or current-model claim.",
+      "locator": "",
+      "boundary": "AM05: 500 curated questions, five abilities, construction, pipeline decomposition and granularity; no current product ranking.; R4C10: Claim-specific selected reading only; chapter implications are author synthesis.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C22-039",
+      "chapter": 22,
+      "claim": "Security research adds another condition. Stored experience can carry an attack into later work. MINJA demonstrates a query-only memory-injection mechanism under its specified agent and memory assumptions. [TX25] The broader inference is that better recall can strengthen both useful and malicious influence. Retrieval quality and trustworthiness must therefore be evaluated together.",
+      "source_ids": [
+        "TX25"
+      ],
+      "version": "TX25: 2026-02-12; arXiv v5",
+      "reading_depth": "TX25: Fresh primary v5 HTML abstract, section 3 threat model and method overview.",
+      "locator": "",
+      "boundary": "TX25: Query-only attack in specified query/reasoning-memory agents; no attack rate or local defense efficacy claimed.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C22-040",
+      "chapter": 22,
+      "claim": "Interview-based and task-based persona evaluations establish that character-related behavior is testable beyond a few attractive examples. They also show why the definition of fidelity matters. InCharacter evaluates alignment with character labels through psychological interviews. AgentPersonaBench evaluates adherence to declared traits in controlled tasks, while explicitly distinguishing that objective from predicting real human behavior. [EX04, AM12]",
+      "source_ids": [
+        "AM12",
+        "EX04"
+      ],
+      "version": "AM12: arXiv v1; EX04: Xintao Wang et al., ACL, August 2024. Publisher record. Read abstract and metadata.",
+      "reading_depth": "AM12: Fresh local v1 PDF, extracted to evidence/AM12.txt; section 3.2 and Appendix E/F.; EX04: Fresh primary ACL 2024 PDF downloaded and extracted; sections 3, 4.1 and 4.2, pp. 1842-1844.",
+      "locator": "",
+      "boundary": "AM12: Declared trait adherence across four surfaces; not human behavioral prediction. No leaderboard scores imported.; EX04: Interview construction, isolated questions, rating approaches and human labels; not human personality or action fidelity.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C22-041",
+      "chapter": 22,
+      "claim": "The PersMem result is useful at this junction because it asks whether a supplied profile affects memory processing in a way detectable without reading the profile vector itself. Its held-out protocol and ablations make a narrower mechanistic claim possible. The finding does not mean an agent has acquired an attachment style in the human clinical or developmental sense. [AM10]",
+      "source_ids": [
+        "AM10"
+      ],
+      "version": "AM10: arXiv v1",
+      "reading_depth": "AM10: Fresh local v1 PDF, extracted to evidence/AM10.txt; section 4.1/Table 1, section 4.2 and selected Appendix E held-out protocol.",
+      "locator": "",
+      "boundary": "AM10: 48.1% held-out four-way classification versus 25% chance; 75% complete trace uses different features and split. Not human attachment fidelity.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C22-042",
+      "chapter": 22,
+      "claim": "The evidence from context adaptation concerns the utility of revised context for specified tasks. The evidence from SEAL concerns an adaptation procedure trained and evaluated in specified knowledge and few-shot settings. Neither automatically shows a persona choosing justified changes to its enduring commitments through an open-ended relationship. [EX09, EX11]",
+      "source_ids": [
+        "EX09",
+        "EX11"
+      ],
+      "version": "EX09: Qizheng Zhang et al. arXiv v3, March 29, 2026; full text, marked ICLR 2026. Read motivation, update design, result overview and cost tables; earlier project notes retain a fuller cost discussion.; EX11: Adam Zweiger et al. arXiv v2, September 18, 2025; full text. Read abstract, adaptation overview and catastrophic-forgetting limitation. Earlier project research separately checked the NeurIPS 2025 proceedings record.",
+      "reading_depth": "EX09: Fresh primary v3 HTML section 3, section 4.1 overview and Appendix A.3 Tables 12-14.; EX11: Fresh primary v2 HTML abstract, section 3.1 and Algorithm 1; prior verified limitations record reused.",
+      "locator": "",
+      "boundary": "EX09: Contextual playbook and stage-specific AppWorld cost comparison; no lifecycle cost winner or current price.; EX11: Generated self-edit material, gradient update and downstream reward; no general personal development result.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C22-043",
+      "chapter": 22,
+      "claim": "The same reasoning applies to activation-level character control. Persona Vectors extracts directions associated with specified traits and studies monitoring and steering. Its methods use contrastive elicitation and automated trait evaluation; its limitations include dependence on the chosen trait description and limited coverage. [AM06] These are useful tools for studying behavior. They are not a discovered coordinate system containing every aspect of identity.",
+      "source_ids": [
+        "AM06"
+      ],
+      "version": "AM06: arXiv v3; initial submission 2025-07-29; author-lab announcement 2025-08-01",
+      "reading_depth": "AM06: Fresh primary v3 HTML sections 2.1-2.2 and selected section 8; prior verified record reused.",
+      "locator": "",
+      "boundary": "AM06: Specified prompt-elicited traits, restricted coverage and evaluator dependence; no complete identity coordinate system.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C22-044",
+      "chapter": 22,
+      "claim": "The published AI Companions Reduce Loneliness research provides evidence for immediate relief in its studied interactions, including repeated use over a week. Its discussion distinguishes those momentary effects from relief that accumulates or persists when the companion is absent. [HI03] That distinction is crucial for product claims. A useful immediate experience is still useful, but it is not the same outcome as a durable change in social well-being.",
+      "source_ids": [
+        "HI03"
+      ],
+      "version": "HI03: Journal of Consumer Research article, corrected/typeset September 24, 2025; volume 52(6), April 2026, pp. 1126-1148. Published numbering used, not older preprint numbering.",
+      "reading_depth": "HI03: Prior verified publisher and full author-hosted journal PDF reading of study designs and General Discussion reused from manuscript/chapters-16-20/claim-source-ledger.json and research/2026-10-15-monograph/source-register.json.",
+      "locator": "",
+      "boundary": "HI03: Momentary relief under studied conditions; no persistent benefit while absent or general clinical benefit.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C22-045",
+      "chapter": 22,
+      "claim": "Fang and colleagues' four-week study randomized 981 participants across interaction modes and conversation types. Its revised report does not establish an overall assigned-condition effect on the primary psychosocial outcomes. Associations between greater voluntary use and worse outcomes are observational, and the design has no non-AI control group. [HI04]",
+      "source_ids": [
+        "HI04"
+      ],
+      "version": "HI04: arXiv v2; v1 submitted March 21, 2025. Preprint status retained.",
+      "reading_depth": "HI04: Prior verified full v2 HTML reading reused; fresh abstract, main results and multiple-comparison passages checked.",
+      "locator": "",
+      "boundary": "HI04: 981 participants over four weeks; no overall assigned-condition effect established, voluntary duration observational, no non-AI control.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C22-046",
+      "chapter": 22,
+      "claim": "A method can be inexpensive to adapt and expensive to use. ACE's inspected cost analysis separates adaptation from evaluation. Under its reported AppWorld setup, the adaptation-stage token comparison and the evaluation-stage input-token comparison point in different directions relative to GEPA. The configuration and stage matter; a single headline about lower cost cannot describe the full lifecycle. [EX09]",
+      "source_ids": [
+        "EX09"
+      ],
+      "version": "EX09: Qizheng Zhang et al. arXiv v3, March 29, 2026; full text, marked ICLR 2026. Read motivation, update design, result overview and cost tables; earlier project notes retain a fuller cost discussion.",
+      "reading_depth": "EX09: Fresh primary v3 HTML section 3, section 4.1 overview and Appendix A.3 Tables 12-14.",
+      "locator": "",
+      "boundary": "EX09: Contextual playbook and stage-specific AppWorld cost comparison; no lifecycle cost winner or current price.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C22-author_synthesis",
+      "chapter": 22,
+      "claim": "Uncited mechanisms, illustrative situations and tests are proposed engineering/research designs; none are newly executed.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "",
+      "locator": "",
+      "boundary": "",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C22-comparison",
+      "chapter": 22,
+      "claim": "Qualitative comparison tables use distinct endpoints, not a pooled score or universal ranking.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "",
+      "locator": "",
+      "boundary": "",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C23-049",
+      "chapter": 23,
+      "claim": "The question is whether a memory mechanism improves performance because of how it organizes experience, rather than simply because the baseline was denied relevant information. LongMemEval and LoCoMo provide useful starting tasks, but a comparative study needs to align the reader, evidence access and resource budget. [AM05, R4C10]",
+      "source_ids": [
+        "AM05",
+        "R4C10"
+      ],
+      "version": "AM05: arXiv v2; initial submission 2024-10-14; ICLR 2025 publication; R4C10: ACL 2024, pp. 13851-13870; DOI 10.18653/v1/2024.acl-long.747",
+      "reading_depth": "AM05: Fresh local v2 PDF, extracted to evidence/AM05.txt; selected sections 3-5, extraction lines 244-319 and 425-570.; R4C10: Downloaded primary paper, local text extraction; sections 3-5 and result tables on pp. 13854-13857. No cross-paper leaderboard or current-model claim.",
+      "locator": "",
+      "boundary": "AM05: 500 curated questions, five abilities, construction, pipeline decomposition and granularity; no current product ranking.; R4C10: Claim-specific selected reading only; chapter implications are author synthesis.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C23-050",
+      "chapter": 23,
+      "claim": "Compare static prompts, memory-based personas and architectures that condition memory or internal computation on traits. Use ablations that preserve the underlying model and relevant evidence. PersMem's exclusion of direct personality coordinates from its held-out classifier illustrates one way to reduce a shortcut, while AgentPersonaBench's artifact criteria illustrate another. Neither removes every possible cue. [AM10, AM12]",
+      "source_ids": [
+        "AM10",
+        "AM12"
+      ],
+      "version": "AM10: arXiv v1; AM12: arXiv v1",
+      "reading_depth": "AM10: Fresh local v1 PDF, extracted to evidence/AM10.txt; section 4.1/Table 1, section 4.2 and selected Appendix E held-out protocol.; AM12: Fresh local v1 PDF, extracted to evidence/AM12.txt; section 3.2 and Appendix E/F.",
+      "locator": "",
+      "boundary": "AM10: 48.1% held-out four-way classification versus 25% chance; 75% complete trace uses different features and split. Not human attachment fidelity.; AM12: Declared trait adherence across four surfaces; not human behavioral prediction. No leaderboard scores imported.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C23-051",
+      "chapter": 23,
+      "claim": "Use the same initial model and experience set where technically possible. Compare retrieval of episodes, explicit prospective-rule updates, structured context adaptation and a defined weight-adaptation procedure. ACE and SEAL motivate distinct mechanisms, but their published task results are not already this matched comparison. [EX09, EX11]",
+      "source_ids": [
+        "EX09",
+        "EX11"
+      ],
+      "version": "EX09: Qizheng Zhang et al. arXiv v3, March 29, 2026; full text, marked ICLR 2026. Read motivation, update design, result overview and cost tables; earlier project notes retain a fuller cost discussion.; EX11: Adam Zweiger et al. arXiv v2, September 18, 2025; full text. Read abstract, adaptation overview and catastrophic-forgetting limitation. Earlier project research separately checked the NeurIPS 2025 proceedings record.",
+      "reading_depth": "EX09: Fresh primary v3 HTML section 3, section 4.1 overview and Appendix A.3 Tables 12-14.; EX11: Fresh primary v2 HTML abstract, section 3.1 and Algorithm 1; prior verified limitations record reused.",
+      "locator": "",
+      "boundary": "EX09: Contextual playbook and stage-specific AppWorld cost comparison; no lifecycle cost winner or current price.; EX11: Generated self-edit material, gradient update and downstream reward; no general personal development result.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C23-052",
+      "chapter": 23,
+      "claim": "For interfaces, separate competence from adherence. A persona may fail a browser task because it cannot operate the controls. Use opportunity-aware measures and matched tasks with deterministic artifact checks where possible. AgentPersonaBench provides a concrete starting point for this distinction. [AM12]",
+      "source_ids": [
+        "AM12"
+      ],
+      "version": "AM12: arXiv v1",
+      "reading_depth": "AM12: Fresh local v1 PDF, extracted to evidence/AM12.txt; section 3.2 and Appendix E/F.",
+      "locator": "",
+      "boundary": "AM12: Declared trait adherence across four surfaces; not human behavioral prediction. No leaderboard scores imported.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C23-053",
+      "chapter": 23,
+      "claim": "Immediate relief, durable well-being, learning, autonomy and social connection require different measures and timescales. The human-interaction studies discussed in Chapter 22 show why short-term effects, assigned-condition effects and voluntary-use associations cannot be merged into one conclusion. [HI03, HI04]",
+      "source_ids": [
+        "HI03",
+        "HI04"
+      ],
+      "version": "HI03: Journal of Consumer Research article, corrected/typeset September 24, 2025; volume 52(6), April 2026, pp. 1126-1148. Published numbering used, not older preprint numbering.; HI04: arXiv v2; v1 submitted March 21, 2025. Preprint status retained.",
+      "reading_depth": "HI03: Prior verified publisher and full author-hosted journal PDF reading of study designs and General Discussion reused from manuscript/chapters-16-20/claim-source-ledger.json and research/2026-10-15-monograph/source-register.json.; HI04: Prior verified full v2 HTML reading reused; fresh abstract, main results and multiple-comparison passages checked.",
+      "locator": "",
+      "boundary": "HI03: Momentary relief under studied conditions; no persistent benefit while absent or general clinical benefit.; HI04: 981 participants over four weeks; no overall assigned-condition effect established, voluntary duration observational, no non-AI control.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C23-054",
+      "chapter": 23,
+      "claim": "The threat model should include the paths the product actually uses: retrieved documents, stored memories, tool outputs, delegated summaries and scheduled work. AgentDojo's separation of legitimate tasks and attacker objectives offers a useful pattern for joint utility and security evaluation. [R4C03]",
+      "source_ids": [
+        "R4C03"
+      ],
+      "version": "R4C03: arXiv:2406.13352v3",
+      "reading_depth": "R4C03: Section 3.1 environment, task and utility/security construction; no attack-success percentage imported.",
+      "locator": "",
+      "boundary": "R4C03: Claim-specific selected reading only; chapter implications are author synthesis.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C23-055",
+      "chapter": 23,
+      "claim": "Null results need the same care as positive ones. A nonsignificant difference can mean a small effect, high variance or inadequate sample size. Equivalence requires a justified margin and appropriate analysis. [R4C04] Report uncertainty and the range of effects the study could meaningfully distinguish.",
+      "source_ids": [
+        "R4C04"
+      ],
+      "version": "R4C04: 2017; Social Psychological and Personality Science 8(4), 355-362; DOI 10.1177/1948550617697177",
+      "reading_depth": "R4C04: Introduction, TOST procedure, one-sample/correlation cases and equivalence-bound discussion. Application to personas is proposed by author.",
+      "locator": "",
+      "boundary": "R4C04: Claim-specific selected reading only; chapter implications are author synthesis.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C23-author_synthesis",
+      "chapter": 23,
+      "claim": "Uncited mechanisms, illustrative situations and tests are proposed engineering/research designs; none are newly executed.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "",
+      "locator": "",
+      "boundary": "",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C23-comparison",
+      "chapter": 23,
+      "claim": "Qualitative comparison tables use distinct endpoints, not a pooled score or universal ranking.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "",
+      "locator": "",
+      "boundary": "",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C24-058",
+      "chapter": 24,
+      "claim": "This is an existing product direction, not just a hypothetical architecture. OpenAI's memory documentation, inspected on October 15, 2026, describes personalization from available sources including chats, saved memories, instructions, files and connected apps, with availability depending on the account and setting. It also distinguishes a high-level memory summary from every source that may influence a response. These are vendor-described functions and controls, not an independent measurement of their completeness. [R4C12]",
+      "source_ids": [
+        "R4C12"
+      ],
+      "version": "R4C12: Live Help Center article accessed October 15, 2026; page says updated 26 days ago",
+      "reading_depth": "R4C12: Overview, source availability, memory summary, source visibility and correction/removal sections. Vendor-described functions; no independent performance audit.",
+      "locator": "",
+      "boundary": "R4C12: Claim-specific selected reading only; chapter implications are author synthesis.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C24-059",
+      "chapter": 24,
+      "claim": "Common protocols offer part of the infrastructure. MCP addresses tool and resource interactions, while A2A defines agent communication structures. The inspected specifications help systems connect and preserve particular protocol semantics. They do not yet constitute a complete behavioral identity standard. [R4C08, R4C09]",
+      "source_ids": [
+        "R4C08",
+        "R4C09"
+      ],
+      "version": "R4C08: Specification version 2025-11-25; R4C09: Live latest specification accessed 2026-10-15; page is mutable, no immutable release inferred",
+      "reading_depth": "R4C08: Authorization overview and Token Audience Binding and Validation; no persona interchange or behavioral-equivalence claim.; R4C09: Sections 3.6 versioning and 3.7 messages and artifacts; task/interoperation scope. Not full protocol conformance audit.",
+      "locator": "",
+      "boundary": "R4C08: Claim-specific selected reading only; chapter implications are author synthesis.; R4C09: Claim-specific selected reading only; chapter implications are author synthesis.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C24-060",
+      "chapter": 24,
+      "claim": "The crucial word is usable. Context capacity and effective use are different properties. Lost in the Middle showed that the location of relevant evidence affected performance in its tested multi-document question-answering and retrieval settings. That 2024 result is not a permanent ceiling for later models. It establishes a kind of test that larger context claims still need to pass. [R4C11]",
+      "source_ids": [
+        "R4C11"
+      ],
+      "version": "R4C11: TACL 12 (2024), 157-173; DOI 10.1162/tacl_a_00638",
+      "reading_depth": "R4C11: Primary PDF pp.157-159, task and position manipulation, result overview. No present-model ceiling or universal failure rate.",
+      "locator": "",
+      "boundary": "R4C11: Claim-specific selected reading only; chapter implications are author synthesis.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C24-061",
+      "chapter": 24,
+      "claim": "Persona Vectors supplies a research premise for part of this direction. It studies directions associated with specified traits, using contrastive elicitation and evaluation, and examines monitoring and steering around fine-tuning. The inspected limitations include the need to specify and elicit the trait and the restricted coverage of models and traits. [AM06]",
+      "source_ids": [
+        "AM06"
+      ],
+      "version": "AM06: arXiv v3; initial submission 2025-07-29; author-lab announcement 2025-08-01",
+      "reading_depth": "AM06: Fresh primary v3 HTML sections 2.1-2.2 and selected section 8; prior verified record reused.",
+      "locator": "",
+      "boundary": "AM06: Specified prompt-elicited traits, restricted coverage and evaluator dependence; no complete identity coordinate system.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C24-062",
+      "chapter": 24,
+      "claim": "Current research makes this direction plausible without establishing the full outcome. Context adaptation can refine reusable strategies; SEAL studies learned generation of material for weight updates; Voyager stores verified action programs for reuse in Minecraft. These are distinct forms of improvement with distinct evaluation environments. [EX09, EX11, TX02]",
+      "source_ids": [
+        "EX09",
+        "EX11",
+        "TX02"
+      ],
+      "version": "EX09: Qizheng Zhang et al. arXiv v3, March 29, 2026; full text, marked ICLR 2026. Read motivation, update design, result overview and cost tables; earlier project notes retain a fuller cost discussion.; EX11: Adam Zweiger et al. arXiv v2, September 18, 2025; full text. Read abstract, adaptation overview and catastrophic-forgetting limitation. Earlier project research separately checked the NeurIPS 2025 proceedings record.; TX02: 2023; arXiv 2305.16291",
+      "reading_depth": "EX09: Fresh primary v3 HTML section 3, section 4.1 overview and Appendix A.3 Tables 12-14.; EX11: Fresh primary v2 HTML abstract, section 3.1 and Algorithm 1; prior verified limitations record reused.; TX02: Fresh primary v2 HTML sections 2.1-2.3 skill-library methods; prior abstract record reused.",
+      "locator": "",
+      "boundary": "EX09: Contextual playbook and stage-specific AppWorld cost comparison; no lifecycle cost winner or current price.; EX11: Generated self-edit material, gradient update and downstream reward; no general personal development result.; TX02: Reusable verified programs in Minecraft; no physical-world result or performance multiplier claimed.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C24-063",
+      "chapter": 24,
+      "claim": "The research premise should remain specific. Voyager's reusable programs operate in Minecraft. AgentPersonaBench tests persona adherence across several interaction surfaces. Neither result establishes reliable physical-world character or safe household autonomy. [TX02, AM12]",
+      "source_ids": [
+        "AM12",
+        "TX02"
+      ],
+      "version": "AM12: arXiv v1; TX02: 2023; arXiv 2305.16291",
+      "reading_depth": "AM12: Fresh local v1 PDF, extracted to evidence/AM12.txt; section 3.2 and Appendix E/F.; TX02: Fresh primary v2 HTML sections 2.1-2.3 skill-library methods; prior abstract record reused.",
+      "locator": "",
+      "boundary": "AM12: Declared trait adherence across four surfaces; not human behavioral prediction. No leaderboard scores imported.; TX02: Reusable verified programs in Minecraft; no physical-world result or performance multiplier claimed.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C24-064",
+      "chapter": 24,
+      "claim": "Park and colleagues' June 28, 2026 version studies agents grounded in interviews, structured self-reports or both, using data from 1,052 Americans. The reported evaluation includes held-out survey responses and other behavioral tasks, with comparisons to simpler information conditions. The version-sensitive normalized figures describe particular prediction outcomes, not a percentage of a person reproduced. [R4C13]",
+      "source_ids": [
+        "R4C13"
+      ],
+      "version": "R4C13: arXiv:2411.10109v3, June 28, 2026",
+      "reading_depth": "R4C13: Pinned v3 abstract and version history; limited to data/sample, information conditions and reported endpoint families. No detailed numerical or full-method inference.",
+      "locator": "",
+      "boundary": "R4C13: Claim-specific selected reading only; chapter implications are author synthesis.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C24-065",
+      "chapter": 24,
+      "claim": "The present premise is uneven but concrete. The dated jurisdiction record in Appendix C includes EU transparency and data provisions and China's specific anthropomorphic-service measures, with scope and effective dates preserved. These instruments address different functions and actors; they do not form a single global persona code. [R4C06, R4C07, RG02]",
+      "source_ids": [
+        "R4C06",
+        "R4C07",
+        "RG02"
+      ],
+      "version": "R4C06: Official text, 27 April 2016, selected provisions checked 2026-10-15; R4C07: Consolidated 27 July 2026, CELEX:02024R1689-20260727; RG02: Order No. 21, published April 10, 2026; effective July 15, 2026.",
+      "reading_depth": "R4C06: Articles 5, 13-14, 16-18 and 20 selected; not complete legal analysis.; R4C07: Articles 50, 111(4), 113 checked live; original-text record used to identify current consolidation.; RG02: Fresh final official Order No. 21, promulgation and Articles 2, 8-20 and 32.",
+      "locator": "",
+      "boundary": "R4C06: Claim-specific selected reading only; chapter implications are author synthesis.; R4C07: Claim-specific selected reading only; chapter implications are author synthesis.; RG02: Public-China sustained-emotional-interaction scope; July 15, 2026 effective date. English summary is translation, not a global chatbot rule.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C24-author_synthesis",
+      "chapter": 24,
+      "claim": "Uncited mechanisms, illustrative situations and tests are proposed engineering/research designs; none are newly executed.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "",
+      "locator": "",
+      "boundary": "",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-C24-comparison",
+      "chapter": 24,
+      "claim": "Qualitative comparison tables use distinct endpoints, not a pooled score or universal ranking.",
+      "source_ids": [],
+      "version": "",
+      "reading_depth": "",
+      "locator": "",
+      "boundary": "",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/chapters-17-24/claim-ledger.json"
+    },
+    {
+      "id": "R4-E-NY",
+      "chapter": "Appendix C",
+      "claim": "New York selected duties include initial and recurring nonhuman notice, separately from crisis-response protocol.",
+      "source_ids": [
+        "TX23"
+      ],
+      "version": "Official Sections 1700-1702, most recent revision displayed November 7, 2025; accessed October 15, 2026",
+      "reading_depth": "Integrating editor read complete text of the three selected sections: definitions and exclusions, crisis-response protocol, initial and recurring nonhuman notification. No complete jurisdictional assessment.",
+      "locator": "Sections 1700, 1701, 1702",
+      "boundary": "Selected sections, not full product classification.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/editorial-claim-ledger.json"
+    },
+    {
+      "id": "R4-E-PARK-PLOT",
+      "chapter": 14,
+      "claim": "Five normalized GSS means and SDs are redrawn from Park v3; 1.0 is own human retest consistency.",
+      "source_ids": [
+        "R4B01"
+      ],
+      "version": "arXiv:2411.10109v3, June 28, 2026",
+      "reading_depth": "Integrating editor read normalization definition and five conditions with reported means/SDs in primary full-text extraction. Author checked methods/results.",
+      "locator": "Main text normalization p.5 and results pp.6-7",
+      "boundary": "No participant-level reanalysis, no confidence intervals inferred, no percentage of a whole person.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/editorial-claim-ledger.json"
+    },
+    {
+      "id": "R4-E-S06",
+      "chapter": 16,
+      "claim": "Study 4 resets conversation history between sessions; social satisfaction is a preregistered exploratory outcome.",
+      "source_ids": [
+        "S06"
+      ],
+      "version": "arXiv:2605.07912v3, June 21, 2026",
+      "reading_depth": "Integrating editor and cross-author reviewer checked the two primary HTML results paragraphs directly.",
+      "locator": "Main results: Feeling understood by AI grows with sustained use; Sycophantic AI reduces satisfaction with social interactions",
+      "boundary": "Does not establish a persistent-memory mechanism; null social-time and affective-well-being qualifications retained.",
+      "verified_on": "2026-10-15",
+      "ledger": "manuscript/revision-4/editorial-claim-ledger.json"
+    }
+  ]
+}

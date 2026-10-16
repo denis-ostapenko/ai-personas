@@ -1,0 +1,12 @@
+{
+  "scope": "synthetic offline teaching lab",
+  "sqlite_version": "3.53.0",
+  "tests_run": 11,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "verified_on": "2026-10-15",
+  "revision": "3.2",
+  "postgres_gateway": "Existing read-only example; no PostgreSQL integration run",
+  "boundary": "Source and derived writes guarded by persisted epoch/state. No complete output/tool shutdown, authentication or distributed worker implementation."
+}

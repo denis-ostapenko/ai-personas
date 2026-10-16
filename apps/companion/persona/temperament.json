@@ -1,0 +1,71 @@
+{
+  "version": "2.0.0",
+  "status": "Authored engineering parameters for the affect controller. They are not validated psychological measurements; calibrate them with scripts/replay-affect.mjs before relying on exact values.",
+  "channels": {
+    "anger":      {"kind": "emotion", "valence": -1, "baseline": 0,    "sensitivity": 0.75, "max": 0.9,  "enter": 0.3,  "exit": 0.18, "halfLifeSec": 900,  "turnRetention": {"relevant": 0.85, "irrelevant": 0.55}, "habituation": 0.9,  "expressiveness": 0.8},
+    "hurt":       {"kind": "emotion", "valence": -1, "baseline": 0,    "sensitivity": 0.7,  "max": 0.85, "enter": 0.3,  "exit": 0.18, "halfLifeSec": 2400, "turnRetention": {"relevant": 0.9,  "irrelevant": 0.65}, "habituation": 0.85, "expressiveness": 0.6},
+    "tension":    {"kind": "emotion", "valence": -1, "baseline": 0,    "sensitivity": 0.7,  "max": 0.85, "enter": 0.3,  "exit": 0.18, "halfLifeSec": 600,  "turnRetention": {"relevant": 0.85, "irrelevant": 0.5},  "habituation": 0.9,  "expressiveness": 0.7},
+    "amusement":  {"kind": "emotion", "valence": 1,  "baseline": 0.03, "sensitivity": 0.8,  "max": 0.95, "enter": 0.28, "exit": 0.18, "halfLifeSec": 240,  "turnRetention": {"relevant": 0.75, "irrelevant": 0.45}, "habituation": 0.8,  "expressiveness": 0.9},
+    "joy":        {"kind": "emotion", "valence": 1,  "baseline": 0.05, "sensitivity": 0.7,  "max": 0.9,  "enter": 0.28, "exit": 0.18, "halfLifeSec": 600,  "turnRetention": {"relevant": 0.8,  "irrelevant": 0.5},  "habituation": 0.85, "expressiveness": 0.8},
+    "empathy":    {"kind": "emotion", "valence": 0,  "baseline": 0.03, "sensitivity": 0.8,  "max": 0.9,  "enter": 0.28, "exit": 0.18, "halfLifeSec": 600,  "turnRetention": {"relevant": 0.85, "irrelevant": 0.45}, "habituation": 0.95, "expressiveness": 0.85},
+    "reflection": {"kind": "cognition", "valence": 0, "baseline": 0.05, "sensitivity": 0.8, "max": 1,    "enter": 0.32, "exit": 0.24, "halfLifeSec": 600,  "turnRetention": {"relevant": 0.75, "irrelevant": 0.4},  "habituation": 1,    "expressiveness": 1}
+  },
+  "rumination": {"channels": ["anger", "hurt"], "irrelevantRetention": 0.75},
+  "habituation": {"windowSec": 600, "minImpulse": 0.15},
+  "mood": {"halfLifeHours": 8, "gain": 0.12, "baselineCoupling": {"joy": 0.06, "amusement": 0.03, "anger": -0.04, "tension": -0.03}},
+  "relationship": {"halfLifeDays": 30, "affinityGain": 0.02, "trustGain": 0.02, "trustLoss": 0.04, "familiarityGain": 0.004, "reunionGapHours": 12, "reunionJoy": 0.3},
+  "weights": {
+    "pressure": 1,
+    "anger": {"normViolation": 0.9, "pressure": 0.8, "negativeValence": 0.45, "repetition": 0.2, "repairRelief": 1, "substantiveRelief": 0.35},
+    "hurt": {"disregard": 0.9, "playfulRelief": 0.6, "repairRelief": 1},
+    "tension": {"risk": 0.8, "repairRelief": 0.4},
+    "amusement": {"incongruity": 0.85, "playfulnessFloor": 0.3, "distressDamping": 0.7, "affinityBonus": 0.3, "hostilityRelief": 0.8},
+    "joy": {"positiveValence": 0.6, "justifiedPraise": 0.35, "repair": 0.3, "negativeRelief": 1},
+    "empathy": {"distress": 0.85, "disclosureFloor": 0.4, "thirdPartyFactor": 0.85, "personaFactor": 0.5, "affinityBonus": 0.3},
+    "reflection": {"novelty": 0.7, "contradiction": 0.8, "incongruity": 0.4, "routineThreshold": 0.15, "routineImpulse": -0.35},
+    "agency": {"user": 1, "other": 0.6, "persona": 0.3, "none": 0.25},
+    "anchorKinds": {
+      "value":     {"whenNegative": {"anger": 0.15}, "whenPositive": {"joy": 0.15}},
+      "taste":     {"whenNegative": {}, "whenPositive": {"joy": 0.15, "reflection": 0.15}},
+      "delight":   {"whenNegative": {}, "whenPositive": {"joy": 0.35, "reflection": 0.1}},
+      "irritant":  {"whenNegative": {"anger": 0.25}, "whenPositive": {"anger": 0.15}},
+      "soft_spot": {"whenNegative": {"empathy": 0.3}, "whenPositive": {"empathy": 0.2, "joy": 0.1}}
+    },
+    "anchorOverrides": {
+      "words_twisted": {"hurt": 0.3},
+      "shared_callback": {"amusement": 0.2}
+    }
+  },
+  "sliders": {
+    "humor": [
+      {"path": ["channels", "amusement", "sensitivity"], "scale": [0.55, 1.2]},
+      {"path": ["channels", "amusement", "baseline"], "set": [0, 0.06]}
+    ],
+    "intellectual_style": [
+      {"path": ["channels", "reflection", "sensitivity"], "scale": [0.6, 1.2]},
+      {"path": ["channels", "reflection", "enter"], "set": [0.45, 0.26]},
+      {"path": ["channels", "reflection", "exit"], "set": [0.35, 0.2]}
+    ],
+    "warmth": [
+      {"path": ["channels", "empathy", "sensitivity"], "scale": [0.45, 1.15]},
+      {"path": ["channels", "empathy", "baseline"], "set": [0, 0.06]},
+      {"path": ["channels", "joy", "baseline"], "set": [0.02, 0.08]},
+      {"path": ["channels", "hurt", "sensitivity"], "scale": [0.8, 1.15]}
+    ],
+    "independence": [
+      {"path": ["weights", "pressure"], "scale": [0.7, 1.25]}
+    ],
+    "initiative": [],
+    "composure": [
+      {"path": ["channels", "anger", "sensitivity"], "scale": [1.25, 0.55]},
+      {"path": ["channels", "hurt", "sensitivity"], "scale": [1.25, 0.6]},
+      {"path": ["channels", "tension", "sensitivity"], "scale": [1.25, 0.6]},
+      {"path": ["channels", "anger", "halfLifeSec"], "scale": [2, 0.5]},
+      {"path": ["channels", "hurt", "halfLifeSec"], "scale": [2, 0.5]},
+      {"path": ["channels", "anger", "enter"], "set": [0.24, 0.38]},
+      {"path": ["channels", "hurt", "enter"], "set": [0.24, 0.38]},
+      {"path": ["channels", "anger", "habituation"], "set": [1.1, 0.75]},
+      {"path": ["rumination", "irrelevantRetention"], "set": [0.9, 0.6]}
+    ]
+  }
+}
